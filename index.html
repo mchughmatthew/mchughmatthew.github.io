@@ -79,7 +79,9 @@
     font-family: 'DM Mono', monospace; font-size: 0.72rem;
     color: var(--gold); border: 1px solid rgba(255,248,219,0.4);
     padding: 0.3rem 0.7rem; border-radius: 2px; letter-spacing: 0.05em;
+    cursor: pointer; transition: background 0.15s, color 0.15s;
   }
+  .tag:hover { background: rgba(255,248,219,0.12); color: #fff; }
   .hero-links { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; }
   .hero-links a {
     display: inline-flex; align-items: center; gap: 0.4rem;
@@ -216,10 +218,10 @@
       Director, <a href="https://www.nursing.upenn.edu/chopr/" target="_blank" style="color:inherit;text-decoration:underline;text-underline-offset:3px;opacity:0.85;">Center for Health Outcomes and Policy Research</a>
     </p>
     <div class="hero-tags">
-      <span class="tag">#nursestaffing</span>
-      <span class="tag">#burnout</span>
-      <span class="tag">#policy_evaluation</span>
-      <span class="tag">#healthyworkenvironment</span>
+      <span class="tag" onclick="searchTag('nurse staffing')">#nursestaffing</span>
+      <span class="tag" onclick="searchTag('burnout')">#burnout</span>
+      <span class="tag" onclick="searchTag('policy')">#policy_evaluation</span>
+      <span class="tag" onclick="searchTag('work environment')">#healthyworkenvironment</span>
     </div>
     <div class="hero-links">
       <a href="cv.pdf" download>Download CV</a>
@@ -239,7 +241,7 @@
       <div class="about-bio">
         <h2>Advancing Nursing Science<br>to Shape Health Policy</h2>
         <p>Matthew D. McHugh is <strong>Professor and Independence Chair for Nursing Education</strong> at the University of Pennsylvania School of Nursing, where he directs the <strong>Center for Health Outcomes and Policy Research (CHOPR)</strong>. He is an elected member of the <strong>National Academy of Medicine</strong> and a Fellow of the American Academy of Nursing.</p>
-        <p>McHugh&rsquo;s research examines how nursing resources&mdash;including staffing levels, work environments, and organizational factors&mdash;affect patient outcomes, nurse well-being, and health equity. His work has directly informed policy discussions at state, national, and international levels, including nurse-to-patient ratio legislation in California, Pennsylvania, New York, and Queensland, Australia.</p>
+        <p>McHugh&rsquo;s research examines how hospital nursing resources&mdash;including staffing levels, work environments, and organizational factors&mdash;affect patient outcomes, nurse well-being, and health equity. His work has directly informed policy discussions at state, national, and international levels, including nurse-to-patient ratio legislation in California, Pennsylvania, New York, and Queensland, Australia.</p>
         <p>A uniquely credentialed scholar, McHugh holds a <strong>PhD in Nursing</strong> from Penn, an <strong>MPH</strong> from Harvard, and a <strong>JD</strong> from Northeastern University School of Law&mdash;bringing disciplinary depth to the intersection of health policy, law, and nursing science. He began his career as a registered nurse and family nurse practitioner, grounding his research in clinical practice.</p>
         <p>He is a <strong>Fulbright Scholar</strong>, former Robert Wood Johnson Foundation Nurse Faculty Scholar, and has received the Claire M. Fagin Distinguished Researcher Award and induction into the International Nurse Researcher Hall of Fame.</p>
       </div>
@@ -262,12 +264,12 @@
     <p class="section-label">Center for Health Outcomes and Policy Research</p>
     <h2>Research Focus</h2>
     <p style="font-size:1rem; color:#555; font-weight:300; max-width:680px; line-height:1.75; margin-bottom:2.5rem;">
-      CHOPR is a multidisciplinary research center at Penn Nursing dedicated to understanding how features of nursing&mdash;staffing, work environments, and education&mdash;shape patient outcomes and health policy.
+      CHOPR is a multidisciplinary research center at Penn Nursing dedicated to understanding how hospital nursing systems&mdash;staffing, work environments, and education&mdash;shape patient outcomes and health policy.
       <a href="https://www.nursing.upenn.edu/chopr/" style="color:var(--gold);" target="_blank">Visit CHOPR &rarr;</a>
     </p>
     <div class="research-grid">
       <div class="research-card"><h3>Nurse Staffing &amp; Policy</h3><p>Evaluating the effects of nurse-to-patient ratio legislation on staffing levels, patient mortality, readmissions, and cost&mdash;with studies in California, Pennsylvania, New York, and Queensland, Australia.</p></div>
-      <div class="research-card"><h3>Nurse Burnout &amp; Work Environments</h3><p>Examining how organizational factors drive nurse burnout, job dissatisfaction, and intent to leave&mdash;and identifying structural interventions that create healthy work environments.</p></div>
+      <div class="research-card"><h3>Nurse Burnout &amp; Work Environments</h3><p>Examining how hospital organizational factors drive nurse burnout, job dissatisfaction, and intent to leave&mdash;and identifying structural interventions that create healthy work environments.</p></div>
       <div class="research-card"><h3>Health Equity &amp; Disparities</h3><p>Investigating how nursing resources mediate racial and ethnic disparities in surgical outcomes, cardiac arrest survival, readmissions, and care for underserved populations.</p></div>
       <div class="research-card"><h3>Policy Evaluation &amp; Methods</h3><p>Applying quasi-experimental methods, matched cohort designs, and causal inference to evaluate large-scale health policy interventions including the ACA Graduate Nurse Education Demonstration.</p></div>
     </div>
@@ -389,6 +391,13 @@ function toggleAbstract(uid, btn) {
   const open = el.classList.toggle('open');
   btn.textContent = open ? 'Abstract ▴' : 'Abstract ▾';
 }
+function searchTag(term) {
+  const input = document.getElementById('pub-search');
+  input.value = term;
+  document.getElementById('publications').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  filterPubs();
+}
+
 function filterPubs() {
   const q = document.getElementById('pub-search').value.toLowerCase().trim();
   if (!q) { renderPubs(PUBS); return; }
