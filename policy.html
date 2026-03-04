@@ -3,6 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5LNP9W9B62"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5LNP9W9B62');
+</script>
+
 <title>Policy Evaluation & Methods — Matthew D. McHugh</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
@@ -226,7 +235,7 @@ function toggleAbstract(uid, btn) {
 
 function filterPubs() {
   const q = document.getElementById('pub-search').value.toLowerCase().trim();
-  if (!q) { renderPubs(PUBS); return; }
+  if (!q) { renderPub(PUBS); return; }
   renderPubs(PUBS.filter(p => {
     const hay = [p.title, p.author, p.journal, p.abstract].join(' ').toLowerCase();
     return hay.includes(q);
