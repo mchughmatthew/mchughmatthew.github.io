@@ -29,8 +29,25 @@
   nav ul a:hover { color: var(--gold-light); }
 
   .topic-hero {
-    background: var(--navy); padding: 120px 2rem 70px;
+    position: relative;
+    padding: 120px 2rem 80px;
+    overflow: hidden;
+    min-height: 420px;
+    display: flex; align-items: flex-end;
   }
+  .topic-hero-bg {
+    position: absolute; inset: 0;
+    background-image: url('images/protest2.png');
+    background-size: cover; background-position: center 35%;
+    filter: brightness(0.4) saturate(0.8);
+    z-index: 0;
+  }
+  .topic-hero-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(12,27,51,0.95) 0%, rgba(12,27,51,0.35) 60%, rgba(12,27,51,0.2) 100%);
+    z-index: 1;
+  }
+  .topic-hero-inner { position: relative; z-index: 2; width: 100%; max-width: 860px; margin: 0 auto; }
   .topic-hero-inner { max-width: 860px; margin: 0 auto; }
   .back-link { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: rgba(255,255,255,0.45); text-decoration: none; letter-spacing: 0.08em; text-transform: uppercase; display: inline-flex; align-items: center; gap: 0.4rem; margin-bottom: 1.5rem; transition: color 0.15s; }
   .back-link:hover { color: var(--gold); }
@@ -97,6 +114,8 @@
 </nav>
 
 <div class="topic-hero">
+  <div class="topic-hero-bg"></div>
+  <div class="topic-hero-overlay"></div>
   <div class="topic-hero-inner">
     <a href="index.html" class="back-link">← Back to main site</a>
     <div><span class="topic-tag">#nursestaffing</span></div>
@@ -127,10 +146,10 @@ This body of work addresses not just whether staffing matters, but <em>how polic
 </section>
 
 <footer>
-  <p>Matthew D. McHugh &middot; University of Pennsylvania School of Nursing &middot; <a href="mailto:mchughm@nursing.upenn.edu">mchughm@nursing.upenn.edu</a></p>
+  <p>Matthew D. McHugh &middot; University of Pennsylvania School of Nursing &middot; <a href="/cdn-cgi/l/email-protection#4c212f24392b24210c22393e3f25222b62393c29222262292839"><span class="__cf_email__" data-cfemail="533e303b26343b3e133d2621203a3d347d2623363d3d7d363726">[email&#160;protected]</span></a></p>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 let PUBS = [];
 
 function parseBib(text) {
