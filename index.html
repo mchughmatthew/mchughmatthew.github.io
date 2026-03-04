@@ -82,6 +82,7 @@
     cursor: pointer; transition: background 0.15s, color 0.15s;
   }
   .tag:hover { background: rgba(255,248,219,0.12); color: #fff; }
+  a.tag { text-decoration: none; }
   .hero-links { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; }
   .hero-links a {
     display: inline-flex; align-items: center; gap: 0.4rem;
@@ -230,10 +231,10 @@
       Director, <a href="https://www.nursing.upenn.edu/chopr/" target="_blank" style="color:inherit;text-decoration:underline;text-underline-offset:3px;opacity:0.85;">Center for Health Outcomes and Policy Research</a>
     </p>
     <div class="hero-tags">
-      <span class="tag" onclick="searchTag('nurse staffing')">#nursestaffing</span>
-      <span class="tag" onclick="searchTag('burnout')">#burnout</span>
-      <span class="tag" onclick="searchTag('policy')">#policy_evaluation</span>
-      <span class="tag" onclick="searchTag('work environment')">#healthyworkenvironment</span>
+      <a href="nursestaffing.html" class="tag">#nursestaffing</a>
+      <a href="burnout.html" class="tag">#burnout</a>
+      <a href="policy.html" class="tag">#policy_evaluation</a>
+      <a href="workenvironment.html" class="tag">#healthyworkenvironment</a>
     </div>
     <div class="hero-links">
       <a href="cv.pdf" download>Download CV</a>
