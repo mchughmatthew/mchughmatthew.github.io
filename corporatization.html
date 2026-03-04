@@ -133,10 +133,10 @@
 </section>
 
 <footer>
-  <p>Matthew D. McHugh &middot; University of Pennsylvania School of Nursing &middot; <a href="mailto:mchughm@nursing.upenn.edu">mchughm@nursing.upenn.edu</a></p>
+  <p>Matthew D. McHugh &middot; University of Pennsylvania School of Nursing &middot; <a href="/cdn-cgi/l/email-protection#3e535d564b5956537e504b4c4d575059104b4e5b5050105b5a4b"><span class="__cf_email__" data-cfemail="4e232d263b2926230e203b3c3d272029603b3e2b2020602b2a3b">[email&#160;protected]</span></a></p>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 let PUBS = [];
 function parseBib(text) {
   const entries = [];
@@ -215,20 +215,24 @@ function renderPubs(filtered) {
   });
   container.innerHTML = html;
 }
+
+function filterPubs() {
+  const raw = document.getElementById('pub-search').value.toLowerCase().trim();
+  if (!raw) { renderPubs(PUBS); return; }
+  const terms = raw.split(/\s+/).filter(Boolean);
+  renderPubs(PUBS.filter(p => {
+    const hay = [p.title, p.author, p.journal, p.abstract].join(' ').toLowerCase();
+    return terms.some(t => hay.includes(t));
+  }));
+}
+
 function toggleAbstract(uid, btn) {
   const el = document.getElementById('abs_' + uid);
   if (!el) return;
   const open = el.classList.toggle('open');
-  btn.textContent = open ? 'Abstract ▴' : 'Abstract ▾';
+  btn.textContent = open ? 'Abstract \u25b4' : 'Abstract \u25be';
 }
-function filterPubs() {
-  const q = document.getElementById('pub-search').value.toLowerCase().trim();
-  if (!q) { renderPubs(PUBS); return; }
-  renderPubs(PUBS.filter(p => {
-    const hay = [p.title, p.author, p.journal, p.abstract].join(' ').toLowerCase();
-    return hay.includes(q);
-  }));
-}
+
 document.addEventListener('DOMContentLoaded', loadPubs);
 </script>
 </body>
