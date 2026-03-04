@@ -222,11 +222,12 @@ function toggleAbstract(uid, btn) {
   btn.textContent = open ? 'Abstract ▴' : 'Abstract ▾';
 }
 function filterPubs() {
-  const q = document.getElementById('pub-search').value.toLowerCase().trim();
-  if (!q) { renderPubs(PUBS); return; }
+  const raw = document.getElementById('pub-search').value.toLowerCase().trim();
+  if (!raw) { renderPubs(PUBS); return; }
+  const terms = raw.split(/\s+/).filter(Boolean);
   renderPubs(PUBS.filter(p => {
     const hay = [p.title, p.author, p.journal, p.abstract].join(' ').toLowerCase();
-    return hay.includes(q);
+    return terms.some(t => hay.includes(t));
   }));
 }
 document.addEventListener('DOMContentLoaded', loadPubs);
