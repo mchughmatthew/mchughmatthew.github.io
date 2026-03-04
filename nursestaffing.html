@@ -48,7 +48,6 @@
     z-index: 1;
   }
   .topic-hero-inner { position: relative; z-index: 2; width: 100%; max-width: 860px; margin: 0 auto; }
-  .topic-hero-inner { max-width: 860px; margin: 0 auto; }
   .back-link { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: rgba(255,255,255,0.45); text-decoration: none; letter-spacing: 0.08em; text-transform: uppercase; display: inline-flex; align-items: center; gap: 0.4rem; margin-bottom: 1.5rem; transition: color 0.15s; }
   .back-link:hover { color: var(--gold); }
   .topic-tag { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--gold); border: 1px solid rgba(255,248,219,0.4); padding: 0.3rem 0.7rem; border-radius: 2px; letter-spacing: 0.05em; display: inline-block; margin-bottom: 1.2rem; }
@@ -114,7 +113,7 @@
 </nav>
 
 <div class="topic-hero">
-  <div class="topic-hero-bg"></div>
+  <div class="topic-hero-bg" style="background-image:url('images/protest2.png');"></div>
   <div class="topic-hero-overlay"></div>
   <div class="topic-hero-inner">
     <a href="index.html" class="back-link">← Back to main site</a>
@@ -126,11 +125,9 @@
 <section class="topic-overview">
   <div class="topic-overview-inner">
     <p class="section-label">Research Overview</p>
-    <p>Nurse staffing — the number of patients assigned to each nurse — is one of the most consequential and extensively studied factors in hospital care quality. McHugh's research has helped establish the causal link between staffing levels and patient outcomes including mortality, readmissions, failure to rescue, and length of stay, and has shaped major policy debates in the United States and internationally.
-
-A landmark contribution is the prospective evaluation of Queensland, Australia's minimum nurse-to-patient ratio mandate, published in <em>The Lancet</em> (2021), which demonstrated that the policy reduced mortality, readmissions, and length of stay — while generating cost savings that exceeded the cost of additional staffing. Related work has examined California's ratio law, showing it reduced nurse burnout and improved patient outcomes without reducing nursing workforce quality. Studies in New York and other states have estimated the public health impact of proposed staffing legislation.
-
-This body of work addresses not just whether staffing matters, but <em>how policy can be designed and evaluated</em> to improve it at scale — with implications for hospital administrators, state legislatures, and federal policymakers.</p>
+    <p>Nurse staffing — the number of patients assigned to each nurse — is one of the most consequential and extensively studied factors in hospital care quality. McHugh's research has helped establish the causal link between staffing levels and patient outcomes including mortality, readmissions, failure to rescue, and length of stay, and has shaped major policy debates in the United States and internationally.</p>
+    <p>A landmark contribution is the prospective evaluation of Queensland, Australia's minimum nurse-to-patient ratio mandate, published in <em>The Lancet</em> (2021), which demonstrated that the policy reduced mortality, readmissions, and length of stay — while generating cost savings that exceeded the cost of additional staffing. Related work has examined California's ratio law, showing it reduced nurse burnout and improved patient outcomes without reducing nursing workforce quality. Studies in New York and other states have estimated the public health impact of proposed staffing legislation.</p>
+    <p>This body of work addresses not just whether staffing matters, but <em>how policy can be designed and evaluated</em> to improve it at scale — with implications for hospital administrators, state legislatures, and federal policymakers.</p>
   </div>
 </section>
 
@@ -146,10 +143,10 @@ This body of work addresses not just whether staffing matters, but <em>how polic
 </section>
 
 <footer>
-  <p>Matthew D. McHugh &middot; University of Pennsylvania School of Nursing &middot; <a href="/cdn-cgi/l/email-protection#4c212f24392b24210c22393e3f25222b62393c29222262292839"><span class="__cf_email__" data-cfemail="533e303b26343b3e133d2621203a3d347d2623363d3d7d363726">[email&#160;protected]</span></a></p>
+  <p>Matthew D. McHugh &middot; University of Pennsylvania School of Nursing &middot; <a href="mailto:mchughm@nursing.upenn.edu">mchughm@nursing.upenn.edu</a></p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 let PUBS = [];
 
 function parseBib(text) {
