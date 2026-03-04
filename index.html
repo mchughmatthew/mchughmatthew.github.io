@@ -317,21 +317,21 @@
       </div>
       <div class="contact-block">
         <h3>Get in Touch</h3>
-        <p>
-          <a href="mailto:mchughm@nursing.upenn.edu">mchughm@nursing.upenn.edu</a><br><br>
-          <a href="https://www.nursing.upenn.edu/chopr/" target="_blank">Center for Health Outcomes<br>and Policy Research (CHOPR)</a><br><br>
-          <a href="https://www.nursing.upenn.edu/" target="_blank">Penn Nursing</a>
-        </p>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.65rem;">
+          <li><a href="mailto:mchughm@nursing.upenn.edu">mchughm@nursing.upenn.edu</a></li>
+          <li><a href="https://www.nursing.upenn.edu/chopr/" target="_blank">Center for Health Outcomes and Policy Research (CHOPR)</a></li>
+          <li><a href="https://www.nursing.upenn.edu/" target="_blank">Penn Nursing</a></li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>Matthew D. McHugh &middot; University of Pennsylvania School of Nursing &middot; <a href="mailto:mchughm@nursing.upenn.edu">mchughm@nursing.upenn.edu</a></p>
+  <p>Matthew D. McHugh &middot; University of Pennsylvania School of Nursing &middot; <a href="/cdn-cgi/l/email-protection#0e636d667b69664e607b7c7d676069207b7e6b6060206b6a7b"><span class="__cf_email__" data-cfemail="f79a949f82909fb7998285849e9990d98287929999d9929382">[email&#160;protected]</span></a></p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 let PUBS = [];
 
 function parseBib(text) {
@@ -439,11 +439,12 @@ function searchTag(term) {
 function filterPubs() {
   const q = document.getElementById('pub-search').value.toLowerCase().trim();
   if (!q) { renderPubs(PUBS); return; }
-  renderPubs(PUBS    .filter(p => {
-      const hay = [p.title,p.author,p.journal,p.abstract].join(' ').toLowerCase();
-      return hay.includes(q);
-    }));
+  renderPubs(PUBS.filter(p => {
+    const hay = [p.title, p.author, p.journal, p.abstract].join(' ').toLowerCase();
+    return hay.includes(q);
+  }));
 }
+
 document.addEventListener('DOMContentLoaded', loadPubs);
 </script>
 </body>
