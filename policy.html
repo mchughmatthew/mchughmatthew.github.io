@@ -38,9 +38,21 @@
   nav ul a:hover { color: var(--gold-light); }
 
   .topic-hero {
-    background: var(--navy); padding: 120px 2rem 70px;
+    position: relative; padding: 120px 2rem 80px;
+    overflow: hidden; min-height: 420px; display: flex; align-items: flex-end;
   }
-  .topic-hero-inner { max-width: 860px; margin: 0 auto; }
+  .topic-hero-bg {
+    position: absolute; inset: 0;
+    background-image: url('chopr.JPG');
+    background-size: cover; background-position: center 40%;
+    filter: brightness(0.35) saturate(0.7); z-index: 0;
+  }
+  .topic-hero-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(12,27,51,0.95) 0%, rgba(12,27,51,0.35) 60%, rgba(12,27,51,0.2) 100%);
+    z-index: 1;
+  }
+  .topic-hero-inner { position: relative; z-index: 2; width: 100%; max-width: 860px; margin: 0 auto; }
   .back-link { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: rgba(255,255,255,0.45); text-decoration: none; letter-spacing: 0.08em; text-transform: uppercase; display: inline-flex; align-items: center; gap: 0.4rem; margin-bottom: 1.5rem; transition: color 0.15s; }
   .back-link:hover { color: var(--gold); }
   .topic-tag { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--gold); border: 1px solid rgba(255,248,219,0.4); padding: 0.3rem 0.7rem; border-radius: 2px; letter-spacing: 0.05em; display: inline-block; margin-bottom: 1.2rem; }
@@ -106,6 +118,8 @@
 </nav>
 
 <div class="topic-hero">
+  <div class="topic-hero-bg"></div>
+  <div class="topic-hero-overlay"></div>
   <div class="topic-hero-inner">
     <a href="index.html" class="back-link">← Back to main site</a>
     <div><span class="topic-tag">#policy_evaluation</span></div>
@@ -116,11 +130,9 @@
 <section class="topic-overview">
   <div class="topic-overview-inner">
     <p class="section-label">Research Overview</p>
-    <p>Rigorous evaluation of health policy requires methods that can credibly estimate causal effects in the absence of randomized experiments. McHugh's methodological work addresses the design and analysis of observational studies in health services research, with applications ranging from nurse staffing legislation to Medicare payment policy and graduate nursing education programs.
-
-Key contributions include the development and application of quasi-experimental designs — including difference-in-differences, matched cohort studies, instrumental variables, and sensitivity analyses for clustered observational designs — to evaluate large-scale natural experiments. Collaborative work with statisticians and econometricians has produced methods specifically tailored to healthcare settings where treatment is assigned at the hospital or system level rather than the individual patient level.
-
-Applied policy evaluations have examined the ACA Graduate Nurse Education Demonstration, California's minimum staffing ratio law, New York staffing legislation, Medicaid expansions and their effects on advanced practice nurse employment, and hospital readmissions penalties. A consistent theme is that policy evaluations must account for complex confounding structures, selection processes, and the multilevel nature of healthcare delivery to produce reliable estimates.</p>
+    <p>Rigorous evaluation of health policy requires methods that can credibly estimate causal effects in the absence of randomized experiments. McHugh's methodological work addresses the design and analysis of observational studies in health services research, with applications ranging from nurse staffing legislation to Medicare payment policy and graduate nursing education programs.</p>
+    <p>Key contributions include the development and application of quasi-experimental designs — including difference-in-differences, matched cohort studies, instrumental variables, and sensitivity analyses for clustered observational designs — to evaluate large-scale natural experiments. Collaborative work with statisticians and econometricians has produced methods specifically tailored to healthcare settings where treatment is assigned at the hospital or system level rather than the individual patient level.</p>
+    <p>Applied policy evaluations have examined the ACA Graduate Nurse Education Demonstration, California's minimum staffing ratio law, New York staffing legislation, Medicaid expansions and their effects on advanced practice nurse employment, and hospital readmissions penalties. A consistent theme is that policy evaluations must account for complex confounding structures, selection processes, and the multilevel nature of healthcare delivery to produce reliable estimates.</p>
   </div>
 </section>
 
@@ -136,10 +148,10 @@ Applied policy evaluations have examined the ACA Graduate Nurse Education Demons
 </section>
 
 <footer>
-  <p>Matthew D. McHugh &middot; University of Pennsylvania School of Nursing &middot; <a href="mailto:mchughm@nursing.upenn.edu">mchughm@nursing.upenn.edu</a></p>
+  <p>Matthew D. McHugh &middot; University of Pennsylvania School of Nursing &middot; <a href="/cdn-cgi/l/email-protection#335e505b46545b5e735d4641405a5d541d4643565d5d1d565746"><span class="__cf_email__" data-cfemail="4c212f24392b24210c22393e3f25222b62393c29222262292839">[email&#160;protected]</span></a></p>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 let PUBS = [];
 
 function parseBib(text) {
@@ -235,7 +247,7 @@ function toggleAbstract(uid, btn) {
 
 function filterPubs() {
   const q = document.getElementById('pub-search').value.toLowerCase().trim();
-  if (!q) { renderPub(PUBS); return; }
+  if (!q) { renderPubs(PUBS); return; }
   renderPubs(PUBS.filter(p => {
     const hay = [p.title, p.author, p.journal, p.abstract].join(' ').toLowerCase();
     return hay.includes(q);
