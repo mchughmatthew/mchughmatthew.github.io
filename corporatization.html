@@ -41,7 +41,7 @@
   }
   .topic-hero-bg {
     position: absolute; inset: 0;
-    background-image: url('');
+    background-image: url('dollar.jpg');
     background-size: cover; background-position: center center;
     filter: brightness(0.4) saturate(0.8); z-index: 0;
   }
@@ -113,9 +113,11 @@
   </ul>
 </nav>
 
-<div class="topic-hero-plain">
+<div class="topic-hero">
+  <div class="topic-hero-bg"></div>
+  <div class="topic-hero-overlay"></div>
   <div class="topic-hero-inner">
-    <a href="index.html" class="back-link" style="color:rgba(255,255,255,0.45);text-decoration:none;font-family:'DM Mono',monospace;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;display:inline-flex;align-items:center;gap:0.4rem;margin-bottom:1.5rem;">← Back to main site</a>
+    <a href="index.html" class="back-link">← Back to main site</a>
     <div><span class="topic-tag">#corporatization</span></div>
     <h1>Corporatization in Healthcare</h1>
   </div>
@@ -142,10 +144,10 @@
 </section>
 
 <footer>
-  <p>Matthew D. McHugh &middot; University of Pennsylvania School of Nursing &middot; <a href="mailto:mchughm@nursing.upenn.edu">mchughm@nursing.upenn.edu</a></p>
+  <p>Matthew D. McHugh &middot; University of Pennsylvania School of Nursing &middot; <a href="/cdn-cgi/l/email-protection#721f111a07151a1f321c0700011b1c155c0702171c1c5c171607"><span class="__cf_email__" data-cfemail="9ff2fcf7eaf8f7f2dff1eaedecf6f1f8b1eaeffaf1f1b1fafbea">[email&#160;protected]</span></a></p>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 let PUBS = [];
 function parseBib(text) {
   const entries = [];
@@ -239,7 +241,7 @@ function toggleAbstract(uid, btn) {
   const el = document.getElementById('abs_' + uid);
   if (!el) return;
   const open = el.classList.toggle('open');
-  btn.textContent = open ? 'Abstract \u25b4' : 'Abstract \u25be';
+  btn.textContent = open ? 'Abstract ▴' : 'Abstract ▾';
 }
 
 document.addEventListener('DOMContentLoaded', loadPubs);
