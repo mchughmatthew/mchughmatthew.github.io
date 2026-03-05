@@ -448,4 +448,18 @@ function toggleAbstract(uid, btn) {
 function searchTag(term) {
   const input = document.getElementById('pub-search');
   input.value = term;
-  document.getElementById('publications').scrollIntoView({ behavior: 'smooth', block: 'start' 
+  document.getElementById('publications').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  filterPubs();
+}
+function filterPubs() {
+  const q = document.getElementById('pub-search').value.toLowerCase().trim();
+  if (!q) { renderPubs(PUBS); return; }
+  renderPubs(PUBS.filter(p => {
+    const hay = [p.title, p.author, p.journal, p.abstract].join(' ').toLowerCase();
+    return hay.includes(q);
+  }));
+}
+document.addEventListener('DOMContentLoaded', loadPubs);
+</script>
+</body>
+</html>
