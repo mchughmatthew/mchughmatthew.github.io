@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5LNP9W9B62"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5LNP9W9B62');
+</script>
+
+<title>Training & Fellowships — Matthew D. McHugh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0c1b33; --navy-mid: #162645; --navy-light: #1e3560;
+    --gold: #fff8db; --gold-light: #fff8db; --cream: #f8f4ef;
+    --warm-white: #fdfaf6; --text: #1a1a2e; --muted: #6b7280; --border: #e5dfd6;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', sans-serif; color: var(--text); background: var(--warm-white); line-height: 1.6; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    background: rgba(12,27,51,0.97); backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,248,219,0.2);
+    padding: 0 2rem; height: 60px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  nav .nav-brand { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.1rem; color: var(--gold-light); letter-spacing: 0.03em; text-decoration: none; }
+  nav ul { list-style: none; display: flex; gap: 2rem; align-items: center; }
+  nav ul a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.85rem; font-weight: 400; letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; }
+  nav ul a:hover { color: var(--gold-light); }
+
+  /* Hero */
+  .topic-hero {
+    background: var(--navy);
+    padding: 120px 2rem 80px;
+  }
+  .topic-hero-inner { max-width: 860px; margin: 0 auto; }
+  .back-link { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: rgba(255,255,255,0.45); text-decoration: none; letter-spacing: 0.08em; text-transform: uppercase; display: inline-flex; align-items: center; gap: 0.4rem; margin-bottom: 1.5rem; transition: color 0.15s; }
+  .back-link:hover { color: var(--gold); }
+  .topic-tag { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--gold); border: 1px solid rgba(255,248,219,0.4); padding: 0.3rem 0.7rem; border-radius: 2px; letter-spacing: 0.05em; display: inline-block; margin-bottom: 1.2rem; }
+  .topic-hero h1 { font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 400; color: #fff; line-height: 1.15; margin-bottom: 0; }
+  .topic-hero .hero-sub { font-size: 1rem; color: rgba(255,255,255,0.55); font-weight: 300; margin-top: 1rem; max-width: 620px; line-height: 1.7; }
+  @media (max-width: 600px) { .topic-hero h1 { font-size: 2.2rem; } }
+
+  /* Overview */
+  .topic-overview { background: var(--cream); padding: 60px 2rem; border-bottom: 1px solid var(--border); }
+  .topic-overview-inner { max-width: 860px; margin: 0 auto; }
+  .section-label { font-family: 'DM Mono', monospace; font-size: 0.68rem; color: var(--navy); letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 1.5rem; }
+  .topic-overview p { font-size: 1.02rem; color: #333; line-height: 1.85; font-weight: 300; margin-bottom: 1.4rem; }
+  .topic-overview p:last-child { margin-bottom: 0; }
+
+  /* Program cards */
+  .programs-section { background: var(--warm-white); padding: 70px 2rem; }
+  .programs-inner { max-width: 860px; margin: 0 auto; }
+  .programs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-top: 2.5rem; }
+
+  .program-card {
+    background: var(--cream);
+    border-top: 3px solid var(--navy);
+    border-radius: 4px;
+    padding: 2rem 1.8rem;
+    display: flex; flex-direction: column; gap: 0.8rem;
+    text-decoration: none;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .program-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(12,27,51,0.1); }
+  .program-card .card-label { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); }
+  .program-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 500; color: var(--navy); line-height: 1.25; }
+  .program-card p { font-size: 0.88rem; color: #555; line-height: 1.65; font-weight: 300; }
+  .program-card .card-cta { font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--navy); letter-spacing: 0.06em; margin-top: auto; padding-top: 0.6rem; opacity: 0.6; transition: opacity 0.15s; }
+  .program-card:hover .card-cta { opacity: 1; }
+
+  /* T32 badge */
+  .t32-banner {
+    background: var(--navy);
+    border-radius: 4px;
+    padding: 1.6rem 2rem;
+    margin-top: 3rem;
+    display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;
+  }
+  .t32-banner .t32-label { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); opacity: 0.7; white-space: nowrap; }
+  .t32-banner p { font-size: 0.88rem; color: rgba(255,255,255,0.7); line-height: 1.6; font-weight: 300; }
+  .t32-banner strong { color: rgba(255,255,255,0.9); font-weight: 500; }
+
+  /* Areas list */
+  .areas-section { background: var(--cream); padding: 60px 2rem; border-top: 1px solid var(--border); }
+  .areas-inner { max-width: 860px; margin: 0 auto; }
+  .areas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.75rem; margin-top: 2rem; }
+  .area-item { font-size: 0.88rem; color: #444; font-weight: 300; padding: 0.75rem 1rem; background: #fff; border-radius: 3px; border-left: 3px solid var(--navy); line-height: 1.4; }
+
+  /* CHOPR link section */
+  .chopr-cta { background: var(--warm-white); padding: 60px 2rem; border-top: 1px solid var(--border); }
+  .chopr-cta-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
+  .chopr-cta p { font-size: 1rem; color: #444; font-weight: 300; line-height: 1.7; max-width: 540px; }
+  .chopr-cta a.cta-btn {
+    font-family: 'DM Mono', monospace; font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--navy); border: 1.5px solid var(--navy); padding: 0.65rem 1.4rem; border-radius: 3px;
+    text-decoration: none; white-space: nowrap; transition: all 0.15s;
+  }
+  .chopr-cta a.cta-btn:hover { background: var(--navy); color: var(--gold); }
+
+  footer { background: var(--navy); padding: 2.5rem 2rem; text-align: center; border-top: 1px solid rgba(255,248,219,0.2); }
+  footer p { font-size: 0.82rem; color: rgba(255,255,255,0.35); }
+  footer a { color: var(--gold); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">Matthew D. McHugh</a>
+  <ul>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#research">Research</a></li>
+    <li><a href="index.html#publications">Publications</a></li>
+    <li><a href="https://www.nursing.upenn.edu/chopr/" target="_blank">CHOPR</a></li>
+    <li><a href="training.html">Training</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+    <li><a href="cv.pdf" download style="font-family:'DM Mono',monospace;font-size:0.72rem;color:var(--navy);background:var(--gold);padding:0.35rem 0.9rem;border-radius:2px;letter-spacing:0.05em;text-transform:uppercase;text-decoration:none;font-weight:500;transition:background 0.15s;">⬇ CV</a></li>
+  </ul>
+</nav>
+
+<div class="topic-hero">
+  <div class="topic-hero-inner">
+    <a href="index.html" class="back-link">← Back to main site</a>
+    <div><span class="topic-tag">#training</span></div>
+    <h1>Training &amp; Fellowships</h1>
+    <p class="hero-sub">NIHR-funded predoctoral and postdoctoral fellowship programs at the Center for Health Outcomes and Policy Research, University of Pennsylvania School of Nursing.</p>
+  </div>
+</div>
+
+<section class="topic-overview">
+  <div class="topic-overview-inner">
+    <p class="section-label">Program Overview</p>
+    <p>The CHOPR Fellowship Program provides advanced training in nursing outcomes research through a formal interdisciplinary curriculum encompassing the conceptual and empirical foundations, methodological approaches, and statistical tools of health outcomes research. Fellows develop expertise in large-scale observational study design, quasi-experimental methods, and the translation of research findings into health policy.</p>
+    <p>Training is conducted within a rich collaborative environment that includes faculty, fellows, and senior researchers working across a portfolio of funded studies — giving trainees direct experience with ongoing data collection, analysis, and dissemination at the intersection of nursing science and health policy.</p>
+  </div>
+</section>
+
+<section class="programs-section">
+  <div class="programs-inner">
+    <p class="section-label">Fellowship Programs</p>
+
+    <div class="programs-grid">
+
+      <a class="program-card" href="https://www.nursing.upenn.edu/chopr/fellowships/pre-doctoral-training/" target="_blank" rel="noopener">
+        <span class="card-label">T32 Fellowship</span>
+        <h3>Predoctoral Training Program</h3>
+        <p>Full-time doctoral training for registered nurses pursuing PhD-level research in nursing outcomes, health services, and health policy. Fellows receive mentorship, funding, and integration into active CHOPR research projects.</p>
+        <span class="card-cta">Learn more at CHOPR →</span>
+      </a>
+
+      <a class="program-card" href="https://www.nursing.upenn.edu/chopr/fellowships/post-doctoral-fellowships/" target="_blank" rel="noopener">
+        <span class="card-label">T32 Fellowship</span>
+        <h3>Postdoctoral Training Program</h3>
+        <p>Two-year postdoctoral fellowships for nurses who have completed doctoral training and seek advanced preparation in outcomes research methods, grant writing, and independent research development.</p>
+        <span class="card-cta">Learn more at CHOPR →</span>
+      </a>
+
+      <a class="program-card" href="https://www.nursing.upenn.edu/chopr/fellowships/pahppmc-research-scholars/" target="_blank" rel="noopener">
+        <span class="card-label">Mentorship Program</span>
+        <h3>Clinical Nurse Research Mentorship</h3>
+        <p>A structured mentorship program pairing practicing clinical nurses with CHOPR faculty and fellows to build research skills, support evidence-based practice, and develop the pipeline of nurse researchers.</p>
+        <span class="card-cta">Learn more at CHOPR →</span>
+      </a>
+
+    </div>
+
+    <div class="t32-banner">
+      <span class="t32-label">Funding</span>
+      <p>Predoctoral and postdoctoral fellowships are supported by an Institutional Training Grant from the <strong>National Institute of Nursing Research</strong> (T32 NR-007104). CHOPR has maintained continuous T32 funding for over two decades, reflecting the program's national standing in nursing outcomes research training.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="areas-section">
+  <div class="areas-inner">
+    <p class="section-label">Research Training Areas</p>
+    <p style="font-size:0.95rem;color:#444;font-weight:300;line-height:1.75;margin-bottom:0;">Fellows receive training across the substantive and methodological domains central to CHOPR's research portfolio:</p>
+    <div class="areas-grid">
+      <div class="area-item">Patient &amp; nurse outcomes research</div>
+      <div class="area-item">Health disparities &amp; equity</div>
+      <div class="area-item">International health systems</div>
+      <div class="area-item">Nurse staffing policy evaluation</div>
+      <div class="area-item">Quasi-experimental methods</div>
+      <div class="area-item">Large-scale survey design</div>
+      <div class="area-item">Seriously ill &amp; high-need patients</div>
+      <div class="area-item">Healthcare policy &amp; programs</div>
+    </div>
+  </div>
+</section>
+
+<section class="chopr-cta">
+  <div class="chopr-cta-inner">
+    <p>Full program details, application information, current fellows, and alumni profiles are available on the CHOPR Fellowship &amp; Scholarship Programs page at Penn Nursing.</p>
+    <a class="cta-btn" href="https://www.nursing.upenn.edu/chopr/fellowships/" target="_blank" rel="noopener">Visit CHOPR Fellowships ↗</a>
+  </div>
+</section>
+
+<footer>
+  <p>Matthew D. McHugh &middot; University of Pennsylvania School of Nursing &middot; <a href="mailto:mchughm@nursing.upenn.edu">mchughm@nursing.upenn.edu</a></p>
+</footer>
+
+</body>
+</html>

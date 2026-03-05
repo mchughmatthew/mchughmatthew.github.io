@@ -228,6 +228,7 @@
     <li><a href="#research">Research</a></li>
     <li><a href="#publications">Publications</a></li>
     <li><a href="https://www.nursing.upenn.edu/chopr/" target="_blank">CHOPR</a></li>
+    <li><a href="training.html">Training</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="cv.pdf" download style="font-family:'DM Mono',monospace;font-size:0.72rem;color:var(--navy);background:var(--gold);padding:0.35rem 0.9rem;border-radius:2px;letter-spacing:0.05em;text-transform:uppercase;text-decoration:none;font-weight:500;transition:background 0.15s;">⬇ CV</a></li>
   </ul>
@@ -447,20 +448,4 @@ function toggleAbstract(uid, btn) {
 function searchTag(term) {
   const input = document.getElementById('pub-search');
   input.value = term;
-  document.getElementById('publications').scrollIntoView({ behavior: 'smooth', block: 'start' });
-  filterPubs();
-}
-
-function filterPubs() {
-  const q = document.getElementById('pub-search').value.toLowerCase().trim();
-  if (!q) { renderPubs(PUBS); return; }
-  renderPubs(PUBS.filter(p => {
-    const hay = [p.title, p.author, p.journal, p.abstract].join(' ').toLowerCase();
-    return hay.includes(q);
-  }));
-}
-
-document.addEventListener('DOMContentLoaded', loadPubs);
-</script>
-</body>
-</html>
+  document.getElementById('publications').scrollIntoView({ behavior: 'smooth', block: 'start' 
