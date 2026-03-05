@@ -41,7 +41,7 @@
   }
   .topic-hero-bg {
     position: absolute; inset: 0;
-    background-image: url('');
+    background-image: url('philly.jpg');
     background-size: cover; background-position: center center;
     filter: brightness(0.4) saturate(0.8); z-index: 0;
   }
@@ -113,9 +113,11 @@
   </ul>
 </nav>
 
-<div class="topic-hero-plain">
+<div class="topic-hero">
+  <div class="topic-hero-bg"></div>
+  <div class="topic-hero-overlay"></div>
   <div class="topic-hero-inner">
-    <a href="index.html" class="back-link" style="color:rgba(255,255,255,0.45);text-decoration:none;font-family:'DM Mono',monospace;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;display:inline-flex;align-items:center;gap:0.4rem;margin-bottom:1.5rem;">← Back to main site</a>
+    <a href="index.html" class="back-link">← Back to main site</a>
     <div><span class="topic-tag">#healthequity</span></div>
     <h1>Health Equity & Disparities</h1>
   </div>
@@ -142,10 +144,10 @@
 </section>
 
 <footer>
-  <p>Matthew D. McHugh &middot; University of Pennsylvania School of Nursing &middot; <a href="mailto:mchughm@nursing.upenn.edu">mchughm@nursing.upenn.edu</a></p>
+  <p>Matthew D. McHugh &middot; University of Pennsylvania School of Nursing &middot; <a href="/cdn-cgi/l/email-protection#365b555e43515e5b76584344455f585118434653585818535243"><span class="__cf_email__" data-cfemail="78151b100d1f101538160d0a0b11161f560d081d1616561d1c0d">[email&#160;protected]</span></a></p>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 let PUBS = [];
 function parseBib(text) {
   const entries = [];
@@ -233,7 +235,9 @@ function toggleAbstract(uid, btn) {
 function filterPubs() {
   const raw = document.getElementById('pub-search').value.toLowerCase().trim();
   if (!raw) { renderPubs(PUBS); return; }
-  const terms = raw.split(/\s+/).filter(Boolean)
+  const terms = raw.split(/\s+/).filter(Boolean);
+  renderPubs(PUBS.filter(p => {
+    const hay = [p.title, p.author, p.journal, p.abstract].join(' ').toLowerCase();
     return terms.some(t => hay.includes(t));
   }));
 }
