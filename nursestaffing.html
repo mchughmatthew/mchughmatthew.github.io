@@ -117,6 +117,7 @@
     <li><a href="index.html#research">Research</a></li>
     <li><a href="index.html#publications">Publications</a></li>
     <li><a href="https://www.nursing.upenn.edu/chopr/" target="_blank">CHOPR</a></li>
+    <li><a href="training.html">Training</a></li>
     <li><a href="index.html#contact">Contact</a></li>
   </ul>
 </nav>
@@ -248,7 +249,15 @@ function toggleAbstract(uid, btn) {
   const open = el.classList.toggle('open');
   btn.textContent = open ? 'Abstract ▴' : 'Abstract ▾';
 }
-
 function filterPubs() {
   const q = document.getElementById('pub-search').value.toLowerCase().trim();
-  if (!q) { renderPub
+  if (!q) { renderPubs(PUBS); return; }
+  renderPubs(PUBS.filter(p => {
+    const hay = [p.title, p.author, p.journal, p.abstract].join(' ').toLowerCase();
+    return hay.includes(q);
+  }));
+}
+document.addEventListener('DOMContentLoaded', loadPubs);
+</script>
+</body>
+</html>
