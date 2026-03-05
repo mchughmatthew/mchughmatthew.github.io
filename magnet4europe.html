@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5LNP9W9B62"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5LNP9W9B62');
+</script>
+<title>Magnet4Europe Initiative — Matthew D. McHugh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0c1b33; --navy-mid: #162645; --navy-light: #1e3560;
+    --gold: #fff8db; --gold-light: #fff8db; --cream: #f8f4ef;
+    --warm-white: #fdfaf6; --text: #1a1a2e; --muted: #6b7280; --border: #e5dfd6;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', sans-serif; color: var(--text); background: var(--warm-white); line-height: 1.6; }
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    background: rgba(12,27,51,0.97); backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,248,219,0.2);
+    padding: 0 2rem; height: 60px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  nav .nav-brand { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.1rem; color: var(--gold-light); letter-spacing: 0.03em; text-decoration: none; }
+  nav ul { list-style: none; display: flex; gap: 2rem; align-items: center; }
+  nav ul a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.85rem; font-weight: 400; letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; }
+  nav ul a:hover { color: var(--gold-light); }
+  .topic-hero { background: var(--navy); padding: 120px 2rem 80px; }
+  .topic-hero-inner { max-width: 860px; margin: 0 auto; }
+  .back-link { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: rgba(255,255,255,0.45); text-decoration: none; letter-spacing: 0.08em; text-transform: uppercase; display: inline-flex; align-items: center; gap: 0.4rem; margin-bottom: 1.5rem; transition: color 0.15s; }
+  .back-link:hover { color: var(--gold); }
+  .topic-tag { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--gold); border: 1px solid rgba(255,248,219,0.4); padding: 0.3rem 0.7rem; border-radius: 2px; letter-spacing: 0.05em; display: inline-block; margin-bottom: 1.2rem; }
+  .funder-tag { font-family: 'DM Mono', monospace; font-size: 0.7rem; color: rgba(255,255,255,0.45); letter-spacing: 0.05em; display: inline-block; margin-left: 0.8rem; }
+  .topic-hero h1 { font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 400; color: #fff; line-height: 1.15; margin-bottom: 0; }
+  @media (max-width: 600px) { .topic-hero h1 { font-size: 2.2rem; } }
+  .topic-overview { background: var(--cream); padding: 60px 2rem; border-bottom: 1px solid var(--border); }
+  .topic-overview-inner { max-width: 860px; margin: 0 auto; }
+  .section-label { font-family: 'DM Mono', monospace; font-size: 0.68rem; color: var(--navy); letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 1.5rem; }
+  .topic-overview p { font-size: 1.02rem; color: #333; line-height: 1.85; font-weight: 300; margin-bottom: 1.4rem; }
+  .topic-overview p:last-child { margin-bottom: 0; }
+  .chopr-cta { background: var(--warm-white); padding: 40px 2rem; border-bottom: 1px solid var(--border); }
+  .chopr-cta-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
+  .chopr-cta p { font-size: 0.92rem; color: #555; font-weight: 300; line-height: 1.7; }
+  .chopr-cta a.cta-btn { font-family: 'DM Mono', monospace; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--navy); border: 1.5px solid var(--navy); padding: 0.55rem 1.2rem; border-radius: 3px; text-decoration: none; white-space: nowrap; transition: all 0.15s; }
+  .chopr-cta a.cta-btn:hover { background: var(--navy); color: var(--gold); }
+  #publications { background: var(--warm-white); padding: 60px 2rem 80px; }
+  .pub-inner { max-width: 860px; margin: 0 auto; }
+  .pub-controls { display: flex; gap: 1rem; margin-bottom: 2.5rem; flex-wrap: wrap; align-items: center; }
+  #pub-search { flex: 1; min-width: 200px; padding: 0.6rem 1rem; border: 1px solid var(--border); border-radius: 3px; font-family: 'DM Sans', sans-serif; font-size: 0.88rem; background: #fff; color: var(--text); outline: none; transition: border-color 0.2s; }
+  #pub-search:focus { border-color: var(--navy); }
+  #pub-search::placeholder { color: var(--muted); }
+  .pub-stats { font-family: 'DM Mono', monospace; font-size: 0.75rem; color: var(--muted); white-space: nowrap; }
+  .year-group { margin-bottom: 2rem; }
+  .year-header { font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--navy); letter-spacing: 0.12em; text-transform: uppercase; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.75rem; }
+  .year-count { color: var(--muted); font-size: 0.65rem; }
+  .pub-item { padding: 1.1rem 0; border-bottom: 1px solid rgba(229,223,214,0.5); }
+  .pub-item:last-child { border-bottom: none; }
+  .pub-title { font-size: 0.95rem; font-weight: 500; color: var(--navy); line-height: 1.45; margin-bottom: 0.3rem; }
+  .pub-title a { color: var(--navy); text-decoration: none; transition: color 0.15s; }
+  .pub-title a:hover { color: #6b7280 !important; text-decoration: underline; text-underline-offset: 3px; }
+  .pub-authors { font-size: 0.82rem; color: var(--muted); margin-bottom: 0.25rem; font-weight: 300; line-height: 1.4; }
+  .pub-journal { font-size: 0.82rem; color: var(--muted); font-style: italic; margin-bottom: 0.4rem; }
+  .pub-actions { display: flex; align-items: center; gap: 0.7rem; flex-wrap: wrap; }
+  .btn-abstract { font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--navy); border: 1px solid rgba(12,27,51,0.35); background: none; padding: 0.2rem 0.6rem; border-radius: 2px; cursor: pointer; letter-spacing: 0.05em; transition: all 0.15s; }
+  .btn-abstract:hover { background: rgba(12,27,51,0.08); }
+  .btn-doi { font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--muted); text-decoration: none; letter-spacing: 0.03em; transition: color 0.15s; }
+  .btn-doi:hover { color: #6b7280; }
+  .btn-pdf { font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--navy); text-decoration: none; letter-spacing: 0.03em; transition: all 0.15s; border: 1px solid rgba(12,27,51,0.35); padding: 0.2rem 0.6rem; border-radius: 2px; }
+  .btn-pdf:hover { background: var(--navy); color: var(--gold); }
+  .abstract-text { display: none; margin-top: 0.8rem; padding: 1rem 1.2rem; background: var(--cream); border-left: 3px solid var(--navy); font-size: 0.83rem; color: #444; line-height: 1.7; border-radius: 0 3px 3px 0; }
+  .abstract-text.open { display: block; }
+  mark { background: rgba(255,248,219,0.5); color: inherit; padding: 0 1px; border-radius: 2px; }
+  .no-results { color: var(--muted); font-size: 0.9rem; padding: 2rem 0; }
+  footer { background: var(--navy); padding: 2.5rem 2rem; text-align: center; border-top: 1px solid rgba(255,248,219,0.2); }
+  footer p { font-size: 0.82rem; color: rgba(255,255,255,0.35); }
+  footer a { color: var(--gold); text-decoration: none; }
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-brand">Matthew D. McHugh</a>
+  <ul>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#research">Research</a></li>
+    <li><a href="index.html#projects">Projects</a></li>
+    <li><a href="index.html#publications">Publications</a></li>
+    <li><a href="https://www.nursing.upenn.edu/chopr/" target="_blank">CHOPR</a></li>
+    <li><a href="training.html">Training</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+    <li><a href="cv.pdf" download style="font-family:'DM Mono',monospace;font-size:0.72rem;color:var(--navy);background:var(--gold);padding:0.35rem 0.9rem;border-radius:2px;letter-spacing:0.05em;text-transform:uppercase;text-decoration:none;font-weight:500;">&#11015; CV</a></li>
+  </ul>
+</nav>
+
+<div class="topic-hero">
+  <div class="topic-hero-inner">
+    <a href="index.html#projects" class="back-link">&#8592; Back to Projects</a>
+    <div><span class="topic-tag">#magnet4europe</span><span class="funder-tag">EU Commission · Multi-site</span></div>
+    <h1>Magnet4Europe Initiative</h1>
+  </div>
+</div>
+
+<section class="topic-overview">
+  <div class="topic-overview-inner">
+    <p class="section-label">Project Overview</p>
+    <p>Magnet4Europe is an EU Commission-funded initiative implementing an evidence-based organizational intervention based on the Magnet Recognition Program&reg; — a voluntary hospital designation for nursing care excellence administered by the American Nurses Credentialing Center. The study is led by Study Directors Linda H. Aiken, PhD, RN, FAAN, FRCN and Walter Sermeus, PhD, MSc, RN, and involves hospitals across multiple European countries.</p>
+    <p>The intervention aims to improve clinician well-being and patient outcomes by redesigning hospital work environments in accordance with Magnet principles: transformational leadership, structural empowerment, exemplary professional practice, new knowledge and innovation, and empirical quality outcomes. Participating hospitals receive structured support to implement these organizational changes, with outcomes tracked prospectively over the intervention period.</p>
+    <p>Magnet4Europe builds on decades of research demonstrating that Magnet-designated hospitals in the United States consistently outperform non-Magnet hospitals on nurse burnout, patient satisfaction, and clinical outcomes including mortality. The European study tests whether similar organizational approaches can achieve comparable benefits across diverse healthcare systems with different workforce structures, labor regulations, and payment models.</p>
+  </div>
+</section>
+
+<div class="chopr-cta">
+  <div class="chopr-cta-inner">
+    <p>Full project details, team information, and resources are available on the CHOPR website at Penn Nursing.</p>
+    <a class="cta-btn" href="https://www.nursing.upenn.edu/chopr/magnet4europe/" target="_blank" rel="noopener">View at CHOPR &#8599;</a>
+  </div>
+</div>
+
+<section id="publications">
+  <div class="pub-inner">
+    <p class="section-label">Related Publications</p>
+    <div class="pub-controls">
+      <input type="text" id="pub-search" placeholder="Filter these publications&hellip;" oninput="filterPubs()" value="Magnet Europe work environment">
+      <span class="pub-stats" id="pub-stats"></span>
+    </div>
+    <div id="pub-list"><p class="no-results">Loading publications&hellip;</p></div>
+  </div>
+</section>
+
+<footer>
+  <p>Matthew D. McHugh &middot; University of Pennsylvania School of Nursing &middot; <a href="mailto:mchughm@nursing.upenn.edu">mchughm@nursing.upenn.edu</a></p>
+</footer>
+
+<script>
+let PUBS = [];
+function parseBib(text) {
+  const entries = [];
+  const entryRe = /@(\w+)\s*\{\s*([^,]+),([\s\S]*?)\n\}/g;
+  let m;
+  while ((m = entryRe.exec(text)) !== null) {
+    const id = m[2].trim();
+    const body = m[3];
+    const entry = { id };
+    const fieldRe = /^\s*(\w+)\s*=\s*\{([\s\S]*?)\}\s*(?:,|$)/gm;
+    let fm;
+    while ((fm = fieldRe.exec(body)) !== null) {
+      entry[fm[1].toLowerCase()] = fm[2].trim();
+    }
+    if (entry.year) entry.year = entry.year.replace(/[{}]/g, '').trim();
+    entries.push(entry);
+  }
+  return entries;
+}
+async function loadPubs() {
+  try {
+    const res = await fetch('publications.bib');
+    if (!res.ok) throw new Error('Failed to load');
+    const text = await res.text();
+    PUBS = parseBib(text);
+    filterPubs();
+  } catch(e) {
+    document.getElementById('pub-list').innerHTML = '<p class="no-results">Could not load publications.</p>';
+  }
+}
+function escHtml(str) {
+  return String(str||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+function highlightText(text, query) {
+  if (!query || query.length < 2) return escHtml(text);
+  let escaped; try { escaped = query.replace(/[\-.*+?^${}()|\\]/g, '\\$&'); } catch(e) { escaped = query; }
+  return escHtml(text).replace(new RegExp('(' + escaped + ')', 'gi'), '<mark>$1</mark>');
+}
+function formatAuthors(str) {
+  if (!str) return '';
+  return str.split(' and ').map(a => a.trim()).join(', ')
+    .replace(/McHugh,?\s*M\.?D\.?/gi, '<strong style="color:var(--navy)">McHugh, M.D.</strong>');
+}
+function renderPubs(filtered) {
+  const container = document.getElementById('pub-list');
+  const q = document.getElementById('pub-search').value.toLowerCase().trim();
+  if (!filtered.length) {
+    container.innerHTML = '<p class="no-results">No publications match your search.</p>';
+    document.getElementById('pub-stats').textContent = '0 publications';
+    return;
+  }
+  document.getElementById('pub-stats').textContent = filtered.length + ' publication' + (filtered.length !== 1 ? 's' : '');
+  const byYear = {};
+  filtered.forEach(p => { const y = p.year || 'Other'; if (!byYear[y]) byYear[y] = []; byYear[y].push(p); });
+  const years = Object.keys(byYear).sort((a, b) => b - a);
+  let html = '';
+  years.forEach(year => {
+    const items = byYear[year];
+    html += `<div class="year-group"><div class="year-header">${year} <span class="year-count">${items.length} paper${items.length > 1 ? 's' : ''}</span></div>`;
+    items.forEach((p, i) => {
+      const uid = (p.id || (year + '_' + i)).replace(/[^a-zA-Z0-9_]/g, '_');
+      const titleHtml = q ? highlightText(p.title, q) : escHtml(p.title);
+      const journalHtml = q ? highlightText(p.journal, q) : escHtml(p.journal);
+      const titleEl = p.url ? `<a href="${escHtml(p.url)}" target="_blank" rel="noopener">${titleHtml}</a>` : titleHtml;
+      const abstractBtn = p.abstract ? `<button class="btn-abstract" onclick="toggleAbstract('${uid}',this)">Abstract &#9662;</button>` : '';
+      const doiLink = p.url ? `<a href="${escHtml(p.url)}" class="btn-doi" target="_blank">DOI &rarr;</a>` : '';
+      const pdfLink = p.pdf ? `<a href="${escHtml(p.pdf)}" class="btn-pdf" target="_blank">&#11015; PDF</a>` : '';
+      const absText = p.abstract ? p.abstract.slice(0, 600) + (p.abstract.length > 600 ? '…' : '') : '';
+      html += `<div class="pub-item">
+        <div class="pub-title">${titleEl}</div>
+        <div class="pub-authors">${formatAuthors(p.author)}</div>
+        <div class="pub-journal">${journalHtml}${p.year ? ', ' + p.year : ''}</div>
+        <div class="pub-actions">${abstractBtn}${doiLink}${pdfLink}</div>
+        ${p.abstract ? `<div class="abstract-text" id="abs_${uid}">${q ? highlightText(absText, q) : escHtml(absText)}</div>` : ''}
+      </div>`;
+    });
+    html += '</div>';
+  });
+  container.innerHTML = html;
+}
+function toggleAbstract(uid, btn) {
+  const el = document.getElementById('abs_' + uid);
+  if (!el) return;
+  const open = el.classList.toggle('open');
+  btn.textContent = open ? 'Abstract ▴' : 'Abstract ▾';
+}
+function filterPubs() {
+  const raw = document.getElementById('pub-search').value.toLowerCase().trim();
+  if (!raw) { renderPubs(PUBS); return; }
+  const terms = raw.split(/\s+/).filter(Boolean);
+  renderPubs(PUBS.filter(p => {
+    const hay = [p.title, p.author, p.journal, p.abstract].join(' ').toLowerCase();
+    return terms.some(t => hay.includes(t));
+  }));
+}
+document.addEventListener('DOMContentLoaded', loadPubs);
+</script>
+</body>
+</html>

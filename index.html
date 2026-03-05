@@ -217,6 +217,18 @@
   .contact-block a:hover { color: var(--gold); border-color: var(--gold); }
   .contact-divider { height: 1px; background: linear-gradient(90deg, transparent, rgba(255,248,219,0.3), transparent); margin: 0; }
   @media (max-width: 600px) { .contact-grid { grid-template-columns: 1fr; gap: 2rem; } }
+
+  /* ── Projects ───────────────────────────────────────── */
+  #projects { background: var(--cream); }
+  .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem; }
+  .project-card { background: #fff; padding: 1.8rem; border-radius: 4px; border-top: 3px solid var(--navy); text-decoration: none; display: block; transition: transform 0.15s, box-shadow 0.15s; }
+  .project-card:hover { transform: translateY(-3px); box-shadow: 0 6px 24px rgba(12,27,51,0.10); }
+  .project-card .card-tag { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.5rem; display: block; }
+  .project-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; color: var(--navy); margin-bottom: 0.6rem; line-height: 1.3; }
+  .project-card p { font-size: 0.88rem; color: #555; line-height: 1.65; font-weight: 300; }
+  .project-card .card-arrow { font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--navy); opacity: 0; margin-top: 1rem; display: block; transition: opacity 0.15s; letter-spacing: 0.05em; }
+  .project-card:hover .card-arrow { opacity: 1; }
+  @media (max-width: 768px) { .projects-grid { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -229,6 +241,7 @@
     <li><a href="#publications">Publications</a></li>
     <li><a href="https://www.nursing.upenn.edu/chopr/" target="_blank">CHOPR</a></li>
     <li><a href="training.html">Training</a></li>
+    <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="cv.pdf" download style="font-family:'DM Mono',monospace;font-size:0.72rem;color:var(--navy);background:var(--gold);padding:0.35rem 0.9rem;border-radius:2px;letter-spacing:0.05em;text-transform:uppercase;text-decoration:none;font-weight:500;transition:background 0.15s;">⬇ CV</a></li>
   </ul>
@@ -300,6 +313,54 @@
       <a href="workenvironment.html" class="research-card"><h3>Work Environments</h3><p>Linking organizational conditions&mdash;leadership, staffing, governance, and Magnet Recognition&mdash;to nurse retention, patient safety, and care quality across thousands of healthcare organizations</p><span class="card-arrow">Explore research →</span></a>
       <a href="healthequity.html" class="research-card"><h3>Health Equity &amp; Disparities</h3><p>Investigating how nursing resources mediate racial and ethnic disparities in surgical outcomes, cardiac arrest survival, readmissions, and care for underserved populations.</p><span class="card-arrow">Explore research →</span></a>
       <a href="policy.html" class="research-card"><h3>Policy Evaluation &amp; Methods</h3><p>Applying quasi-experimental methods, matched cohort designs, and causal inference to evaluate large-scale health policy interventions including the ACA Graduate Nurse Education Demonstration.</p><span class="card-arrow">Explore research →</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="section-inner">
+    <p class="section-label">Active Research</p>
+    <h2>Current Projects</h2>
+    <p style="font-size:1rem; color:#555; font-weight:300; max-width:680px; line-height:1.75; margin-bottom:2.5rem;">
+      CHOPR maintains a portfolio of funded multi-site studies examining nurse workforce conditions, clinician well-being, and health policy across the U.S. and internationally.
+    </p>
+    <div class="projects-grid">
+      <a href="aacnhwe.html" class="project-card">
+        <span class="card-tag">Survey · National</span>
+        <h3>AACN-HWE Survey</h3>
+        <p>A national survey of hospital nurses measuring healthy work environment standards and their relationship to nurse and patient outcomes.</p>
+        <span class="card-arrow">View project →</span>
+      </a>
+      <a href="nurses4all.html" class="project-card">
+        <span class="card-tag">Policy Evaluation · Pennsylvania</span>
+        <h3>Nurses4All</h3>
+        <p>A mail survey of Pennsylvania nurses evaluating the impact of the Nurse Licensure Compact and minimum staffing legislation on nurse and patient outcomes.</p>
+        <span class="card-arrow">View project →</span>
+      </a>
+      <a href="nurses4allbc.html" class="project-card">
+        <span class="card-tag">Policy Evaluation · British Columbia</span>
+        <h3>Nurses4All@BC</h3>
+        <p>Evaluating British Columbia's nurse staffing policies and their effects on the nursing workforce and patient outcomes in collaboration with Canadian partners.</p>
+        <span class="card-arrow">View project →</span>
+      </a>
+      <a href="magnet4europe.html" class="project-card">
+        <span class="card-tag">Intervention · EU-Funded</span>
+        <h3>Magnet4Europe Initiative</h3>
+        <p>An EU Commission-funded trial implementing Magnet-based organizational interventions across European hospitals to improve clinician well-being and patient outcomes.</p>
+        <span class="card-arrow">View project →</span>
+      </a>
+      <a href="usmagnets.html" class="project-card">
+        <span class="card-tag">Survey · National</span>
+        <h3>U.S. Clinician Wellbeing Study</h3>
+        <p>The first large-scale evaluation of mental health and wellbeing among U.S. hospital nurses and physicians, funded by the American Nurses Credentialing Center.</p>
+        <span class="card-arrow">View project →</span>
+      </a>
+      <a href="rn4cast.html" class="project-card">
+        <span class="card-tag">Multi-Country · International</span>
+        <h3>RN4CAST International Studies</h3>
+        <p>A landmark multinational study across Europe, Africa, Asia, and the Americas linking nurse staffing and education to patient mortality and quality of care.</p>
+        <span class="card-arrow">View project →</span>
+      </a>
     </div>
   </div>
 </section>
@@ -448,7 +509,7 @@ function toggleAbstract(uid, btn) {
 function searchTag(term) {
   const input = document.getElementById('pub-search');
   input.value = term;
-  document.getElementById('publications').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  document.getElementById('publications').scrollIntoView({ behavior: 'smooth', block: 'start });
   filterPubs();
 }
 function filterPubs() {
