@@ -38,9 +38,21 @@
   nav ul a:hover { color: var(--gold-light); }
 
   .topic-hero {
-    background: var(--navy); padding: 120px 2rem 70px;
+    position: relative; padding: 120px 2rem 80px;
+    overflow: hidden; min-height: 420px; display: flex; align-items: flex-end;
   }
-  .topic-hero-inner { max-width: 860px; margin: 0 auto; }
+  .topic-hero-bg {
+    position: absolute; inset: 0;
+    background-image: url('images/mobile.jpg');
+    background-size: cover; background-position: center 30%;
+    filter: brightness(0.35) saturate(0.6); z-index: 0;
+  }
+  .topic-hero-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(12,27,51,0.95) 0%, rgba(12,27,51,0.35) 60%, rgba(12,27,51,0.2) 100%);
+    z-index: 1;
+  }
+  .topic-hero-inner { position: relative; z-index: 2; width: 100%; max-width: 860px; margin: 0 auto; }
   .back-link { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: rgba(255,255,255,0.45); text-decoration: none; letter-spacing: 0.08em; text-transform: uppercase; display: inline-flex; align-items: center; gap: 0.4rem; margin-bottom: 1.5rem; transition: color 0.15s; }
   .back-link:hover { color: var(--gold); }
   .topic-tag { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--gold); border: 1px solid rgba(255,248,219,0.4); padding: 0.3rem 0.7rem; border-radius: 2px; letter-spacing: 0.05em; display: inline-block; margin-bottom: 1.2rem; }
@@ -106,6 +118,8 @@
 </nav>
 
 <div class="topic-hero">
+  <div class="topic-hero-bg"></div>
+  <div class="topic-hero-overlay"></div>
   <div class="topic-hero-inner">
     <a href="index.html" class="back-link">← Back to main site</a>
     <div><span class="topic-tag">#healthyworkenvironment</span></div>
@@ -116,11 +130,9 @@
 <section class="topic-overview">
   <div class="topic-overview-inner">
     <p class="section-label">Research Overview</p>
-    <p>The nurse work environment — the organizational conditions under which nurses practice — is a powerful determinant of both nurse outcomes and patient safety. McHugh's research uses validated instruments including the Practice Environment Scale of the Nursing Work Index (PES-NWI) to measure work environments across thousands of hospitals, linking structural features to outcomes ranging from mortality and readmissions to patient satisfaction and nurse retention.
-
-A central finding across many studies is that hospitals with more supportive work environments — characterized by strong nurse leadership, good nurse-physician relations, adequate staffing, and organizational support for professional practice — consistently outperform those with poor environments on virtually every measured outcome. Magnet Recognition, which reflects organizational commitment to nursing excellence, has been a particular focus, with studies demonstrating lower mortality, better nurse outcomes, and higher patient satisfaction in Magnet-designated hospitals.
-
-International collaborations through the RN4CAST consortium and the EU-funded Magnet4Europe initiative have extended these findings across Europe, demonstrating that the association between work environments and outcomes is robust across diverse healthcare systems and that organizational interventions can improve clinician well-being at scale.</p>
+    <p>The nurse work environment — the organizational conditions under which nurses practice — is a powerful determinant of both nurse outcomes and patient safety. McHugh's research uses validated instruments including the Practice Environment Scale of the Nursing Work Index (PES-NWI) to measure work environments across thousands of hospitals, linking structural features to outcomes ranging from mortality and readmissions to patient satisfaction and nurse retention.</p>
+    <p>A central finding across many studies is that hospitals with more supportive work environments — characterized by strong nurse leadership, good nurse-physician relations, adequate staffing, and organizational support for professional practice — consistently outperform those with poor environments on virtually every measured outcome. Magnet Recognition, which reflects organizational commitment to nursing excellence, has been a particular focus, with studies demonstrating lower mortality, better nurse outcomes, and higher patient satisfaction in Magnet-designated hospitals.</p>
+    <p>International collaborations through the RN4CAST consortium and the EU-funded Magnet4Europe initiative have extended these findings across Europe, demonstrating that the association between work environments and outcomes is robust across diverse healthcare systems and that organizational interventions can improve clinician well-being at scale.</p>
   </div>
 </section>
 
@@ -136,10 +148,10 @@ International collaborations through the RN4CAST consortium and the EU-funded Ma
 </section>
 
 <footer>
-  <p>Matthew D. McHugh &middot; University of Pennsylvania School of Nursing &middot; <a href="mailto:mchughm@nursing.upenn.edu">mchughm@nursing.upenn.edu</a></p>
+  <p>Matthew D. McHugh &middot; University of Pennsylvania School of Nursing &middot; <a href="/cdn-cgi/l/email-protection#ff929c978a989792bf918a8d8c969198d18a8f9a9191d19a9b8a"><span class="__cf_email__" data-cfemail="0d606e65786a65604d63787f7e64636a23787d68636323686978">[email&#160;protected]</span></a></p>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 let PUBS = [];
 
 function parseBib(text) {
@@ -235,7 +247,7 @@ function toggleAbstract(uid, btn) {
 
 function filterPubs() {
   const q = document.getElementById('pub-search').value.toLowerCase().trim();
-  if (!q) { renderPub(PUBS); return; }
+  if (!q) { renderPubs(PUBS); return; }
   renderPubs(PUBS.filter(p => {
     const hay = [p.title, p.author, p.journal, p.abstract].join(' ').toLowerCase();
     return hay.includes(q);
