@@ -237,7 +237,7 @@ function filterPubs() {
   const terms = raw.split(/\s+/).filter(Boolean);
   const filtered = PUBS.filter(p => {
     const haystack = [p.title, p.author, p.journal, p.abstract, p.year].join(' ').toLowerCase();
-    return terms.every(t => haystack.includes(t));
+    return terms.some(t => haystack.includes(t));
   });
   renderPubs(filtered);
 }
