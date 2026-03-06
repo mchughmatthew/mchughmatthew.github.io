@@ -292,6 +292,17 @@
           <div class="edu-item"><div class="edu-degree">MSN &middot; Family NP / Psych CNS</div><div class="edu-school">University of Pennsylvania</div></div>
           <div class="edu-item"><div class="edu-degree">ASN/BSN &middot; Nursing</div><div class="edu-school">Gwynedd-Mercy University</div></div>
         </div>
+        <div class="sidebar-card" style="margin-top:1.2rem;">
+          <h3>Training Opportunities</h3>
+          <div class="edu-item">
+            <div class="edu-degree"><a href="training.html" style="color:rgba(255,255,255,0.9);text-decoration:underline;text-underline-offset:3px;">Pre/Postdoctoral Fellowships</a></div>
+            <div class="edu-school">Dr. McHugh leads the NINR-funded T32 Training Program &ldquo;Advanced Training in Nursing Outcomes Research.&rdquo;</div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-degree"><a href="https://www.nursing.upenn.edu/nursing-and-healthcare-management-coordinated-dual-degree/" target="_blank" style="color:rgba(255,255,255,0.9);text-decoration:underline;text-underline-offset:3px;">Nursing and Healthcare Management</a></div>
+            <div class="edu-school">Dr. McHugh is faculty director of the Nursing and Health Care Management Coordinated Dual Degree Program, Penn Nursing and the Wharton School.</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -394,7 +405,7 @@
       <div class="contact-block">
         <h3>Get in Touch</h3>
         <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.65rem;">
-          <li><a href="mailto:mchughm@nursing.upenn.edu">mchughm@nursing.upenn.edu</a></li>
+          <li><a href="/cdn-cgi/l/email-protection#076a646f72606f6a47697275746e696029727762696929626372"><span class="__cf_email__" data-cfemail="bbd6d8d3cedcd3d6fbd5cec9c8d2d5dc95cecbded5d595dedfce">[email&#160;protected]</span></a></li>
           <li><a href="https://www.nursing.upenn.edu/chopr/" target="_blank">Center for Health Outcomes and Policy Research (CHOPR)</a></li>
           <li><a href="https://www.nursing.upenn.edu/" target="_blank">Penn Nursing</a></li>
         </ul>
@@ -404,10 +415,10 @@
 </section>
 
 <footer>
-  <p>Matthew D. McHugh &middot; University of Pennsylvania School of Nursing &middot; <a href="mailto:mchughm@nursing.upenn.edu">mchughm@nursing.upenn.edu</a></p>
+  <p>Matthew D. McHugh &middot; University of Pennsylvania School of Nursing &middot; <a href="/cdn-cgi/l/email-protection#402d23283527282d002e353233292e276e3530252e2e6e252435"><span class="__cf_email__" data-cfemail="bbd6d8d3cedcd3d6fbd5cec9c8d2d5dc95cecbded5d595dedfce">[email&#160;protected]</span></a></p>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 let PUBS = [];
 
 function parseBib(text) {
@@ -508,18 +519,4 @@ function toggleAbstract(uid, btn) {
 function searchTag(term) {
   const input = document.getElementById('pub-search');
   input.value = term;
-  document.getElementById('publications').scrollIntoView({ behavior: 'smooth', block: 'start' });
-  filterPubs();
-}
-function filterPubs() {
-  const q = document.getElementById('pub-search').value.toLowerCase().trim();
-  if (!q) { renderPubs(PUBS); return; }
-  renderPubs(PUBS.filter(p => {
-    const hay = [p.title, p.author, p.journal, p.abstract].join(' ').toLowerCase();
-    return hay.includes(q);
-  }));
-}
-document.addEventListener('DOMContentLoaded', loadPubs);
-</script>
-</body>
-</html>
+  document.getElementById('publications').scrollIntoView({ behavior: 'smooth', block: 'start
