@@ -124,7 +124,8 @@
   .about-grid { display: grid; grid-template-columns: 1fr 320px; gap: 4rem; align-items: start; }
   .about-bio p { font-size: 1.05rem; color: #333; line-height: 1.8; margin-bottom: 1.2rem; font-weight: 300; }
   .about-bio strong { color: var(--navy); font-weight: 500; }
-  .sidebar-card { background: var(--navy); padding: 1.8rem; border-radius: 4px; position: sticky; top: 80px; }
+  .sidebar-card { background: var(--navy); padding: 1.8rem; border-radius: 4px; }
+  .sidebar-sticky { position: sticky; top: 80px; display: flex; flex-direction: column; gap: 1.2rem; }
   .sidebar-card h3 {
     font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 500;
     color: var(--gold-light); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.2rem;
@@ -284,6 +285,7 @@
         <p>McHugh holds a <strong>PhD in Nursing</strong> from Penn, an <strong>MPH</strong> from Harvard, and a <strong>JD</strong> from Northeastern University School of Law&mdash;bringing disciplinary depth to the intersection of health policy, law, and nursing science. He began his career as a registered nurse and family nurse practitioner, grounding his research in clinical practice.</p>
       </div>
       <div>
+        <div class="sidebar-sticky">
         <div class="sidebar-card">
           <h3>Education</h3>
           <div class="edu-item"><div class="edu-degree">JD &middot; Law</div><div class="edu-school">Northeastern University School of Law</div></div>
@@ -303,6 +305,7 @@
             <div class="edu-school">Dr. McHugh is faculty director of the Nursing and Health Care Management Coordinated Dual Degree Program, Penn Nursing and the Wharton School.</div>
           </div>
         </div>
+        </div> <!-- end sidebar-sticky -->
       </div>
     </div>
   </div>
