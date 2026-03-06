@@ -124,6 +124,8 @@
   .about-grid { display: grid; grid-template-columns: 1fr 320px; gap: 4rem; align-items: start; }
   .about-bio p { font-size: 1.05rem; color: #333; line-height: 1.8; margin-bottom: 1.2rem; font-weight: 300; }
   .about-bio strong { color: var(--navy); font-weight: 500; }
+  .hero-chopr-link { color: inherit; text-decoration: underline; text-underline-offset: 3px; opacity: 0.85; transition: color 0.15s, opacity 0.15s; }
+  .hero-chopr-link:hover { color: var(--gold); opacity: 1; }
   .prose-link { color: var(--navy); text-decoration: underline; text-underline-offset: 3px; transition: color 0.15s; }
   .prose-link:hover { color: #1a6fd4; }
   .sidebar-card { background: var(--navy); padding: 1.8rem; border-radius: 4px; }
@@ -259,7 +261,7 @@
     <p class="hero-credentials">PhD &middot; JD &middot; MPH &middot; RN &middot; FAAN</p>
     <p class="hero-title">
       Professor &amp; Independence Chair for Nursing Education<br>
-      Director, <a href="https://www.nursing.upenn.edu/chopr/" target="_blank" style="color:inherit;text-decoration:underline;text-underline-offset:3px;opacity:0.85;">Center for Health Outcomes and Policy Research</a>
+      Director, <a href="https://www.nursing.upenn.edu/chopr/" target="_blank" class="hero-chopr-link">Center for Health Outcomes and Policy Research</a>
     </p>
     <div class="hero-tags">
       <a href="nursestaffing.html" class="tag">#nursestaffing</a>
@@ -518,10 +520,18 @@ function renderPubs(filtered) {
   container.innerHTML = html;
 }
 function toggleAbstract(uid, btn) {
-  const el = document.getElementById('abs_'+uid);
-  if (!el) return;
-  const open = el.classList.toggle('open');
+  const el = document.getElemen
   btn.textContent = open ? 'Abstract ▴' : 'Abstract ▾';
+}
+function filterPubs() {
+  const raw = document.getElementById('pub-search').value.toLowerCase().trim();
+  if (!raw) { renderPubs(PUBS); return; }
+  const terms = raw.split(/\s+/).filter(Boolean);
+  const filtered = PUBS.filter(p => {
+    const haystack = [p.title, p.author, p.journal, p.abstract, p.year].join(' ').toLowerCase();
+    return terms.some(t => haystack.includes(t));
+  });
+  renderPubs(filtered);
 }
 function searchTag(term) {
   const input = document.getElementById('pub-search');
