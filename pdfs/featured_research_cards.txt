@@ -1,0 +1,1626 @@
+<!-- ===== ALL PUBLICATIONS CARDS ===== -->
+<!-- Total: 158 papers -->
+
+      <!-- 2026 — Workplace discrimination among registered nurses: The role o -->
+      <div class="featured-card">
+        <div class="featured-label">2026 · Nursing Outlook</div>
+        <div class="featured-title">Workplace discrimination among registered nurses: The role of the nurse work environment</div>
+        <div class="featured-authors">Yu, Hyunmin, Tibbitt, Celsea, Iroegbu, Christin, Lake, Eileen T., Kutney-Lee, Ann, Brooks Carthon, J. Margo, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://www.sciencedirect.com/science/article/pii/S0029655426000187" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2026 — The Role of Surveillance in the Association Between the Nurs -->
+      <div class="featured-card">
+        <div class="featured-label">2026 · Research in Nursing &amp; Health</div>
+        <div class="featured-title">The Role of Surveillance in the Association Between the Nurse Work Environment and Patient Safety Culture</div>
+        <div class="featured-authors">Connell, Kathryn A., Yu, Hyunmin, Villani, Domenique, <strong>McHugh MD</strong>, Douglas, Clint</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/nur.70056" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2026 — The Impact of Magnet Recognition on Nurse Managers’ Assessme -->
+      <div class="featured-card">
+        <div class="featured-label">2026 · Journal of Nursing Management</div>
+        <div class="featured-title">The Impact of Magnet Recognition on Nurse Managers’ Assessments of Work Environment, Quality, and Safety: A Cross-Sectional Study</div>
+        <div class="featured-authors">Yu, Hyunmin, Keele, Luke J., Brom, Heather, Pittman, Helena, Varghese, Roopa, <strong>McHugh MD</strong>, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://onlinelibrary.wiley.com/doi/abs/10.1155/jonm/1847111" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2026 — Sensitivity analysis for clustered observational studies wit -->
+      <div class="featured-card">
+        <div class="featured-label">2026 · Journal of the Royal Statistical Society Series A: Statistics in Society</div>
+        <div class="featured-title">Sensitivity analysis for clustered observational studies with an application to the effectiveness of magnet nursing hospitals</div>
+        <div class="featured-authors">Huang, Melody, Ben-Michael, Eli, <strong>McHugh MD</strong>, Keele, Luke</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://doi.org/10.1093/jrsssa/qnag002" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2026 — Reducing Readmission Disparities in Hospitals Serving High V -->
+      <div class="featured-card">
+        <div class="featured-label">2026 · Medical Care</div>
+        <div class="featured-title">Reducing Readmission Disparities in Hospitals Serving High Volumes of Patients With Limited English Proficiency: Evidence From New Jersey</div>
+        <div class="featured-authors">Sliwinski, Kathy, <strong>McHugh MD</strong>, Squires, Allison P., Muir, K. Jane, Margo Brooks Carthon, J., Lasater, Karen B.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://doi.org/10.1097/MLR.0000000000002276" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2026 — Pathway to Excellence Designation, Nurse Work Environment, a -->
+      <div class="featured-card">
+        <div class="featured-label">2026 · Research in Nursing &amp; Health</div>
+        <div class="featured-title">Pathway to Excellence Designation, Nurse Work Environment, and Hospital Quality and Safety: A Multi-State Hospital Study</div>
+        <div class="featured-authors">Yu, Hyunmin, Brooks Carthon, J. Margo, Aiken, Linda H., McEwan, Kevin K., <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://doi.org/10.1002/nur.70052" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2026 — Organizational Factors to Reattract Nurses to Hospital Emplo -->
+      <div class="featured-card">
+        <div class="featured-label">2026 · JAMA Network Open</div>
+        <div class="featured-title">Organizational Factors to Reattract Nurses to Hospital Employment</div>
+        <div class="featured-authors">Lasater, Karen B., <strong>McHugh MD</strong>, Muir, K. Jane</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://doi.org/10.1001/jamanetworkopen.2025.56570" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2026 — Mortality among the dementia population in not-for-profit ho -->
+      <div class="featured-card">
+        <div class="featured-label">2026 · Journal of Aging &amp; Social Policy</div>
+        <div class="featured-title">Mortality among the dementia population in not-for-profit hospitals with better nursing resources</div>
+        <div class="featured-authors">Hovsepian, Vaneh E, Sloane, Douglas M, Muir, K Jane, <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://doi.org/10.1080/08959420.2023.2297596" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2026 — Magnet4Europe Intervention to improve clinician and patient  -->
+      <div class="featured-card">
+        <div class="featured-label">2026 · Medical Care</div>
+        <div class="featured-title">Magnet4Europe Intervention to improve clinician and patient well-being: A quasi-experimental study of 56 hospitals in 6 European countries</div>
+        <div class="featured-authors">Aiken, Linda H., Sermeus, Walter, Lasater, Karen B., Busse, Reinhard, McKee, Martin, Smith, Herbert, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://doi.org/10.1097/MLR.0000000000002257" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2026 — Hospital Nursing Has Not Returned to Pre-COVID Conditions: T -->
+      <div class="featured-card">
+        <div class="featured-label">2026 · Medical Care</div>
+        <div class="featured-title">Hospital Nursing Has Not Returned to Pre-COVID Conditions: Time for a Different Approach</div>
+        <div class="featured-authors">Lasater, Karen B., <strong>McHugh MD</strong>, Aiken, Linda H.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://journals.lww.com/lww-medicalcare/fulltext/9900/hospital_nursing_has_not_returned_to_pre_covid.432.aspx" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2026 — Associations Between the Nurse Practice Environment and Nurs -->
+      <div class="featured-card">
+        <div class="featured-label">2026 · Nursing Open</div>
+        <div class="featured-title">Associations Between the Nurse Practice Environment and Nurse-Sensitive Patient Outcomes: Empirical Research Quantitative</div>
+        <div class="featured-authors">Chau, Janita Pak Chun, Lo, Suzanne Hoi Shan, Choi, Kai Chow, Butt, Laveeza, Tong, Danny Wah Kun, Kwok, Angela Mei Ling, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/nop2.70451" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2026 — Association of emergency department and medical-surgical nur -->
+      <div class="featured-card">
+        <div class="featured-label">2026 · Journal of Emergency Nursing</div>
+        <div class="featured-title">Association of emergency department and medical-surgical nurse staffing on patient departures against medical advice</div>
+        <div class="featured-authors">Muir, K. Jane, Golinelli, Daniela, Lasater, Karen B., Aiken, Linda H., Merchant, Raina, <strong>McHugh MD</strong>, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://doi.org/10.1016/j.jen.2025.12.009" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2025 — Virtual Nursing for the Care of Hospitalized Patients -->
+      <div class="featured-card">
+        <div class="featured-label">2025 · JAMA Network Open</div>
+        <div class="featured-title">Virtual Nursing for the Care of Hospitalized Patients</div>
+        <div class="featured-authors">Muir, K. Jane, Maye, Alexandra, <strong>McHugh MD</strong>, Aiken, Linda H., Vo, Vicky, Lasater, Karen B.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://doi.org/10.1001/jamanetworkopen.2025.45597" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2025 — The protective effect of Pathway to Excellence Designation o -->
+      <div class="featured-card">
+        <div class="featured-label">2025 · International Journal for Quality in Health Care</div>
+        <div class="featured-title">The protective effect of Pathway to Excellence Designation on patient satisfaction during the COVID-19 Pandemic</div>
+        <div class="featured-authors">Yu, Hyunmin, Golinelli, Daniela, Aiken, Linda H, <strong>McHugh MD</strong>, Brooks Carthon, J Margo</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://doi.org/10.1093/intqhc/mzaf096" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2025 — System-Level Factors Contributing to Burnout and Professiona -->
+      <div class="featured-card">
+        <div class="featured-label">2025 · Health Equity</div>
+        <div class="featured-title">System-Level Factors Contributing to Burnout and Professional Well-Being Among Transgender and Gender-Diverse Nurses</div>
+        <div class="featured-authors">Yu, Hyunmin, Tibbitt, Celsea, Brooks Carthon, J. Margo, Lasater, Karen B., Bauermeister, José A., <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://www.liebertpub.com/doi/full/10.1089/heq.2024.0196" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2025 — Sensitivity Analysis for Clustered Observational Studies wit -->
+      <div class="featured-card">
+        <div class="featured-label">2025 · </div>
+        <div class="featured-title">Sensitivity Analysis for Clustered Observational Studies with an Application to the Effectiveness of Magnet Nursing Hospitals</div>
+        <div class="featured-authors">Melody Huang, Eli Ben-Michael, <strong>McHugh MD</strong>, Luke Keele</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://arxiv.org/abs/2504.21617" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2025 — Poor patient care outcomes and nurse job outcomes associated -->
+      <div class="featured-card">
+        <div class="featured-label">2025 · Value in Health.</div>
+        <div class="featured-title">Poor patient care outcomes and nurse job outcomes associated with unfavorable intensive care unit and emergency department nurse work environments</div>
+        <div class="featured-authors">Muir, K. Jane, Golinelli, Daniela, Connell, Kathryn, Lasater, Karen B, <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2025 — Nurses’ Perceptions of Their Practice Environment in Public  -->
+      <div class="featured-card">
+        <div class="featured-label">2025 · Hospital Topics</div>
+        <div class="featured-title">Nurses’ Perceptions of Their Practice Environment in Public Hospitals: A Repeated Cross-Sectional Study</div>
+        <div class="featured-authors">Chau, Janita Pak Chun, Lo, Suzanne Hoi Shan, Choi, Kai Chow, Tong, Danny Wah Kun, Kwok, Angela Mei Ling, Butt, Laveeza, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://www.tandfonline.com/doi/full/10.1080/00185868.2025.2524814" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2025 — Nurse Work Environment and Hospital Readmission Disparities  -->
+      <div class="featured-card">
+        <div class="featured-label">2025 · Research in Nursing &amp; Health</div>
+        <div class="featured-title">Nurse Work Environment and Hospital Readmission Disparities Between Patients With and Without Limited English Proficiency</div>
+        <div class="featured-authors">Sliwinski, Kathy, <strong>McHugh MD</strong>, Squires, Allison P., Jane Muir, K., Lasater, Karen B.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/nur.22462" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2025 — Minimum nurse staffing policy intervention in Queensland Aus -->
+      <div class="featured-card">
+        <div class="featured-label">2025 · International Journal of Nursing Studies</div>
+        <div class="featured-title">Minimum nurse staffing policy intervention in Queensland Australia improved nurse wellbeing and patient safety: A quasi-experimental intervention study</div>
+        <div class="featured-authors">Lasater, Karen B., Aiken, Linda H., Douglas, Clint, Windsor, Carol, Yates, Patsy, Smith, Herbert L., et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://www.sciencedirect.com/science/article/pii/S0020748925001889" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2025 — Lower Burnout Among Hospital Nurses in California Attributed -->
+      <div class="featured-card">
+        <div class="featured-label">2025 · Policy, Politics, &amp; Nursing Practice</div>
+        <div class="featured-title">Lower Burnout Among Hospital Nurses in California Attributed to Better Nurse Staffing Ratios</div>
+        <div class="featured-authors">Muir, K. Jane, Sliwinski, Kathy, Pogue, Colleen A., Golinelli, Daniela, Petto, Angelo, Lasater, Karen B., et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://doi.org/10.1177/15271544251317506" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2025 — Leader perspectives on the “experience-complexity gap”: Reco -->
+      <div class="featured-card">
+        <div class="featured-label">2025 · Nursing Outlook</div>
+        <div class="featured-title">Leader perspectives on the “experience-complexity gap”: Recommendations to fortify the nursing workforce</div>
+        <div class="featured-authors">Rao, Aditi D., Anderson, Evan P., Smith, Beth A., <strong>McHugh MD</strong>, Cunningham, Regina S.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://www.sciencedirect.com/science/article/pii/S0029655425000533" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2025 — LGBTQ+ Inclusive Policies, Nurse Job Outcomes, and Quality o -->
+      <div class="featured-card">
+        <div class="featured-label">2025 · JAMA Network Open</div>
+        <div class="featured-title">LGBTQ+ Inclusive Policies, Nurse Job Outcomes, and Quality of Care in Hospitals</div>
+        <div class="featured-authors">Yu, Hyunmin, <strong>McHugh MD</strong>, Bauermeister, José A., Hanneman, Tari, Lasater, Karen B.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://doi.org/10.1001/jamanetworkopen.2025.1765" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2025 — Informing Hospital Physician Well-Being Interventions in Eur -->
+      <div class="featured-card">
+        <div class="featured-label">2025 · JAMA Network Open</div>
+        <div class="featured-title">Informing Hospital Physician Well-Being Interventions in Europe and the US</div>
+        <div class="featured-authors">Aiken, Linda H., Sermeus, Walter, McKee, Martin, Busse, Reinhard, Smith, Herbert, Maier, Claudia B., et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://doi.org/10.1001/jamanetworkopen.2025.44067" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2025 — Inclusive Hospital Policies, Nurse Burnout, and Job Turnover -->
+      <div class="featured-card">
+        <div class="featured-label">2025 · Nursing Research</div>
+        <div class="featured-title">Inclusive Hospital Policies, Nurse Burnout, and Job Turnover</div>
+        <div class="featured-authors">Yu, Hyunmin, Bauermeister, Jos\'e A, <strong>McHugh MD</strong>, Hanneman, Tari, Lasater, Karen B</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2025 — Impact of Hospitals’ LGBTQ+ Inclusion Efforts on Patient Sat -->
+      <div class="featured-card">
+        <div class="featured-label">2025 · BMJ Quality &amp; Safety</div>
+        <div class="featured-title">Impact of Hospitals’ LGBTQ+ Inclusion Efforts on Patient Satisfaction from 2016 to 2023: A Retrospective Longitudinal Observational Study</div>
+        <div class="featured-authors">Yu, Hyunmin, <strong>McHugh MD</strong>, Bauermeister, José A., Hanneman, Tari, Brom, Heather</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://qualitysafety.bmj.com/content/early/2025/03/05/bmjqs-2024-018235" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2025 — How Organizational Inclusion Shapes Patient Satisfaction in  -->
+      <div class="featured-card">
+        <div class="featured-label">2025 · Medical Care</div>
+        <div class="featured-title">How Organizational Inclusion Shapes Patient Satisfaction in Magnet Hospitals</div>
+        <div class="featured-authors">Yu, Hyunmin, Brom, Heather, Bauermeister, José A., Reich, Jessie, <strong>McHugh MD</strong>, Hanneman, Tari, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://journals.lww.com/10.1097/MLR.0000000000002201" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2025 — Hospital Performance, Nursing Resources, and Health Inequiti -->
+      <div class="featured-card">
+        <div class="featured-label">2025 · Nursing Research</div>
+        <div class="featured-title">Hospital Performance, Nursing Resources, and Health Inequities During the COVID-19 Pandemic</div>
+        <div class="featured-authors">Kutney-Lee, Ann, Golinelli, Daniela, Feder, Shelli L., Amenyedor, Kelvin Eyram, Lasater, Karen B., <strong>McHugh MD</strong>, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://journals.lww.com/nursingresearchonline/fulltext/2025/07000/hospital_performance,_nursing_resources,_and.6.aspx" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2025 — Hospital Ownership Type Correlated With Investments in Nursi -->
+      <div class="featured-card">
+        <div class="featured-label">2025 · Medical Care</div>
+        <div class="featured-title">Hospital Ownership Type Correlated With Investments in Nursing Services: Evidence from Illinois</div>
+        <div class="featured-authors">Muir, K. Jane, Sliwinski, Kathy S., Golinelli, Daniela, <strong>McHugh MD</strong>, Lasater, Karen B.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://journals.lww.com/lww-medicalcare/fulltext/9900/hospital_ownership_type_correlated_with.339.aspx" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2025 — Associations between nurse-to-patient ratio, nurse education -->
+      <div class="featured-card">
+        <div class="featured-label">2025 · International Nursing Review</div>
+        <div class="featured-title">Associations between nurse-to-patient ratio, nurse educational level, and nurse-sensitive patient outcomes: A 12-month prospective observational study</div>
+        <div class="featured-authors">Chau, Janita Pak Chun, Lo, Suzanne Hoi Shan, Choi, Kai Chow, Tong, Danny Wah Kun, Kwok, Angela Mei Ling, Butt, Laveeza, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/inr.13091" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2025 — Associations Between Nurse Staffing Levels and 30- and 60-Da -->
+      <div class="featured-card">
+        <div class="featured-label">2025 · Research in Nursing &amp; Health</div>
+        <div class="featured-title">Associations Between Nurse Staffing Levels and 30- and 60-Day Readmissions for Acute Care Patients With Intellectual and Developmental Disability</div>
+        <div class="featured-authors">Moronski, Lynne S., Lake, Eileen T., <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/nur.70013" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2025 — Association of Racial and Ethnic Composition With Staff Leve -->
+      <div class="featured-card">
+        <div class="featured-label">2025 · Journal of the American Medical Directors Association</div>
+        <div class="featured-title">Association of Racial and Ethnic Composition With Staff Levels in Nursing Homes: 2013-2019</div>
+        <div class="featured-authors">Kang, Yejin, Kang, Sam, Bowblis, John R., Downer, Brian, <strong>McHugh MD</strong>, Xu, Huiwen</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://doi.org/10.1016/j.jamda.2025.105496" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2025 — Association of Emergency Department Nurse and Physician Work -->
+      <div class="featured-card">
+        <div class="featured-label">2025 · BMC Health Services Research</div>
+        <div class="featured-title">Association of Emergency Department Nurse and Physician Work Environment Agreement on Clinician Job and Patient Outcomes</div>
+        <div class="featured-authors">Muir, K. Jane, Agarwal, Anish K., Golinelli, Daniela, Lasater, Karen B., Ballinghoff, James, Mattioni, Colleen, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://doi.org/10.1186/s12913-025-12720-x" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2025 — A Systematic Review of Medicaid Healthcare Utilization by Ad -->
+      <div class="featured-card">
+        <div class="featured-label">2025 · MEDSURG Nursing</div>
+        <div class="featured-title">A Systematic Review of Medicaid Healthcare Utilization by Adults with Serious Mental Illness</div>
+        <div class="featured-authors">Langston, Christine, Kutney-Lee, Ann, <strong>McHugh MD</strong>, Brooks Carthon, J. Margo</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://proxy.library.upenn.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;db=aph&amp;AN=184380043&amp;site=ehost-live" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2024 — Validation of a short form of the Practice Environment Scale -->
+      <div class="featured-card">
+        <div class="featured-label">2024 · Research in Nursing &amp; Health</div>
+        <div class="featured-title">Validation of a short form of the Practice Environment Scale of the Nursing Work Index: The PES-5</div>
+        <div class="featured-authors">Lake, Eileen T., Gil, Jennifer, Moronski, Lynne, <strong>McHugh MD</strong>, Aiken, Linda H., Lasater, Karen B.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/nur.22388" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2024 — Prevalence, predictors and outcomes of physician care left u -->
+      <div class="featured-card">
+        <div class="featured-label">2024 · European Journal of Internal Medicine</div>
+        <div class="featured-title">Prevalence, predictors and outcomes of physician care left undone in acute care hospitals across six European countries during COVID-19: A cross-sectional study</div>
+        <div class="featured-authors">Simon Dello, Luk Bruyneel, Dorothea Kohnen, Hans De Witte, Wilmar B. Schaufeli, <strong>McHugh MD</strong>, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://www.sciencedirect.com/science/article/pii/S095362052300376X" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2024 — Physician and nurse well-being, patient safety and recommend -->
+      <div class="featured-card">
+        <div class="featured-label">2024 · BMJ Open</div>
+        <div class="featured-title">Physician and nurse well-being, patient safety and recommendations for interventions: cross-sectional survey in hospitals in six European countries</div>
+        <div class="featured-authors">Aiken, Linda H., Sermeus, Walter, McKee, Martin, Lasater, Karen B., Sloane, Douglas, Pogue, Colleen A., et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://doi.org/10.1136/bmjopen-2023-079931" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2024 — Left without being seen: nurse work environment and timely o -->
+      <div class="featured-card">
+        <div class="featured-label">2024 · Journal of Emergency Nursing</div>
+        <div class="featured-title">Left without being seen: nurse work environment and timely outcomes in New York and Illinois emergency departments</div>
+        <div class="featured-authors">Muir, K. Jane, <strong>McHugh MD</strong>, Merchant, Raina M., Lasater, Karen B.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://www.sciencedirect.com/science/article/pii/S0099176723003148" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2024 — Laying the foundations for implementing magnet principles in -->
+      <div class="featured-card">
+        <div class="featured-label">2024 · International Journal of Nursing Studies</div>
+        <div class="featured-title">Laying the foundations for implementing magnet principles in hospitals in Europe: A qualitative analysis</div>
+        <div class="featured-authors">Ingrid Svensson, Jackie Bridges, Jaimie Ellis, Noeleen Brady, Simon Dello, Jonathan Hooft, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://www.sciencedirect.com/science/article/pii/S002074892400066X" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2024 — Hospital performance on Hospital Consumer Assessment of Heal -->
+      <div class="featured-card">
+        <div class="featured-label">2024 · Medical Care</div>
+        <div class="featured-title">Hospital performance on Hospital Consumer Assessment of Healthcare Providers and System ratings: Associations with nursing factors</div>
+        <div class="featured-authors">Rosenbaum, Kathleen E. Fitzpatrick, Lasater, Karen B., <strong>McHugh MD</strong>, Lake, Eileen T.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://journals.lww.com/lww-medicalcare/fulltext/2024/05000/hospital_performance_on_hospital_consumer.2.aspx?context=latestarticles" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2024 — Hospital Nurse Staffing Variation and Covid-19 Deaths: A Cro -->
+      <div class="featured-card">
+        <div class="featured-label">2024 · International Journal of Nursing Studies</div>
+        <div class="featured-title">Hospital Nurse Staffing Variation and Covid-19 Deaths: A Cross-Sectional Study</div>
+        <div class="featured-authors">Lasater, Karen B., <strong>McHugh MD</strong>, Aiken, Linda H.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://www.sciencedirect.com/science/article/pii/S0020748924001421" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2024 — Emergency nurses’ well-being in Magnet hospitals and recomme -->
+      <div class="featured-card">
+        <div class="featured-label">2024 · Journal of Emergency Nursing</div>
+        <div class="featured-title">Emergency nurses’ well-being in Magnet hospitals and recommendations for improvements in work environments: a multicenter cross-sectional observational study</div>
+        <div class="featured-authors">Elise Turnbach, Lindsey Coates, Florence D. Vanek, Emma Cotter, Colleen A. Pogue, Rebecca R.S. Clark, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2024 — Effect of the Nurse Work Environment on Older Hispanic Surgi -->
+      <div class="featured-card">
+        <div class="featured-label">2024 · Nursing Research</div>
+        <div class="featured-title">Effect of the Nurse Work Environment on Older Hispanic Surgical Patient Readmissions</div>
+        <div class="featured-authors">Daus, Marguerite, <strong>McHugh MD</strong>, Kutney-Lee, Ann, Carthon, Margo J Brooks</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2024 — Effect of discharge readiness on 30-day readmissions among o -->
+      <div class="featured-card">
+        <div class="featured-label">2024 · Medical Care</div>
+        <div class="featured-title">Effect of discharge readiness on 30-day readmissions among older adults living with multiple chronic conditions</div>
+        <div class="featured-authors">Pogue, Colleen A., Schlak, Amelia E., <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2024 — Changes in proportion of bachelor's nurses associated with i -->
+      <div class="featured-card">
+        <div class="featured-label">2024 · Research in nursing &amp; health</div>
+        <div class="featured-title">Changes in proportion of bachelor&#x27;s nurses associated with improvements in patient outcomes</div>
+        <div class="featured-authors">Lasater, Karen B., Sloane, Douglas M., <strong>McHugh MD</strong>, Porat-Dahlerbruch, Joshua, Aiken, Linda H.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2024 — Changes in Patient Care Experiences and the Nurse Work Envir -->
+      <div class="featured-card">
+        <div class="featured-label">2024 · Medical Care Research and Review</div>
+        <div class="featured-title">Changes in Patient Care Experiences and the Nurse Work Environment: A Longitudinal Study of U.S. Hospitals</div>
+        <div class="featured-authors">Rosenbaum, Kathleen E. Fitzpatrick, Lasater, Karen B., <strong>McHugh MD</strong>, Lake, Eileen T.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://doi.org/10.1177/10775587241282403" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2024 — COVID-19 Mortality Disparities among Socially Vulnerable Med -->
+      <div class="featured-card">
+        <div class="featured-label">2024 · INQUIRY: The Journal of Health Care Organization, Provision, and Financing</div>
+        <div class="featured-title">COVID-19 Mortality Disparities among Socially Vulnerable Medicare Beneficiaries Associated With the Quality of Nurse Work Environments in U.S. Hospitals</div>
+        <div class="featured-authors">Brooks Carthon, Margo, Muir, Jane, Iroegbu, Christin, Langston, Christine, Amenyedor, Kelvin, Nikpour, Jacqueline, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://doi.org/10.1177/00469580241284959" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2024 — Alternative Models of Nurse Staffing May Be Dangerous in Hig -->
+      <div class="featured-card">
+        <div class="featured-label">2024 · Medical Care</div>
+        <div class="featured-title">Alternative Models of Nurse Staffing May Be Dangerous in High-Stakes Hospital Care</div>
+        <div class="featured-authors">Lasater, Karen B., Muir, K. Jane, Sloane, Douglas M., <strong>McHugh MD</strong>, Aiken, Linda H.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://journals-lww-com.proxy.library.upenn.edu/lww-medicalcare/fulltext/2024/07000/alternative_models_of_nurse_staffing_may_be.2.aspx?context=latestarticles" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2024 — A review of disparities in outcomes of hospitalized patients -->
+      <div class="featured-card">
+        <div class="featured-label">2024 · Journal of Health Care for the Poor and Underserved</div>
+        <div class="featured-title">A review of disparities in outcomes of hospitalized patients with limited English proficiency: the importance of nursing resources</div>
+        <div class="featured-authors">Sliwinski, Kathy, Kutney-Lee, Ann, <strong>McHugh MD</strong>, Lasater, Karen B.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2023 — The association of the emergency department work environment -->
+      <div class="featured-card">
+        <div class="featured-label">2023 · Journal of the American College of Emergency Physicians Open</div>
+        <div class="featured-title">The association of the emergency department work environment on patient care and nurse job outcomes</div>
+        <div class="featured-authors">Muir, K Jane, Sloane, Douglas M, Aiken, Linda H, Hovsepian, Vaneh, <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2023 — Structural capabilities in primary care practices where nurs -->
+      <div class="featured-card">
+        <div class="featured-label">2023 · International Journal of Older People Nursing</div>
+        <div class="featured-title">Structural capabilities in primary care practices where nurse practitioners care for persons living with dementia</div>
+        <div class="featured-authors">Hovsepian, Vaneh E, Liu, Jianfang, Schlak, Amelia E, Sadak, Tatiana, Martsolf, Grant, Bilazarian, Ani, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2023 — Recruiting and retaining bachelor qualified nurses in German -->
+      <div class="featured-card">
+        <div class="featured-label">2023 · BMJ Open</div>
+        <div class="featured-title">Recruiting and retaining bachelor qualified nurses in German hospitals (BSN4Hospital): protocol of a mixed-methods design</div>
+        <div class="featured-authors">Maier, Claudia B, K\"oppen, Julia, Kleine, Joan, <strong>McHugh MD</strong>, Sermeus, Walter, Aiken, Linda H</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2023 — Public insurance expansions and labor demand in physician pr -->
+      <div class="featured-card">
+        <div class="featured-label">2023 · Journal of Human Resources</div>
+        <div class="featured-title">Public insurance expansions and labor demand in physician practices</div>
+        <div class="featured-authors">Barnes, Hilary, Chen, Alice J., <strong>McHugh MD</strong>, Richards, Michael R.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://doi.org/10.3368/jhr.0920-11176R2" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2023 — Physician and nurse well-being and preferred interventions t -->
+      <div class="featured-card">
+        <div class="featured-label">2023 · JAMA Health Forum</div>
+        <div class="featured-title">Physician and nurse well-being and preferred interventions to address burnout in hospital practice: factors associated with turnover, outcomes, and patient safety</div>
+        <div class="featured-authors">Aiken, Linda H, Lasater, Karen B, Sloane, Douglas M, Pogue, Colleen A, Rosenbaum, Kathleen E Fitzpatrick, Muir, K Jane, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2023 — Operative and nonoperative outcomes of emergency general sur -->
+      <div class="featured-card">
+        <div class="featured-label">2023 · Annals of Surgery</div>
+        <div class="featured-title">Operative and nonoperative outcomes of emergency general surgery conditions: an observational study using a novel instrumental variable</div>
+        <div class="featured-authors">Kaufman, Elinore J, Keele, Luke J, Wirtalla, Christopher J, Rosen, Claire B, Roberts, Sanford E, Mavroudis, Catherine L, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2023 — Matching one sample according to two criteria in observation -->
+      <div class="featured-card">
+        <div class="featured-label">2023 · Journal of the American Statistical Association</div>
+        <div class="featured-title">Matching one sample according to two criteria in observational studies</div>
+        <div class="featured-authors">Zhang, Bo, Small, Dylan S, Lasater, Karen B, <strong>McHugh MD</strong>, Silber, Jeffrey H, Rosenbaum, Paul R</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2023 — Explaining racial disparities in surgical survival: a tapere -->
+      <div class="featured-card">
+        <div class="featured-label">2023 · BMJ Open</div>
+        <div class="featured-title">Explaining racial disparities in surgical survival: a tapered match analysis of patient and hospital factors</div>
+        <div class="featured-authors">Lasater, Karen B, Rosenbaum, Paul R, Aiken, Linda H, Brooks-Carthon, J Margo, Kelz, Rachel R, Reiter, Joseph G, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2023 — Examining disparities among older multimorbid emergency gene -->
+      <div class="featured-card">
+        <div class="featured-label">2023 · The American Journal of Surgery</div>
+        <div class="featured-title">Examining disparities among older multimorbid emergency general surgery patients: An observational study of Medicare beneficiaries</div>
+        <div class="featured-authors">Roberts, Sanford E, Rosen, Claire B, Wirtalla, Christopher J, Finn, Caitlin B, Kaufman, Elinore J, Reilly, Patrick M, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2023 — Evaluating consistency of documented ICD codes for hospitali -->
+      <div class="featured-card">
+        <div class="featured-label">2023 · Hospital Pediatrics</div>
+        <div class="featured-title">Evaluating consistency of documented ICD codes for hospitalized patients With Sickle Cell Disease</div>
+        <div class="featured-authors">Rosenbaum, Kathleen E Fitzpatrick, Chittams, Jesse L, <strong>McHugh MD</strong>, Lasater, Karen B</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2023 — Electronic health record usability and post-surgical outcome -->
+      <div class="featured-card">
+        <div class="featured-label">2023 · The American Journal of Geriatric Psychiatry</div>
+        <div class="featured-title">Electronic health record usability and post-surgical outcomes among older adults with dementia</div>
+        <div class="featured-authors">Hovsepian, Vaneh E, <strong>McHugh MD</strong>, Kutney-Lee, Ann</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2023 — Conditional Effects of Race on Operative and Nonoperative Ou -->
+      <div class="featured-card">
+        <div class="featured-label">2023 · Medical Care</div>
+        <div class="featured-title">Conditional Effects of Race on Operative and Nonoperative Outcomes of Emergency General Surgery Conditions</div>
+        <div class="featured-authors">Roberts, Sanford E, Rosen, Claire B, Keele, Luke J, Kaufman, Elinore J, Wirtalla, Christopher J, Syvyk, Solomiya, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2023 — A repeated cross-sectional study of nurses immediately befor -->
+      <div class="featured-card">
+        <div class="featured-label">2023 · Nursing Outlook</div>
+        <div class="featured-title">A repeated cross-sectional study of nurses immediately before and during the COVID-19 Pandemic: implications for action</div>
+        <div class="featured-authors">Aiken, Linda H, Sloane, Douglas M, <strong>McHugh MD</strong>, Pogue, Colleen A, Lasater, Karen B</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2022 — The impact of California's staffing mandate and the economic -->
+      <div class="featured-card">
+        <div class="featured-label">2022 · Nursing Outlook</div>
+        <div class="featured-title">The impact of California&#x27;s staffing mandate and the economic recession on registered nurse staffing levels: a longitudinal analysis</div>
+        <div class="featured-authors">Dierkes, Andrew, Do, Duy, Morin, Haley, Rochman, Monica, Sloane, Douglas, <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2022 — Rates of surgical consultations after emergency department a -->
+      <div class="featured-card">
+        <div class="featured-label">2022 · JAMA Surgery</div>
+        <div class="featured-title">Rates of surgical consultations after emergency department admission in Black and White Medicare Patients</div>
+        <div class="featured-authors">Roberts, Sanford E., Rosen, Claire B., Keele, Luke J., Wirtalla, Christopher J., Syvyk, Solomiya, Kaufman, Elinore J., et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2022 — Policy Evaluation Of The Affordable Care Act Graduate Nurse  -->
+      <div class="featured-card">
+        <div class="featured-label">2022 · Health Affairs</div>
+        <div class="featured-title">Policy Evaluation Of The Affordable Care Act Graduate Nurse Education Demonstration</div>
+        <div class="featured-authors">Porat-Dahlerbruch, Joshua, Aiken, Linda H., Todd, Barbara, Cunningham, Regina, Brom, Heather, Peele, Morgan E., et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://www.healthaffairs.org/doi/full/10.1377/hlthaff.2021.01328" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- 2022 — Nursing resources linked to postsurgical outcomes for patien -->
+      <div class="featured-card">
+        <div class="featured-label">2022 · Annals of Surgery Open</div>
+        <div class="featured-title">Nursing resources linked to postsurgical outcomes for patients with opioid use disorder: an observational study</div>
+        <div class="featured-authors">French, Rachel, <strong>McHugh MD</strong>, Aiken, Linda H., Compton, Peggy, Meghani, Salimah H., Brooks Carthon, J. Margo</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2022 — Hospital nursing factors associated with decreased odds of m -->
+      <div class="featured-card">
+        <div class="featured-label">2022 · BMC Geriatrics</div>
+        <div class="featured-title">Hospital nursing factors associated with decreased odds of mortality in older adult Medicare surgical patients with depression</div>
+        <div class="featured-authors">Kumar, Aparna, Sloane, Douglas, Aiken, Linda H., <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2022 — Criminal prosecution of clinician errors: a setback to the p -->
+      <div class="featured-card">
+        <div class="featured-label">2022 · Journal of Hospital Medicine</div>
+        <div class="featured-title">Criminal prosecution of clinician errors: a setback to the progress toward safe hospital work environments</div>
+        <div class="featured-authors">Townley, Jacqueline N., Pogue, Colleen A., <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2022 — An expanded institutional- and national-level blueprint to a -->
+      <div class="featured-card">
+        <div class="featured-label">2022 · Nursing Management</div>
+        <div class="featured-title">An expanded institutional- and national-level blueprint to address nurse burnout and moral suffering amid the evolving pandemic</div>
+        <div class="featured-authors">Schlak, Amelia E., Rosa, William E., Rushton, Cynda H., Poghosyan, Lusine, Root, Maggie C., <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2022 — A workplace organisational intervention to improve hospital  -->
+      <div class="featured-card">
+        <div class="featured-label">2022 · BMJ Open</div>
+        <div class="featured-title">A workplace organisational intervention to improve hospital nurses&#x27; and physicians&#x27; mental health: study protocol for the Magnet4Europe Wait List Cluster Randomised Controlled Trial</div>
+        <div class="featured-authors">Sermeus, Walter, Aiken, Linda H., Ball, Jane, Bridges, Jackie, Bruyneel, Luk, Busse, Reinhard, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2021 — Value of nurse practitioner inpatient hospital staffing -->
+      <div class="featured-card">
+        <div class="featured-label">2021 · Medical Care</div>
+        <div class="featured-title">Value of nurse practitioner inpatient hospital staffing</div>
+        <div class="featured-authors">Aiken, Linda H., <strong>McHugh MD</strong>, Sloane, Douglas M.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2021 — Patient outcomes and cost savings associated with hospital s -->
+      <div class="featured-card">
+        <div class="featured-label">2021 · BMJ Open</div>
+        <div class="featured-title">Patient outcomes and cost savings associated with hospital safe nurse staffing legislation: an observational study</div>
+        <div class="featured-authors">Lasater, Karen B., Aiken, Linda H., Sloane, Douglas, French, Rachel, Martin, Brendan, Alexander, Maryann, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2021 — Leveraging the work environment to minimize the negative imp -->
+      <div class="featured-card">
+        <div class="featured-label">2021 · International Journal of Environmental Research and Public Health</div>
+        <div class="featured-title">Leveraging the work environment to minimize the negative impact of nurse burnout on patient outcomes</div>
+        <div class="featured-authors">Schlak, Amelia E., Aiken, Linda H., Chittams, Jesse, Poghosyan, Lusine, <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2021 — Is hospital nurse staffing legislation in the public's inter -->
+      <div class="featured-card">
+        <div class="featured-label">2021 · Medical Care</div>
+        <div class="featured-title">Is hospital nurse staffing legislation in the public&#x27;s interest?: an observational study in New York state</div>
+        <div class="featured-authors">Lasater, Karen B., Aiken, Linda H., Sloane, Douglas M., French, Rachel, Anusiewicz, Colleen V., Martin, Brendan, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2021 — Hospital nurse staffing and patient outcomes in Chile: a mul -->
+      <div class="featured-card">
+        <div class="featured-label">2021 · The Lancet Global Health</div>
+        <div class="featured-title">Hospital nurse staffing and patient outcomes in Chile: a multilevel cross-sectional study</div>
+        <div class="featured-authors">Aiken, Linda H., Simonetti, Marta, Sloane, Douglas M., Cer\'on, Consuelo, Soto, Paz, Bravo, David, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2021 — Evaluating the costs and outcomes of hospital nursing resour -->
+      <div class="featured-card">
+        <div class="featured-label">2021 · Journal of General Internal Medicine</div>
+        <div class="featured-title">Evaluating the costs and outcomes of hospital nursing resources: a matched cohort study of patients with common medical conditions</div>
+        <div class="featured-authors">Lasater, Karen B., <strong>McHugh MD</strong>, Rosenbaum, Paul R., Aiken, Linda H., Smith, Herbert L., Reiter, Joseph G., et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2021 — Electronic health record usability: associations with nurse  -->
+      <div class="featured-card">
+        <div class="featured-label">2021 · Medical Care</div>
+        <div class="featured-title">Electronic health record usability: associations with nurse and patient outcomes in hospitals</div>
+        <div class="featured-authors">Kutney-Lee, Ann, Sloane, D. M., Bowles, K. H., <strong>McHugh MD</strong>, Aiken, L. H.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2021 — Effects of nurse-to-patient ratio legislation on nurse staff -->
+      <div class="featured-card">
+        <div class="featured-label">2021 · The Lancet</div>
+        <div class="featured-title">Effects of nurse-to-patient ratio legislation on nurse staffing and patient mortality, readmissions, and length of stay: a prospective study in a panel of hospitals</div>
+        <div class="featured-authors"><strong>McHugh MD</strong>, Aiken, Linda H, Sloane, Douglas M, Windsor, Carol, Douglas, Clint, Yates, Patsy</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2021 — Better nurse staffing is associated with survival for Black  -->
+      <div class="featured-card">
+        <div class="featured-label">2021 · Medical Care</div>
+        <div class="featured-title">Better nurse staffing is associated with survival for Black patients and diminishes racial disparities in survival after in-hospital cardiac arrests</div>
+        <div class="featured-authors">Carthon, Margo Brooks, Brom, Heather, <strong>McHugh MD</strong>, Sloane, Douglas M., Berg, Robert, Merchant, Raina, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2020 — Valuing hospital investments in nursing: multistate matched- -->
+      <div class="featured-card">
+        <div class="featured-label">2020 · BMJ Quality &amp; Safety</div>
+        <div class="featured-title">Valuing hospital investments in nursing: multistate matched-cohort study of surgical patients</div>
+        <div class="featured-authors">Lasater, Karen B, <strong>McHugh MD</strong>, Rosenbaum, Paul R, Aiken, Linda H, Smith, Herbert, Reiter, Joseph G, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2020 — The relationship of nursing home Medicaid census to nurses'  -->
+      <div class="featured-card">
+        <div class="featured-label">2020 · Journal of the American Medical Directors Association</div>
+        <div class="featured-title">The relationship of nursing home Medicaid census to nurses&#x27; assessments of care quality and work environment</div>
+        <div class="featured-authors">White, Elizabeth M, Aiken, Linda H, <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2020 — Staffing trends in Magnet and non-Magnet hospitals after sta -->
+      <div class="featured-card">
+        <div class="featured-label">2020 · Journal of Nursing Care Quality</div>
+        <div class="featured-title">Staffing trends in Magnet and non-Magnet hospitals after state legislation</div>
+        <div class="featured-authors">de Cordova, Pamela B, Riman, Kathryn A, Rogowski, Jeannette, <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2020 — Organizational support for nurse practitioners in primary ca -->
+      <div class="featured-card">
+        <div class="featured-label">2020 · Nursing Research</div>
+        <div class="featured-title">Organizational support for nurse practitioners in primary care and workforce outcomes</div>
+        <div class="featured-authors">Poghosyan, L., Ghaffari, Affan, Liu, J., <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2020 — Nurse staffing, the clinical work environment, and burn pati -->
+      <div class="featured-card">
+        <div class="featured-label">2020 · Journal of Burn Care &amp; Research</div>
+        <div class="featured-title">Nurse staffing, the clinical work environment, and burn patient mortality</div>
+        <div class="featured-authors">Bettencourt, Amanda P., <strong>McHugh MD</strong>, Sloane, Douglas M., Aiken, Linda H.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2020 — Large-scale interventions to create hospital work environmen -->
+      <div class="featured-card">
+        <div class="featured-label">2020 · Western Journal of Nursing Research</div>
+        <div class="featured-title">Large-scale interventions to create hospital work environments that enhance nurse physician teamwork</div>
+        <div class="featured-authors"><strong>McHugh MD</strong>, Kang, Xiao Linda, Brom, Heather, Lasater, Karen B</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2020 — Evaluation of hospital nurse-to-patient staffing ratios and  -->
+      <div class="featured-card">
+        <div class="featured-label">2020 · American Journal of Infection Control</div>
+        <div class="featured-title">Evaluation of hospital nurse-to-patient staffing ratios and sepsis bundles on patient outcomes</div>
+        <div class="featured-authors">Lasater, Karen B., Sloane, Douglas M., <strong>McHugh MD</strong>, Cimiotti, Jeannie P., Riman, Kathryn A., Martin, Brendan, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2020 — Chronic hospital nurse understaffing meets COVID-19: an obse -->
+      <div class="featured-card">
+        <div class="featured-label">2020 · BMJ Quality &amp; Safety</div>
+        <div class="featured-title">Chronic hospital nurse understaffing meets COVID-19: an observational study</div>
+        <div class="featured-authors">Lasater, Karen B., Aiken, Linda H., Sloane, Douglas M., French, Rachel, Martin, Brendan, Reneau, Kyrani, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2020 — Case for hospital nurse-to-patient ratio legislation in Quee -->
+      <div class="featured-card">
+        <div class="featured-label">2020 · BMJ Open</div>
+        <div class="featured-title">Case for hospital nurse-to-patient ratio legislation in Queensland, Australia, hospitals: an observational study</div>
+        <div class="featured-authors"><strong>McHugh MD</strong>, Aiken, Linda H., Windsor, Carol, Douglas, Clint, Yates, Patsy</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2019 — The association of nurse practitioner employment and Medicai -->
+      <div class="featured-card">
+        <div class="featured-label">2019 · </div>
+        <div class="featured-title">The association of nurse practitioner employment and Medicaid acceptance in ambulatory practices</div>
+        <div class="featured-authors">Barnes, Hilary, Richards, Michael R, Martsolf, Grant R, Nikpay, Sayeh S, <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2019 — The association of nurse physician teamwork and mortality in -->
+      <div class="featured-card">
+        <div class="featured-label">2019 · Western Journal of Nursing Research</div>
+        <div class="featured-title">The association of nurse physician teamwork and mortality in surgical patients</div>
+        <div class="featured-authors">Kang, Xiao Linda, Brom, Heather M, Lasater, Karen B, <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2019 — Registered nurse burnout, job dissatisfaction, and missed ca -->
+      <div class="featured-card">
+        <div class="featured-label">2019 · Journal of the American Geriatrics Society</div>
+        <div class="featured-title">Registered nurse burnout, job dissatisfaction, and missed care in nursing homes</div>
+        <div class="featured-authors">White, Elizabeth M, Aiken, Linda H, <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2019 — Quality of end of life care and its association with nurse p -->
+      <div class="featured-card">
+        <div class="featured-label">2019 · Journal of the American Geriatrics Society</div>
+        <div class="featured-title">Quality of end of life care and its association with nurse practice environments in U.S. hospitals</div>
+        <div class="featured-authors">Lasater, K., Sloane, D. M., <strong>McHugh MD</strong>, Aiken, L. H.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2019 — Public reporting of nurse staffing in the United States -->
+      <div class="featured-card">
+        <div class="featured-label">2019 · Journal of Nursing Regulation</div>
+        <div class="featured-title">Public reporting of nurse staffing in the United States</div>
+        <div class="featured-authors">de Cordova, Pamela B, Pogorzelska-Maziarz, Monika, Eckenhoff, Myra Emma, <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2019 — Nursing home work environment, care quality, registered nurs -->
+      <div class="featured-card">
+        <div class="featured-label">2019 · Geriatric Nursing</div>
+        <div class="featured-title">Nursing home work environment, care quality, registered nurse burnout and job dissatisfaction</div>
+        <div class="featured-authors">White, Elizabeth M, Aiken, Linda H, Sloane, Douglas M, <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2019 — New Evidence on the Impact of Safe Nurse Staffing Interventi -->
+      <div class="featured-card">
+        <div class="featured-label">2019 · International Council of Nurses Congress 2019</div>
+        <div class="featured-title">New Evidence on the Impact of Safe Nurse Staffing Interventions</div>
+        <div class="featured-authors"><strong>McHugh MD</strong>, Aiken, Linda H.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2019 — Magnet hospital recognition in hospital systems over time -->
+      <div class="featured-card">
+        <div class="featured-label">2019 · Health Care Management Review</div>
+        <div class="featured-title">Magnet hospital recognition in hospital systems over time</div>
+        <div class="featured-authors">Lasater, Karen B, Richards, Michael R, Dandapani, Nikila B, Burns, Lawton R, <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2019 — In hospitals with more nurses who have baccalaureate degrees -->
+      <div class="featured-card">
+        <div class="featured-label">2019 · Health Affairs</div>
+        <div class="featured-title">In hospitals with more nurses who have baccalaureate degrees, better outcomes for patients after cardiac arrest</div>
+        <div class="featured-authors">Harrison, Jordan M, Aiken, Linda H, Sloane, Douglas M, Brooks Carthon, J Margo, Merchant, Raina M, Berg, Robert A, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2019 — Effects of public reporting legislation of nurse staffing: a -->
+      <div class="featured-card">
+        <div class="featured-label">2019 · Policy, Politics, and Nursing Practice</div>
+        <div class="featured-title">Effects of public reporting legislation of nurse staffing: a trend analysis</div>
+        <div class="featured-authors">de Cordova, P. B., Rogowski, J., Riman, K. A., <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2019 — An assessment of patient, caregiver, and clinician perspecti -->
+      <div class="featured-card">
+        <div class="featured-label">2019 · Annals of Surgery</div>
+        <div class="featured-title">An assessment of patient, caregiver, and clinician perspectives on the post-discharge phase of care</div>
+        <div class="featured-authors">Dowzicky, Phillip M, Shah, Arnav A, Barg, Frances K, Eriksen, Whitney T, <strong>McHugh MD</strong>, Kelz, Rachel R</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2019 — A Methodology For studying organizational performance: a mul -->
+      <div class="featured-card">
+        <div class="featured-label">2019 · Medical Care</div>
+        <div class="featured-title">A Methodology For studying organizational performance: a multistate survey of front-line providers</div>
+        <div class="featured-authors">Lasater, Karen B., Jarr\'in, Olga F., Aiken, Linda H., <strong>McHugh MD</strong>, <strong>McHugh MD</strong>, Sloane, Douglas M., et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2018 — Rural and nonrural primary care physician practices increasi -->
+      <div class="featured-card">
+        <div class="featured-label">2018 · Health Affairs</div>
+        <div class="featured-title">Rural and nonrural primary care physician practices increasingly rely on nurse practitioners</div>
+        <div class="featured-authors">Barnes, Hilary, Richards, Michael R., <strong>McHugh MD</strong>, Martsolf, Grant R.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2018 — Nurses' and patients' appraisals show patient safety in hosp -->
+      <div class="featured-card">
+        <div class="featured-label">2018 · Health Affairs</div>
+        <div class="featured-title">Nurses&#x27; and patients&#x27; appraisals show patient safety in hospitals is still deficient and recommended measures not implemented</div>
+        <div class="featured-authors">Aiken, L. H., Sloane, D. M., Barnes, H., Cimiotti, J., Jarr\'in, O., <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2018 — Lower postsurgical mortality for individuals with dementia w -->
+      <div class="featured-card">
+        <div class="featured-label">2018 · Journal of the American Geriatrics Society</div>
+        <div class="featured-title">Lower postsurgical mortality for individuals with dementia with better-educated hospital workforce</div>
+        <div class="featured-authors">White, Elizabeth M, Smith, Jessica G, Trotta, Rebecca L, <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2018 — Employment of advanced practice clinicians in physician prac -->
+      <div class="featured-card">
+        <div class="featured-label">2018 · JAMA Internal Medicine</div>
+        <div class="featured-title">Employment of advanced practice clinicians in physician practices</div>
+        <div class="featured-authors">Martsolf, G. R., Barnes, H., Richards, M. R., Ray, K. N., Brom, H. M., <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2018 — Effect of changes in hospital nursing resources on improveme -->
+      <div class="featured-card">
+        <div class="featured-label">2018 · Medical Care</div>
+        <div class="featured-title">Effect of changes in hospital nursing resources on improvements in patient safety and quality of care: a panel study</div>
+        <div class="featured-authors">Sloane, D. M., Smith, H. L., <strong>McHugh MD</strong>, Aiken, L. H.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2018 — A Journey to Construct an All-Encompassing Conceptual Model  -->
+      <div class="featured-card">
+        <div class="featured-label">2018 · </div>
+        <div class="featured-title">A Journey to Construct an All-Encompassing Conceptual Model of Factors Affecting Clinician Well-Being and Resilience</div>
+        <div class="featured-authors">Brigham, T., Barden, C., Dopp, A. L., Hengerer, A., Kaplan, J., Malone, B., et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2017 — US hospital employment of foreign-educated nurses and patien -->
+      <div class="featured-card">
+        <div class="featured-label">2017 · Journal of Nursing Regulation</div>
+        <div class="featured-title">US hospital employment of foreign-educated nurses and patient experience: a cross-sectional study</div>
+        <div class="featured-authors">Germack, Hayley D, <strong>McHugh MD</strong>, Sloane, Douglas M, Aiken, Linda H</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2017 — Nursing skill mix in European hospitals: cross-sectional stu -->
+      <div class="featured-card">
+        <div class="featured-label">2017 · BMJ Quality &amp; Safety</div>
+        <div class="featured-title">Nursing skill mix in European hospitals: cross-sectional study of the association with mortality, patient ratings, and quality of care</div>
+        <div class="featured-authors">Aiken, Linda H., Sloane, D., Griffiths, P., Rafferty, A. M., Bruyneel, L., <strong>McHugh MD</strong>, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2017 — Risk factors for all-cause rehospitalization among Medicare  -->
+      <div class="featured-card">
+        <div class="featured-label">2017 · Telemedicine and e-Health</div>
+        <div class="featured-title">Risk factors for all-cause rehospitalization among Medicare recipients with heart failure receiving telehomecare</div>
+        <div class="featured-authors">Kang, Y., <strong>McHugh MD</strong>, Chittams, J., Bowles, K. H.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2017 — Nonparametric methods for doubly robust estimation of contin -->
+      <div class="featured-card">
+        <div class="featured-label">2017 · Journal of the Royal Statistical Society, Series B</div>
+        <div class="featured-title">Nonparametric methods for doubly robust estimation of continuous treatment effects</div>
+        <div class="featured-authors">Kennedy, E. H., Ma, Z., <strong>McHugh MD</strong>, Small, D. S.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2017 — Hospitals known for nursing excellence perform better on Val -->
+      <div class="featured-card">
+        <div class="featured-label">2017 · Policy, Politics, &amp; Nursing Practice</div>
+        <div class="featured-title">Hospitals known for nursing excellence perform better on Value Based Purchasing measures</div>
+        <div class="featured-authors">Lasater, Karen B, Germack, Hayley D, Small, Dylan S, <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2017 — Effects of regulation and payment policies on nurse practiti -->
+      <div class="featured-card">
+        <div class="featured-label">2017 · Medical Care Research and Review</div>
+        <div class="featured-title">Effects of regulation and payment policies on nurse practitioners&#x27; clinical practices</div>
+        <div class="featured-authors">Barnes, H., Meier, C. B., Altares Sarik, D., Germack, H. D., Aiken, L. A., <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2017 — Better nurse autonomy decreases the odds of 30-day mortality -->
+      <div class="featured-card">
+        <div class="featured-label">2017 · Journal of Nursing Scholarship</div>
+        <div class="featured-title">Better nurse autonomy decreases the odds of 30-day mortality and failure to rescue</div>
+        <div class="featured-authors">Rao, Aditi D., Kumar, Aparna, <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2017 — A race to the top? competitive pressure and Magnet adoption  -->
+      <div class="featured-card">
+        <div class="featured-label">2017 · Medical Care</div>
+        <div class="featured-title">A race to the top? competitive pressure and Magnet adoption among US hospitals 1997 - 2012</div>
+        <div class="featured-authors">Richards, M. R., Lasater, K. B., <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2016 — Utilizing home healthcare electronic health records for tele -->
+      <div class="featured-card">
+        <div class="featured-label">2016 · Computers, Informatics, Nursing</div>
+        <div class="featured-title">Utilizing home healthcare electronic health records for telehomecare patients with heart failure: a decision tree approach to detect associations with rehospitalizations</div>
+        <div class="featured-authors">Kang, Y., <strong>McHugh MD</strong>, Chittams, J., Bowles, K.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2016 — Reducing hospital readmission disparities of older Black and -->
+      <div class="featured-card">
+        <div class="featured-label">2016 · Journal of the American Geriatrics Society</div>
+        <div class="featured-title">Reducing hospital readmission disparities of older Black and White adults after elective joint replacement: the role of nurse staffing</div>
+        <div class="featured-authors">Lasater, K. B., <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2016 — RN assessments of excellent quality of care and patient safe -->
+      <div class="featured-card">
+        <div class="featured-label">2016 · International Journal of Nursing Studies</div>
+        <div class="featured-title">RN assessments of excellent quality of care and patient safety are associated with significantly lower odds of 30-day inpatient mortality: a national cross-sectional study of acute-care hospitals</div>
+        <div class="featured-authors">Smeds Alenius, L., Tishelman, C., Lindqvist, R., Runesdotter, S., <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2016 — Nurse staffing and the work environment linked to readmissio -->
+      <div class="featured-card">
+        <div class="featured-label">2016 · International Journal for Quality in Health Care</div>
+        <div class="featured-title">Nurse staffing and the work environment linked to readmissions among older adults following elective total hip and knee replacement</div>
+        <div class="featured-authors">Lasater, K. B., <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2016 — Magnet hospital recognition linked to lower central line-ass -->
+      <div class="featured-card">
+        <div class="featured-label">2016 · Research in Nursing and Health</div>
+        <div class="featured-title">Magnet hospital recognition linked to lower central line-associated bloodstream infection rates</div>
+        <div class="featured-authors">Barnes, H., Rearden, J., <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2016 — Comparison of the value of nursing work environments in hosp -->
+      <div class="featured-card">
+        <div class="featured-label">2016 · JAMA Surgery</div>
+        <div class="featured-title">Comparison of the value of nursing work environments in hospitals across different levels of patient risk</div>
+        <div class="featured-authors">Silber, J. H., Rosenbaum, P. R., <strong>McHugh MD</strong>, Ludwig, J. M., Smith, H. L., Niknam, B. A., et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2016 — Better nurse staffing and nurse work environments associated -->
+      <div class="featured-card">
+        <div class="featured-label">2016 · Medical Care</div>
+        <div class="featured-title">Better nurse staffing and nurse work environments associated with increased survival of in-hospital cardiac arrest patients</div>
+        <div class="featured-authors"><strong>McHugh MD</strong>, Rochman, M. F., Sloane, D.M., Berg, R. A., Mancini, Mary E., Nadkarni, V. M., et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2016 — Achieving Kaiser Permanente quality -->
+      <div class="featured-card">
+        <div class="featured-label">2016 · Health Care Management Review</div>
+        <div class="featured-title">Achieving Kaiser Permanente quality</div>
+        <div class="featured-authors"><strong>McHugh MD</strong>, Aiken, L. H., Eckenhoff, M., Burns, L. R.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2015 — Professional bedside nursing in Pennsylvania: a staff study -->
+      <div class="featured-card">
+        <div class="featured-label">2015 · </div>
+        <div class="featured-title">Professional bedside nursing in Pennsylvania: a staff study</div>
+        <div class="featured-authors"><strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2015 — Organization of hospital nursing and 30-day readmissions in  -->
+      <div class="featured-card">
+        <div class="featured-label">2015 · Medical Care</div>
+        <div class="featured-title">Organization of hospital nursing and 30-day readmissions in Medicare patients undergoing surgery</div>
+        <div class="featured-authors">Ma, C., <strong>McHugh MD</strong>, Aiken, L.H.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2015 — Hospitals known for nursing excellence associated with bette -->
+      <div class="featured-card">
+        <div class="featured-label">2015 · Health Services Research</div>
+        <div class="featured-title">Hospitals known for nursing excellence associated with better hospital experiences for patients</div>
+        <div class="featured-authors">Stimpfel, A.W., Sloane, D.M., <strong>McHugh MD</strong>, Aiken, L.H.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2015 — A longitudinal examination of the association between nurse  -->
+      <div class="featured-card">
+        <div class="featured-label">2015 · BMC Health Services Research</div>
+        <div class="featured-title">A longitudinal examination of the association between nurse staffing levels, the practice environment and nurse-sensitive patient outcomes in hospitals</div>
+        <div class="featured-authors">Chau, Janita PC, Lo, Suzanne HS, Choi, KC, Chan, Eric LS, <strong>McHugh MD</strong>, Tong, Danny WK, et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2014 — Wage, work environment, and staffing: effects on nurse outco -->
+      <div class="featured-card">
+        <div class="featured-label">2014 · Policy, Politics, &amp; Nursing Practice</div>
+        <div class="featured-title">Wage, work environment, and staffing: effects on nurse outcomes</div>
+        <div class="featured-authors"><strong>McHugh MD</strong>, Ma, T.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2014 — Understanding the role of the professional practice environm -->
+      <div class="featured-card">
+        <div class="featured-label">2014 · The Journal of Nursing Administration</div>
+        <div class="featured-title">Understanding the role of the professional practice environment on quality of care in Magnet and non-Magnet hospitals</div>
+        <div class="featured-authors">Witkoski Stimpfel, A., Rosen, J., <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2014 — Nurse staffing and education and hospital mortality in nine  -->
+      <div class="featured-card">
+        <div class="featured-label">2014 · The Lancet</div>
+        <div class="featured-title">Nurse staffing and education and hospital mortality in nine European countries: a retrospective observational study</div>
+        <div class="featured-authors">Aiken, Linda H., Sloane, D. M., Bruyneel, L., Van den Heede, K., Griffiths, P., Busse, R., et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2014 — Is a nursing shortage in Israel inevitable? -->
+      <div class="featured-card">
+        <div class="featured-label">2014 · Israel Journal of Health Policy Research</div>
+        <div class="featured-title">Is a nursing shortage in Israel inevitable?</div>
+        <div class="featured-authors">Aiken, Linda H, <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2014 — Impact of nurse staffing levels on nurse outcomes in communi -->
+      <div class="featured-card">
+        <div class="featured-label">2014 · Nursing and Health Sciences</div>
+        <div class="featured-title">Impact of nurse staffing levels on nurse outcomes in community hospitals, Thailand</div>
+        <div class="featured-authors">Nantsupawat, Apiradee, Nantsupawat, Raymoul, Kulnaviktikul, Wipada, <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2014 — Impact of critical care nursing on 30-day mortality of mecha -->
+      <div class="featured-card">
+        <div class="featured-label">2014 · Critical Care Medicine</div>
+        <div class="featured-title">Impact of critical care nursing on 30-day mortality of mechanically ventilated older adults</div>
+        <div class="featured-authors">Kelly, D., <strong>McHugh MD</strong>, Sloane, D.M., Aiken, L.H.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2014 — Factors influencing job satisfaction of new graduate nurses  -->
+      <div class="featured-card">
+        <div class="featured-label">2014 · Journal of Continuing Education in Nursing</div>
+        <div class="featured-title">Factors influencing job satisfaction of new graduate nurses participating in nurse residency programs: a systematic review</div>
+        <div class="featured-authors">Lin, PS, Viscardi, MK, <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2014 — Distinct enough? a national examination of Catholic hospital -->
+      <div class="featured-card">
+        <div class="featured-label">2014 · Health Care Management Review</div>
+        <div class="featured-title">Distinct enough? a national examination of Catholic hospital affiliation and patient perceptions of care</div>
+        <div class="featured-authors">Kutney-Lee, Ann, Melendez-Torres, G.J., <strong>McHugh MD</strong>, Mann Wall, Barbra</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2014 — Challenges and opportunities in nurse credentialing research -->
+      <div class="featured-card">
+        <div class="featured-label">2014 · </div>
+        <div class="featured-title">Challenges and opportunities in nurse credentialing research design</div>
+        <div class="featured-authors"><strong>McHugh MD</strong>, Smith, H. L., Spetz, J., Romano, P., Mazmanian, P., Hawkins, R.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2013 — Lower mortality in Magnet hospitals -->
+      <div class="featured-card">
+        <div class="featured-label">2013 · Medical Care</div>
+        <div class="featured-title">Lower mortality in Magnet hospitals</div>
+        <div class="featured-authors"><strong>McHugh MD</strong>, Kelly, L. A., Smith, H. L., Wu, E. S., Vanak, J., Aiken, L. H.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2013 — Hospitals with higher nurse staffing had lower odds of readm -->
+      <div class="featured-card">
+        <div class="featured-label">2013 · Health Affairs</div>
+        <div class="featured-title">Hospitals with higher nurse staffing had lower odds of readmissions penalties than hospitals with lower staffing</div>
+        <div class="featured-authors"><strong>McHugh MD</strong>, Berez, J., Small, D.S.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2013 — Hospital nursing and 30-day readmissions among Medicare pati -->
+      <div class="featured-card">
+        <div class="featured-label">2013 · Medical Care</div>
+        <div class="featured-title">Hospital nursing and 30-day readmissions among Medicare patients with heart failure, acute myocardial infarction, and pneumonia</div>
+        <div class="featured-authors"><strong>McHugh MD</strong>, Ma, T.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2012 — Nurse reported quality of care: a measure of hospital qualit -->
+      <div class="featured-card">
+        <div class="featured-label">2012 · Research in Nursing and Health</div>
+        <div class="featured-title">Nurse reported quality of care: a measure of hospital quality</div>
+        <div class="featured-authors"><strong>McHugh MD</strong>, Stimpfel, Amy Witkoski</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2012 — Impact of nurse staffing mandates on safety-net hospitals: l -->
+      <div class="featured-card">
+        <div class="featured-label">2012 · Milbank Quarterly</div>
+        <div class="featured-title">Impact of nurse staffing mandates on safety-net hospitals: lessons from California</div>
+        <div class="featured-authors"><strong>McHugh MD</strong>, Brooks-Carthon, J.M., Sloane, D.M., Wu, E.S., Kelly, L., Aiken, L. H.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2011 — Risk factors for hospital-acquired "poor glycemic control":  -->
+      <div class="featured-card">
+        <div class="featured-label">2011 · International Journal for Quality in Health Care</div>
+        <div class="featured-title">Risk factors for hospital-acquired &quot;poor glycemic control&quot;: a case-control study</div>
+        <div class="featured-authors"><strong>McHugh MD</strong>, Shang, J., Sloane, D.M., Aiken, L.H.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2011 — Nurses' widespread job dissatisfaction, burnout and frustrat -->
+      <div class="featured-card">
+        <div class="featured-label">2011 · Health Affairs</div>
+        <div class="featured-title">Nurses&#x27; widespread job dissatisfaction, burnout and frustration with health benefits signal problems for patient care</div>
+        <div class="featured-authors"><strong>McHugh MD</strong>, Kutney-Lee, Ann, Cimiotti, Jeannie P., Sloane, Douglas M., Aiken, Linda H.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2011 — Nurse outcomes in Magnet and non-Magnet hospitals -->
+      <div class="featured-card">
+        <div class="featured-label">2011 · Journal of Nursing Administration</div>
+        <div class="featured-title">Nurse outcomes in Magnet and non-Magnet hospitals</div>
+        <div class="featured-authors">Kelly, L. A., <strong>McHugh MD</strong>, Aiken, L. H.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2011 — Health reform and the constitutionality of the individual ma -->
+      <div class="featured-card">
+        <div class="featured-label">2011 · Policy, Politics, &amp; Nursing Practice</div>
+        <div class="featured-title">Health reform and the constitutionality of the individual mandate</div>
+        <div class="featured-authors">Lee, J.J., Kelly, D., <strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2011 — Contradicting fears, California's nurse-to-patient mandate d -->
+      <div class="featured-card">
+        <div class="featured-label">2011 · Health Affairs</div>
+        <div class="featured-title">Contradicting fears, California&#x27;s nurse-to-patient mandate did not reduce the skill level of the nursing workforce in hospitals</div>
+        <div class="featured-authors"><strong>McHugh MD</strong>, Kelly, L., Sloane, D.M., Aiken, L. H.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2010 — Understanding clinical expertise: nurse education, experienc -->
+      <div class="featured-card">
+        <div class="featured-label">2010 · Research in Nursing and Health</div>
+        <div class="featured-title">Understanding clinical expertise: nurse education, experience, and the hospital context</div>
+        <div class="featured-authors"><strong>McHugh MD</strong>, Lake, E.T.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2010 — Medicare readmissions policies and racial and ethnic health  -->
+      <div class="featured-card">
+        <div class="featured-label">2010 · Policy, Politics, &amp; Nursing Practice</div>
+        <div class="featured-title">Medicare readmissions policies and racial and ethnic health disparities: a cautionary tale</div>
+        <div class="featured-authors"><strong>McHugh MD</strong>, Brooks-Carthon, J.M., Kang, X.L.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2010 — Hospital nurse staffing and public health emergency prepared -->
+      <div class="featured-card">
+        <div class="featured-label">2010 · Public Health Nursing</div>
+        <div class="featured-title">Hospital nurse staffing and public health emergency preparedness: implications for policy</div>
+        <div class="featured-authors"><strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2010 — Daily multidisciplinary team rounds associated with reduced  -->
+      <div class="featured-card">
+        <div class="featured-label">2010 · Evidence Based Nursing</div>
+        <div class="featured-title">Daily multidisciplinary team rounds associated with reduced 30-day mortality in medical intensive care unit patients</div>
+        <div class="featured-authors"><strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2009 — Nursing: a key to patient satisfaction -->
+      <div class="featured-card">
+        <div class="featured-label">2009 · Health Affairs</div>
+        <div class="featured-title">Nursing: a key to patient satisfaction</div>
+        <div class="featured-authors">Kutney-Lee, A, <strong>McHugh MD</strong>, Sloane, D.M., Cimiotti, J.P., Flynn, L, Neff, D.F., et al.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2008 — The U.S. presidential election and healthcare workforce poli -->
+      <div class="featured-card">
+        <div class="featured-label">2008 · Politics, Policy, and Nursing Practice</div>
+        <div class="featured-title">The U.S. presidential election and healthcare workforce policy</div>
+        <div class="featured-authors"><strong>McHugh MD</strong>, Aiken, Linda H., Cooper, Richard A., Miller, P.</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2007 — The legal context of nurses volunteering in mass casualty ev -->
+      <div class="featured-card">
+        <div class="featured-label">2007 · Pennsylvania Nurse</div>
+        <div class="featured-title">The legal context of nurses volunteering in mass casualty events</div>
+        <div class="featured-authors"><strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2007 — Readiness for change and short-term outcomes of female adole -->
+      <div class="featured-card">
+        <div class="featured-label">2007 · International Journal of Eating Disorders</div>
+        <div class="featured-title">Readiness for change and short-term outcomes of female adolescents in residential treatment for anorexia nervosa</div>
+        <div class="featured-authors"><strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2006 — Reducing racial and ethnic health disparities: exploring an  -->
+      <div class="featured-card">
+        <div class="featured-label">2006 · Journal of Health Politics, Policy &amp; Law</div>
+        <div class="featured-title">Reducing racial and ethnic health disparities: exploring an outcome-oriented agenda for research and policy</div>
+        <div class="featured-authors">Gibbs, Brian K., Nsiah-Jefferson, Laurie, <strong>McHugh MD</strong>, Trivedi, Amal N., Prothrow-Stith, Deborah</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2006 — Fit or fat? a review of the debate on deaths attributable to -->
+      <div class="featured-card">
+        <div class="featured-label">2006 · Public Health Nursing</div>
+        <div class="featured-title">Fit or fat? a review of the debate on deaths attributable to obesity</div>
+        <div class="featured-authors"><strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2005 — Contributing Factors to Health Disparities -->
+      <div class="featured-card">
+        <div class="featured-label">2005 · Mayor&#x27;s Task Force Blueprint: A Plan to Eliminate Racial and Ethnic Disparities in Health</div>
+        <div class="featured-title">Contributing Factors to Health Disparities</div>
+        <div class="featured-authors"><strong>McHugh MD</strong>, (prepared for the Boston Public Health Commission)</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2005 — Case Example: Asthma in Roxbury -->
+      <div class="featured-card">
+        <div class="featured-label">2005 · Mayor&#x27;s Task Force Blueprint: A Plan to Eliminate Racial and Ethnic Disparities in Health</div>
+        <div class="featured-title">Case Example: Asthma in Roxbury</div>
+        <div class="featured-authors"><strong>McHugh MD</strong>, (prepared for the Boston Public Health Commission)</div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+      <!-- 2004 — The Role of Readiness for Change in the Residential Treatmen -->
+      <div class="featured-card">
+        <div class="featured-label">2004 · Dissertation Abstracts International</div>
+        <div class="featured-title">The Role of Readiness for Change in the Residential Treatment Recovery Outcomes among Female Adolescents with Anorexia Nervosa</div>
+        <div class="featured-authors"><strong>McHugh MD</strong></div>
+        <div class="featured-actions">
+          <a href="pdfs/REPLACE_ME.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
