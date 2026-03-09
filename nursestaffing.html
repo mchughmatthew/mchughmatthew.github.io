@@ -105,6 +105,58 @@
   mark { background: rgba(255,248,219,0.5); color: inherit; padding: 0 1px; border-radius: 2px; }
   .no-results { color: var(--muted); font-size: 0.9rem; padding: 2rem 0; }
 
+  /* ── Featured Papers ── */
+  .featured-papers { background: var(--warm-white); padding: 60px 2rem 0; }
+  .featured-inner { max-width: 860px; margin: 0 auto; }
+  .featured-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin-top: 1.5rem; }
+
+  .featured-card {
+    border: 1px solid rgba(12,27,51,0.18);
+    border-radius: 4px;
+    padding: 1.5rem 1.6rem;
+    background: #fff;
+    position: relative;
+    display: flex; flex-direction: column;
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .featured-card:hover { box-shadow: 0 6px 28px rgba(12,27,51,0.1); transform: translateY(-2px); }
+  .featured-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: var(--navy);
+    border-radius: 4px 4px 0 0;
+  }
+  .featured-card.highlight::before { background: linear-gradient(90deg, var(--navy) 0%, #2a6496 100%); }
+  .featured-label {
+    font-family: 'DM Mono', monospace; font-size: 0.65rem;
+    color: var(--navy); letter-spacing: 0.15em; text-transform: uppercase;
+    margin-bottom: 0.8rem;
+    display: flex; align-items: center; gap: 0.5rem;
+  }
+  .featured-label .pill {
+    background: var(--navy); color: var(--gold);
+    padding: 0.15rem 0.5rem; border-radius: 2px;
+    font-size: 0.6rem; letter-spacing: 0.1em;
+  }
+  .featured-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.08rem; font-weight: 500; color: var(--navy);
+    line-height: 1.4; margin-bottom: 0.5rem;
+  }
+  .featured-authors { font-size: 0.78rem; color: var(--muted); font-weight: 300; margin-bottom: 0.35rem; line-height: 1.45; }
+  .featured-venue { font-size: 0.78rem; color: var(--muted); font-style: italic; margin-bottom: 0.9rem; }
+  .featured-summary { font-size: 0.83rem; color: #444; line-height: 1.75; font-weight: 300; flex: 1; margin-bottom: 1.1rem; }
+  .featured-actions { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+  .featured-btn {
+    font-family: 'DM Mono', monospace; font-size: 0.7rem; letter-spacing: 0.04em;
+    padding: 0.35rem 0.8rem; border-radius: 2px; text-decoration: none;
+    transition: all 0.15s; display: inline-flex; align-items: center; gap: 0.35rem;
+  }
+  .featured-btn.primary { background: var(--navy); color: var(--gold); border: 1px solid var(--navy); }
+  .featured-btn.primary:hover { background: #162645; }
+  .featured-btn.secondary { background: none; color: var(--navy); border: 1px solid rgba(12,27,51,0.35); }
+  .featured-btn.secondary:hover { background: rgba(12,27,51,0.06); }
+
   footer { background: var(--navy); padding: 2.5rem 2rem; text-align: center; border-top: 1px solid rgba(255,248,219,0.2); }
   footer p { font-size: 0.82rem; color: rgba(255,255,255,0.35); }
   footer a { color: var(--gold); text-decoration: none; }
@@ -143,6 +195,53 @@
   </div>
 </section>
 
+<section class="featured-papers">
+  <div class="featured-inner">
+    <p class="section-label">Featured Research</p>
+    <div class="featured-grid">
+
+      <!-- CARD 1 — Lancet Queensland study -->
+      <div class="featured-card highlight">
+        <div class="featured-label"><span class="pill">Landmark</span> Policy Evaluation</div>
+        <div class="featured-title">Minimum nurse-to-patient ratios and mortality in Queensland hospitals</div>
+        <div class="featured-authors">McHugh MD, Aiken LH, Sloane DM, Windsor C, Douglas C, Yates P</div>
+        <div class="featured-venue">The Lancet, 2021</div>
+        <div class="featured-summary">A prospective evaluation of Queensland, Australia's statewide nurse staffing mandate — the first major natural experiment to demonstrate that minimum ratio legislation reduces patient mortality, readmissions, and length of stay, while generating net cost savings.</div>
+        <div class="featured-actions">
+          <a href="pdfs/lancet_queensland.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="https://doi.org/10.1016/S0140-6736(21)02269-6" class="featured-btn secondary" target="_blank">DOI →</a>
+        </div>
+      </div>
+
+      <!-- CARD 2 — California ratios -->
+      <div class="featured-card">
+        <div class="featured-label">State Policy · Workforce</div>
+        <div class="featured-title">Nurse staffing mandates and the California experience: outcomes, retention, and quality</div>
+        <div class="featured-authors">McHugh MD, Kelly LA, Smith HL, Wu ES, Vanak JM, Aiken LH</div>
+        <div class="featured-venue">Health Affairs, 2013</div>
+        <div class="featured-summary">Examines California's landmark nurse-to-patient ratio law — finding it reduced nurse burnout and job dissatisfaction without compromising nurse workforce quality, and was associated with better patient outcomes than comparable non-ratio states.</div>
+        <div class="featured-actions">
+          <a href="pdfs/california_ratios.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+          <a href="#publications" class="featured-btn secondary">All Staffing Papers ↓</a>
+        </div>
+      </div>
+
+      <!-- CARD 3 — White Paper -->
+      <div class="featured-card">
+        <div class="featured-label">Policy Brief</div>
+        <div class="featured-title">Safe Staffing: The Nurse-to-Patient Ratio Debate</div>
+        <div class="featured-authors">McHugh MD &amp; CHOPR Faculty</div>
+        <div class="featured-venue">CHOPR White Paper</div>
+        <div class="featured-summary">A comprehensive synthesis of the evidence on minimum nurse staffing standards — covering patient outcomes, nurse workforce effects, economic impacts, and design considerations for state and federal legislation.</div>
+        <div class="featured-actions">
+          <a href="pdfs/safe_staffing.pdf" class="featured-btn primary" target="_blank">⬇ PDF</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <section id="publications">
   <div class="pub-inner">
     <p class="section-label">Related Publications</p>
@@ -155,10 +254,10 @@
 </section>
 
 <footer>
-  <p>Matthew D. McHugh &middot; University of Pennsylvania School of Nursing &middot; <a href="/cdn-cgi/l/email-protection#f598969d80929d98b59b8087869c9b92db8085909b9bdb909180"><span class="__cf_email__" data-cfemail="c4a9a7acb1a3aca984aab1b6b7adaaa3eab1b4a1aaaaeaa1a0b1">[email&#160;protected]</span></a></p>
+  <p>Matthew D. McHugh &middot; University of Pennsylvania School of Nursing &middot; <a href="mailto:mchughm@nursing.upenn.edu">mchughm@nursing.upenn.edu</a></p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 let PUBS = [];
 
 function parseBib(text) {
