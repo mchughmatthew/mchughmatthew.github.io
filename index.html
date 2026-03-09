@@ -4,6 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Matthew D. McHugh, PhD, JD, MPH, RN, FAAN</title>
+<meta name="description" content="Matthew D. McHugh is Professor and Independence Chair at the University of Pennsylvania School of Nursing, and Director of CHOPR. His research focuses on nurse staffing, health policy, burnout, and patient outcomes.">
+<link rel="icon" href="https://www.nursing.upenn.edu/favicon.ico">
+<!-- Open Graph / Social -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mchughmatthew.github.io/">
+<meta property="og:title" content="Matthew D. McHugh, PhD, JD, MPH, RN, FAAN">
+<meta property="og:description" content="Professor & Independence Chair, University of Pennsylvania School of Nursing. Director, Center for Health Outcomes and Policy Research (CHOPR). Research on nurse staffing, health policy, and patient outcomes.">
+<meta property="og:image" content="https://mchughmatthew.github.io/images/og-preview.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Matthew D. McHugh, PhD, JD, MPH, RN, FAAN">
+<meta name="twitter:description" content="Professor & Independence Chair, Penn Nursing. Director, CHOPR. Research on nurse staffing, health policy, and patient outcomes.">
+<meta name="twitter:image" content="https://mchughmatthew.github.io/images/og-preview.jpg">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5LNP9W9B62"></script>
 <script>
@@ -165,7 +177,7 @@
     font-family: 'DM Sans', sans-serif; font-size: 0.9rem;
     background: #fff; color: var(--text); transition: border-color 0.2s; outline: none;
   }
-  #pub-search:focus { border-color: var(--gold); }
+  #pub-search:focus { border-color: var(--navy); }
   #pub-search::placeholder { color: var(--muted); }
   .pub-stats { font-family: 'DM Mono', monospace; font-size: 0.75rem; color: var(--muted); white-space: nowrap; }
   .year-group { margin-bottom: 3rem; }
@@ -207,11 +219,44 @@
   footer p { font-size: 0.82rem; color: rgba(255,255,255,0.35); }
   footer a { color: var(--gold); text-decoration: none; }
 
+  /* ── Hamburger nav ──────────────────────────────────── */
+  .nav-hamburger {
+    display: none; flex-direction: column; justify-content: center;
+    gap: 5px; background: none; border: none; cursor: pointer;
+    padding: 4px; z-index: 1100;
+  }
+  .nav-hamburger span {
+    display: block; width: 22px; height: 2px;
+    background: rgba(255,255,255,0.8); border-radius: 2px;
+    transition: transform 0.25s, opacity 0.25s;
+  }
+  .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+  .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
   @media (max-width: 768px) {
     .about-grid { grid-template-columns: 1fr; }
     .research-grid { grid-template-columns: 1fr; }
-    nav ul { display: none; }
     #hero h1 { font-size: 2.5rem; }
+    .nav-hamburger { display: flex; }
+    nav ul {
+      display: none; flex-direction: column; gap: 0;
+      position: fixed; top: 60px; left: 0; right: 0;
+      background: rgba(12,27,51,0.99); backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,248,219,0.15);
+      padding: 0.5rem 0 1rem; z-index: 999;
+    }
+    nav ul.open { display: flex; }
+    nav ul li { width: 100%; }
+    nav ul a {
+      display: block; padding: 0.75rem 1.5rem;
+      font-size: 0.85rem; letter-spacing: 0.08em;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    nav ul li:last-child a {
+      margin: 0.75rem 1.5rem 0;
+      display: inline-block; width: auto;
+    }
   }
 
   /* ── Contact ─────────────────────────────────────── */
@@ -242,7 +287,10 @@
 
 <nav>
   <a href="#" class="nav-brand">Matthew D. McHugh</a>
-  <ul>
+  <button class="nav-hamburger" id="nav-toggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+  <ul id="nav-menu">
     <li><a href="#about">About</a></li>
     <li><a href="#research">Research</a></li>
     <li><a href="#projects">Projects</a></li>
@@ -520,7 +568,9 @@ function renderPubs(filtered) {
   container.innerHTML = html;
 }
 function toggleAbstract(uid, btn) {
-  const el = document.getElemen
+  const el = document.getElementById('abs_' + uid);
+  if (!el) return;
+  const open = el.classList.toggle('open');
   btn.textContent = open ? 'Abstract ▴' : 'Abstract ▾';
 }
 function filterPubs() {
@@ -528,18 +578,30 @@ function filterPubs() {
   if (!raw) { renderPubs(PUBS); return; }
   const terms = raw.split(/\s+/).filter(Boolean);
   const filtered = PUBS.filter(p => {
-    const haystack = [p.title, p.author, p.journal, p.abstract, p.year].join(' ').toLowerCase();
+    const haystack = [p.title, p.author, p.journal, p.abstract].join(' ').toLowerCase();
     return terms.some(t => haystack.includes(t));
   });
   renderPubs(filtered);
 }
-function searchTag(term) {
-  const input = document.getElementById('pub-search');
-  input.value = term;
-  document.getElementById('publications').scrollIntoView({ behavior: 'smooth', block: 'start' });
-  filterPubs();
-}
-loadPubs();
+document.addEventListener('DOMContentLoaded', () => {
+  loadPubs();
+  // Hamburger nav toggle
+  const toggle = document.getElementById('nav-toggle');
+  const menu = document.getElementById('nav-menu');
+  if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('open');
+      menu.classList.toggle('open');
+    });
+    // Close menu when a nav link is clicked
+    menu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        toggle.classList.remove('open');
+        menu.classList.remove('open');
+      });
+    });
+  }
+});
 </script>
 </body>
 </html>
