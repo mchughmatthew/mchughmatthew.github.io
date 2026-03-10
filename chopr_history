@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CHOPR History | Matthew D. McHugh</title>
+<meta name="description" content="The history of the Center for Health Outcomes and Policy Research (CHOPR) at Penn Nursing, founded in 1989 by Dr. Linda H. Aiken.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5LNP9W9B62"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5LNP9W9B62');
+</script>
+
+<style>
+  :root {
+    --navy: #0c1b33;
+    --navy-mid: #162645;
+    --navy-light: #1e3560;
+    --gold: #fff8db;
+    --gold-accent: #e6d98a;
+    --cream: #f8f4ef;
+    --warm-white: #fdfaf6;
+    --text: #1a1a2e;
+    --muted: #6b7280;
+    --border: #e5dfd6;
+    --timeline-line: rgba(12,27,51,0.15);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', sans-serif; color: var(--text); background: var(--warm-white); line-height: 1.6; }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    background: rgba(12,27,51,0.97); backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,248,219,0.2);
+    padding: 0 2rem; height: 60px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  nav .nav-brand {
+    font-family: 'Cormorant Garamond', serif; font-weight: 500;
+    font-size: 1.1rem; color: var(--gold); letter-spacing: 0.03em; text-decoration: none;
+  }
+  nav ul { list-style: none; display: flex; gap: 2rem; align-items: center; }
+  nav ul a {
+    color: rgba(255,255,255,0.75); text-decoration: none;
+    font-size: 0.85rem; font-weight: 400; letter-spacing: 0.05em;
+    text-transform: uppercase; transition: color 0.2s;
+  }
+  nav ul a:hover { color: var(--gold); }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+  .hamburger span { display: block; width: 22px; height: 1.5px; background: rgba(255,255,255,0.75); transition: all 0.2s; }
+
+  /* ── HERO ── */
+  #hero {
+    background: var(--navy); padding: 120px 2rem 80px;
+    position: relative; overflow: hidden;
+  }
+  #hero::before {
+    content: ''; position: absolute; top: -50%; right: -20%;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(255,248,219,0.07) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  #hero::after {
+    content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+    height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+  .hero-inner { max-width: 860px; margin: 0 auto; }
+  .hero-eyebrow {
+    font-family: 'DM Mono', monospace; font-size: 0.75rem;
+    color: var(--gold); letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 1.5rem;
+    display: flex; align-items: center; gap: 0.8rem;
+  }
+  .hero-eyebrow a { color: rgba(255,248,219,0.6); text-decoration: none; transition: color 0.2s; }
+  .hero-eyebrow a:hover { color: var(--gold); }
+  .hero-eyebrow .sep { opacity: 0.4; }
+  #hero h1 {
+    font-family: 'Cormorant Garamond', serif; font-weight: 300;
+    font-size: clamp(2.8rem, 6vw, 4.5rem); color: #fff;
+    line-height: 1.05; letter-spacing: -0.01em; margin-bottom: 1rem;
+  }
+  .hero-sub {
+    font-size: 1rem; color: rgba(255,255,255,0.55); font-weight: 300;
+    line-height: 1.75; max-width: 620px;
+  }
+
+  /* ── STATS BANNER ── */
+  #stats {
+    background: var(--navy-mid);
+    border-top: 1px solid rgba(255,248,219,0.1);
+    border-bottom: 1px solid rgba(255,248,219,0.1);
+    padding: 2.5rem 2rem;
+  }
+  .stats-grid {
+    max-width: 900px; margin: 0 auto;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;
+  }
+  .stat-item { text-align: center; }
+  .stat-number {
+    font-family: 'Cormorant Garamond', serif; font-size: 2.8rem; font-weight: 300;
+    color: var(--gold); line-height: 1; margin-bottom: 0.4rem;
+  }
+  .stat-label {
+    font-family: 'DM Mono', monospace; font-size: 0.68rem;
+    color: rgba(255,255,255,0.45); letter-spacing: 0.12em; text-transform: uppercase;
+    line-height: 1.5;
+  }
+  .stat-detail {
+    font-size: 0.78rem; color: rgba(255,255,255,0.3); margin-top: 0.5rem;
+    font-weight: 300; line-height: 1.5;
+  }
+
+  /* ── TIMELINE SECTION ── */
+  #timeline { padding: 80px 2rem 100px; }
+  .timeline-inner { max-width: 900px; margin: 0 auto; }
+  .section-label {
+    font-family: 'DM Mono', monospace; font-size: 0.7rem;
+    color: var(--navy); letter-spacing: 0.2em; text-transform: uppercase;
+    margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.8rem;
+  }
+  .section-label::after {
+    content: ''; flex: 1; max-width: 60px; height: 1px; background: var(--navy); opacity: 0.4;
+  }
+  .timeline-heading {
+    font-family: 'Cormorant Garamond', serif; font-weight: 400;
+    font-size: 2.5rem; color: var(--navy); margin-bottom: 0.75rem; line-height: 1.15;
+  }
+  .timeline-intro {
+    font-size: 1rem; color: var(--muted); font-weight: 300; line-height: 1.75;
+    max-width: 600px; margin-bottom: 4rem;
+  }
+
+  /* vertical spine */
+  .timeline-track {
+    position: relative;
+    padding: 0;
+  }
+  .timeline-track::before {
+    content: ''; position: absolute;
+    left: 50%; top: 0; bottom: 0;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, var(--timeline-line) 5%, var(--timeline-line) 95%, transparent);
+    transform: translateX(-50%);
+  }
+
+  /* each event row */
+  .tl-event {
+    display: grid;
+    grid-template-columns: 1fr 80px 1fr;
+    gap: 0;
+    margin-bottom: 0;
+    position: relative;
+    min-height: 100px;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  .tl-event.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* year node (center column) */
+  .tl-node {
+    display: flex; flex-direction: column; align-items: center;
+    justify-content: center; position: relative; z-index: 2;
+    padding: 1.5rem 0;
+  }
+  .tl-dot {
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    background: var(--navy);
+    border: 2px solid var(--warm-white);
+    box-shadow: 0 0 0 2px var(--navy);
+    margin-bottom: 0.4rem;
+    flex-shrink: 0;
+  }
+  .tl-event.milestone .tl-dot {
+    width: 16px; height: 16px;
+    background: var(--gold-accent);
+    box-shadow: 0 0 0 2px var(--gold-accent), 0 0 12px rgba(230,217,138,0.4);
+  }
+  .tl-year {
+    font-family: 'DM Mono', monospace; font-size: 0.72rem;
+    color: var(--navy); letter-spacing: 0.1em; font-weight: 400;
+    white-space: nowrap;
+  }
+
+  /* card (left or right column) */
+  .tl-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1.4rem 1.6rem;
+    position: relative;
+    transition: box-shadow 0.2s, transform 0.2s;
+    margin: 1rem 0;
+  }
+  .tl-card:hover {
+    box-shadow: 0 6px 24px rgba(12,27,51,0.09);
+    transform: translateY(-2px);
+  }
+  .tl-event.milestone .tl-card {
+    border-top: 3px solid var(--gold-accent);
+  }
+
+  /* left-side card: right column empty */
+  .tl-event.left .tl-card  { grid-column: 1; margin-right: 1.5rem; }
+  .tl-event.left .tl-node  { grid-column: 2; }
+  .tl-event.left .tl-empty { grid-column: 3; }
+
+  /* right-side card: left column empty */
+  .tl-event.right .tl-empty { grid-column: 1; }
+  .tl-event.right .tl-node  { grid-column: 2; }
+  .tl-event.right .tl-card  { grid-column: 3; margin-left: 1.5rem; }
+
+  /* connector arrow nub */
+  .tl-event.left .tl-card::after {
+    content: ''; position: absolute;
+    right: -7px; top: 50%; transform: translateY(-50%);
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 7px solid var(--border);
+  }
+  .tl-event.left .tl-card::before {
+    content: ''; position: absolute;
+    right: -6px; top: 50%; transform: translateY(-50%);
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 6px solid #fff;
+    z-index: 1;
+  }
+  .tl-event.right .tl-card::after {
+    content: ''; position: absolute;
+    left: -7px; top: 50%; transform: translateY(-50%);
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 7px solid var(--border);
+  }
+  .tl-event.right .tl-card::before {
+    content: ''; position: absolute;
+    left: -6px; top: 50%; transform: translateY(-50%);
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 6px solid #fff;
+    z-index: 1;
+  }
+  .tl-event.milestone.right .tl-card::before { border-right-color: #fff; }
+
+  .tl-card-category {
+    font-family: 'DM Mono', monospace; font-size: 0.65rem;
+    color: var(--muted); letter-spacing: 0.15em; text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  .tl-card h3 {
+    font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 500;
+    color: var(--navy); line-height: 1.3; margin-bottom: 0.5rem;
+  }
+  .tl-card p {
+    font-size: 0.85rem; color: #555; line-height: 1.65; font-weight: 300;
+  }
+  .tl-card .tl-tag {
+    display: inline-block; margin-top: 0.8rem;
+    font-family: 'DM Mono', monospace; font-size: 0.65rem;
+    color: var(--navy); border: 1px solid rgba(12,27,51,0.25);
+    padding: 0.2rem 0.55rem; border-radius: 2px; letter-spacing: 0.05em;
+  }
+
+  /* ── QUOTE BLOCK ── */
+  .tl-quote-block {
+    background: var(--navy);
+    border-radius: 4px;
+    padding: 3rem 3.5rem;
+    margin: 4rem 0;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  .tl-quote-block::before {
+    content: '\201C';
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 8rem; line-height: 1;
+    color: rgba(255,248,219,0.08);
+    position: absolute; top: -1rem; left: 2rem;
+    pointer-events: none;
+  }
+  .tl-quote-block blockquote {
+    font-family: 'Cormorant Garamond', serif; font-size: 1.45rem; font-weight: 300;
+    font-style: italic; color: rgba(255,255,255,0.85); line-height: 1.6;
+    max-width: 680px; margin: 0 auto 1.5rem;
+  }
+  .tl-quote-attr {
+    font-family: 'DM Mono', monospace; font-size: 0.72rem;
+    color: var(--gold); letter-spacing: 0.12em;
+  }
+
+  /* ── PRESENT ERA ── */
+  .tl-present {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--navy);
+    border-radius: 4px;
+    padding: 2.5rem 3rem;
+    margin: 3rem 0 0;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;
+  }
+  .tl-present-left h3 {
+    font-family: 'Cormorant Garamond', serif; font-size: 1.6rem;
+    color: var(--navy); margin-bottom: 0.75rem;
+  }
+  .tl-present-left p {
+    font-size: 0.9rem; color: #555; line-height: 1.7; font-weight: 300;
+  }
+  .tl-present-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .tl-ps-item { background: #fff; padding: 1rem 1.2rem; border-radius: 3px; border-left: 3px solid var(--gold-accent); }
+  .tl-ps-n {
+    font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 300;
+    color: var(--navy); line-height: 1; margin-bottom: 0.25rem;
+  }
+  .tl-ps-l {
+    font-family: 'DM Mono', monospace; font-size: 0.65rem;
+    color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; line-height: 1.4;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--navy); padding: 3rem 2rem;
+    text-align: center; border-top: 1px solid rgba(255,248,219,0.2);
+  }
+  footer p { font-size: 0.82rem; color: rgba(255,255,255,0.35); }
+  footer a { color: var(--gold); text-decoration: none; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    nav ul { display: none; }
+    nav ul.open { display: flex; flex-direction: column; position: absolute; top: 60px; left: 0; right: 0; background: rgba(12,27,51,0.98); padding: 1rem 2rem 1.5rem; gap: 1rem; }
+    .hamburger { display: flex; }
+
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+
+    /* collapse timeline to single column on mobile */
+    .timeline-track::before { left: 28px; }
+    .tl-event {
+      grid-template-columns: 56px 1fr;
+      grid-template-rows: auto;
+    }
+    .tl-event.left .tl-card,
+    .tl-event.right .tl-card { grid-column: 2; grid-row: 1; margin: 0.5rem 0 0.5rem 0.75rem; }
+    .tl-event.left .tl-node,
+    .tl-event.right .tl-node { grid-column: 1; grid-row: 1; justify-content: flex-start; padding-top: 1.5rem; align-items: center; }
+    .tl-event.left .tl-empty,
+    .tl-event.right .tl-empty { display: none; }
+    .tl-year { font-size: 0.65rem; }
+    .tl-node { flex-direction: row; gap: 0.5rem; }
+    .tl-dot { margin-bottom: 0; }
+
+    .tl-event.left .tl-card::after,
+    .tl-event.left .tl-card::before,
+    .tl-event.right .tl-card::after,
+    .tl-event.right .tl-card::before { display: none; }
+
+    .tl-quote-block { padding: 2rem 1.5rem; }
+    .tl-quote-block blockquote { font-size: 1.2rem; }
+    .tl-present { grid-template-columns: 1fr; padding: 1.8rem; }
+    .tl-present-stats { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 480px) {
+    .stats-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-brand">Matthew D. McHugh</a>
+  <ul id="nav-links">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#research">Research</a></li>
+    <li><a href="index.html#publications">Publications</a></li>
+    <li><a href="https://www.nursing.upenn.edu/chopr/" target="_blank">CHOPR</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">
+      <a href="index.html">Matthew D. McHugh</a>
+      <span class="sep">—</span>
+      <a href="https://www.nursing.upenn.edu/chopr/" target="_blank">CHOPR</a>
+      <span class="sep">/</span>
+      History
+    </p>
+    <h1>CHOPR:<br>Thirty-Five Years<br>of Impact</h1>
+    <p class="hero-sub">
+      The Center for Health Outcomes and Policy Research was founded in 1989 by Dr. Linda H. Aiken to build an evidence base connecting nurse staffing, care environments, and patient outcomes — and to translate that science into policy.
+    </p>
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats">
+  <div class="stats-grid">
+    <div class="stat-item">
+      <div class="stat-number">85+</div>
+      <div class="stat-label">Doctoral Trainees<br>Since 1997</div>
+      <div class="stat-detail">90% at research-intensive institutions<br>80% successfully competing for funding</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">400+</div>
+      <div class="stat-label">Published Papers</div>
+      <div class="stat-detail">Including <em>Health Affairs</em> top influential papers<br>& AcademyHealth Article of the Year</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">$100M+</div>
+      <div class="stat-label">Research Funding<br>150+ Projects</div>
+      <div class="stat-detail">NINR · AHRQ · NIMHD · ANF · RWJF<br>& international funders</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">60+</div>
+      <div class="stat-label">Senior Fellows</div>
+      <div class="stat-detail">Faculty, alumni & research partners<br>across six continents</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">50+</div>
+      <div class="stat-label">Major Research Prizes</div>
+      <div class="stat-detail">Christiane Reimann Prize<br>Gustav O. Lienhard Award & more</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">30</div>
+      <div class="stat-label">Partnering Countries<br>Six Continents</div>
+      <div class="stat-detail">Africa · The Americas · Asia<br>Australia · Oceania · Europe</div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section id="timeline">
+  <div class="timeline-inner">
+    <div class="section-label">Since 1988</div>
+    <h2 class="timeline-heading">A History of Discovery</h2>
+    <p class="timeline-intro">
+      From a single faculty appointment to a global research enterprise, this timeline traces the pivotal moments that shaped CHOPR's mission and amplified its influence on health policy worldwide.
+    </p>
+
+    <div class="timeline-track" id="timeline-track">
+
+      <!-- 1988 -->
+      <div class="tl-event left milestone">
+        <div class="tl-card">
+          <div class="tl-card-category">Founding</div>
+          <h3>Linda Aiken Joins Penn as Trustee Professor</h3>
+          <p>Dr. Linda H. Aiken was appointed as a University of Pennsylvania Trustee Professor — one of the institution's highest honors — bringing with her a bold vision for health services research centered on nursing and patient outcomes.</p>
+          <span class="tl-tag">Penn Nursing</span>
+        </div>
+        <div class="tl-node">
+          <div class="tl-dot"></div>
+          <div class="tl-year">1988</div>
+        </div>
+        <div class="tl-empty"></div>
+      </div>
+
+      <!-- 1989 -->
+      <div class="tl-event right milestone">
+        <div class="tl-empty"></div>
+        <div class="tl-node">
+          <div class="tl-dot"></div>
+          <div class="tl-year">1989</div>
+        </div>
+        <div class="tl-card">
+          <div class="tl-card-category">Founding</div>
+          <h3>CHOPR Is Established</h3>
+          <p>Dr. Aiken formally established the Center for Health Outcomes and Policy Research to explore organizational effectiveness in health care with the potential to affect patient outcomes — a mission that would define the field.</p>
+          <span class="tl-tag">Center Launch</span>
+        </div>
+      </div>
+
+      <!-- 1993 -->
+      <div class="tl-event left">
+        <div class="tl-card">
+          <div class="tl-card-category">Policy</div>
+          <h3>Aiken Named Co-Chair of the Health Care Workforce Subcommittee</h3>
+          <p>During the Clinton Administration's national health care reform effort, Dr. Aiken was appointed co-chair of the Health Care Workforce Subcommittee, positioning CHOPR research at the center of federal health policy debate.</p>
+          <span class="tl-tag">Federal Policy</span>
+        </div>
+        <div class="tl-node">
+          <div class="tl-dot"></div>
+          <div class="tl-year">1993</div>
+        </div>
+        <div class="tl-empty"></div>
+      </div>
+
+      <!-- 1997 -->
+      <div class="tl-event right milestone">
+        <div class="tl-empty"></div>
+        <div class="tl-node">
+          <div class="tl-dot"></div>
+          <div class="tl-year">1997</div>
+        </div>
+        <div class="tl-card">
+          <div class="tl-card-category">Training</div>
+          <h3>NIH T32 Training Grant Established</h3>
+          <p>The National Institutes of Health funded CHOPR's predoctoral training program in nursing outcomes research — initiating a pipeline that would produce more than 85 doctoral-trained scholars, the vast majority of whom went on to research-intensive careers.</p>
+          <span class="tl-tag">NIH · NINR</span>
+        </div>
+      </div>
+
+      <!-- 1999 -->
+      <div class="tl-event left">
+        <div class="tl-card">
+          <div class="tl-card-category">Landmark Report</div>
+          <h3>IOM Releases "To Err is Human"</h3>
+          <p>The Institute of Medicine's landmark report on preventable medical errors galvanized national attention on patient safety and hospital care quality — validating CHOPR's long-standing focus on the organizational drivers of patient outcomes and amplifying demand for its research.</p>
+          <span class="tl-tag">Patient Safety</span>
+        </div>
+        <div class="tl-node">
+          <div class="tl-dot"></div>
+          <div class="tl-year">1999</div>
+        </div>
+        <div class="tl-empty"></div>
+      </div>
+
+      <!-- 2002 -->
+      <div class="tl-event right milestone">
+        <div class="tl-empty"></div>
+        <div class="tl-node">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2002</div>
+        </div>
+        <div class="tl-card">
+          <div class="tl-card-category">Science → Policy</div>
+          <h3>Landmark JAMA Study Links Nurse Staffing to Patient Mortality</h3>
+          <p>Aiken and CHOPR colleagues published a seminal study in <em>JAMA</em> demonstrating that each additional patient per nurse was associated with a 7% increase in the likelihood of patient death — among the most influential papers in health services research and a direct catalyst for staffing legislation.</p>
+          <span class="tl-tag">JAMA · Nurse Staffing</span>
+        </div>
+      </div>
+
+      <!-- 2004 -->
+      <div class="tl-event left">
+        <div class="tl-card">
+          <div class="tl-card-category">Work Environment</div>
+          <h3>Magnet Hospital Research Advances Work Environment Science</h3>
+          <p>CHOPR published influential studies establishing the relationship between the professional practice environment — including nurse autonomy, physician-nurse relations, and managerial support — and both nurse outcomes and patient outcomes, informing the Magnet Recognition Program's evidence base.</p>
+          <span class="tl-tag">Magnet · Work Environment</span>
+        </div>
+        <div class="tl-node">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2004</div>
+        </div>
+        <div class="tl-empty"></div>
+      </div>
+
+      <!-- 2005 -->
+      <div class="tl-event right">
+        <div class="tl-empty"></div>
+        <div class="tl-node">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2005</div>
+        </div>
+        <div class="tl-card">
+          <div class="tl-card-category">International</div>
+          <h3>CHOPR-Led Meeting Launches Multicountry Hospital Study</h3>
+          <p>A CHOPR-convened meeting of international collaborators at Bellagio, Italy launched the framework for a landmark multicountry study of hospital nurse staffing and patient outcomes — an effort that would eventually span more than 30 countries and reshape global nursing policy debates.</p>
+          <span class="tl-tag">Global Research</span>
+        </div>
+      </div>
+
+      <!-- 2009 -->
+      <div class="tl-event left milestone">
+        <div class="tl-card">
+          <div class="tl-card-category">International</div>
+          <h3>RN4CAST Project Funded by the European Commission</h3>
+          <p>The Registered Nurse Forecasting (RN4CAST) study, co-led by CHOPR, was funded by the European Commission's 7th Framework Programme. Spanning nine European countries, it produced definitive evidence on how nurse staffing and education levels affect patient mortality.</p>
+          <span class="tl-tag">EU · RN4CAST</span>
+        </div>
+        <div class="tl-node">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2009</div>
+        </div>
+        <div class="tl-empty"></div>
+      </div>
+
+      <!-- 2014 -->
+      <div class="tl-event right milestone">
+        <div class="tl-empty"></div>
+        <div class="tl-node">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2014</div>
+        </div>
+        <div class="tl-card">
+          <div class="tl-card-category">Science → Policy</div>
+          <h3>RN4CAST Lancet Study Redefines Global Nursing Policy</h3>
+          <p>The RN4CAST consortium published findings in <em>The Lancet</em> demonstrating that each additional patient per nurse and a 10% increase in bachelor's-educated nurses were each independently associated with reduced patient mortality — compelling evidence that influenced workforce policy across Europe and beyond.</p>
+          <span class="tl-tag">The Lancet · RN4CAST</span>
+        </div>
+      </div>
+
+      <!-- 2016 -->
+      <div class="tl-event left">
+        <div class="tl-card">
+          <div class="tl-card-category">Leadership</div>
+          <h3>Matthew McHugh Named Director of CHOPR</h3>
+          <p>Dr. Matthew D. McHugh, a CHOPR-trained scholar, became director of the center, continuing its tradition of rigorous policy-relevant research on nurse staffing, hospital quality, and health equity — while expanding its domestic and international research portfolio.</p>
+          <span class="tl-tag">CHOPR Leadership</span>
+        </div>
+        <div class="tl-node">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2016</div>
+        </div>
+        <div class="tl-empty"></div>
+      </div>
+
+      <!-- 2020 -->
+      <div class="tl-event right">
+        <div class="tl-empty"></div>
+        <div class="tl-node">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2020</div>
+        </div>
+        <div class="tl-card">
+          <div class="tl-card-category">Crisis &amp; Response</div>
+          <h3>CHOPR Research Shapes COVID-19 Nursing Policy Response</h3>
+          <p>As the COVID-19 pandemic exposed longstanding vulnerabilities in hospital nurse staffing and work environments, CHOPR researchers published rapidly on nurse burnout, staffing ratios, and workforce collapse — informing emergency policy responses and the national conversation on health system resilience.</p>
+          <span class="tl-tag">COVID-19 · Workforce</span>
+        </div>
+      </div>
+
+      <!-- 2022 -->
+      <div class="tl-event left milestone">
+        <div class="tl-card">
+          <div class="tl-card-category">Milestone</div>
+          <h3>Magnet4Europe Initiative Launches</h3>
+          <p>CHOPR launched the Magnet4Europe initiative — a cluster-randomized trial bringing the Magnet hospital model to European health systems — to improve nurse working conditions and patient outcomes across the continent, further expanding CHOPR's international footprint.</p>
+          <span class="tl-tag">Magnet4Europe</span>
+        </div>
+        <div class="tl-node">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2022</div>
+        </div>
+        <div class="tl-empty"></div>
+      </div>
+
+    </div><!-- /timeline-track -->
+
+    <!-- Quote -->
+    <div class="tl-quote-block">
+      <blockquote>
+        "Our policy research agenda is motivated by a commitment to improving health care outcomes by building an evidence base for health service management and providing direction for national policymakers."
+      </blockquote>
+      <div class="tl-quote-attr">— Linda H. Aiken, PhD, RN, FAAN · CHOPR Founding Director</div>
+    </div>
+
+    <!-- Present -->
+    <div class="tl-present">
+      <div class="tl-present-left">
+        <h3>CHOPR Today</h3>
+        <p>
+          Now entering its fourth decade, CHOPR continues to set the global research agenda on nurse staffing, work environments, health equity, and patient outcomes — training the next generation of health services researchers and translating evidence into actionable policy.
+        </p>
+        <p style="margin-top:0.8rem;">
+          <a href="https://www.nursing.upenn.edu/chopr/" target="_blank" style="color:var(--navy); font-size:0.85rem; font-weight:500; text-decoration:underline; text-underline-offset:3px;">Visit the CHOPR website →</a>
+        </p>
+      </div>
+      <div class="tl-present-stats">
+        <div class="tl-ps-item">
+          <div class="tl-ps-n">35+</div>
+          <div class="tl-ps-l">Years of Research</div>
+        </div>
+        <div class="tl-ps-item">
+          <div class="tl-ps-n">30</div>
+          <div class="tl-ps-l">Partner Countries</div>
+        </div>
+        <div class="tl-ps-item">
+          <div class="tl-ps-n">$100M+</div>
+          <div class="tl-ps-l">Research Funded</div>
+        </div>
+        <div class="tl-ps-item">
+          <div class="tl-ps-n">400+</div>
+          <div class="tl-ps-l">Publications</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>
+    <a href="index.html">Matthew D. McHugh</a> &nbsp;·&nbsp;
+    University of Pennsylvania School of Nursing &nbsp;·&nbsp;
+    <a href="mailto:mchughm@nursing.upenn.edu">mchughm@nursing.upenn.edu</a>
+  </p>
+  <p style="margin-top:0.5rem;">
+    &copy; <span id="yr"></span> Matthew D. McHugh. All rights reserved.
+  </p>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // hamburger
+  const ham = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+  ham.addEventListener('click', () => navLinks.classList.toggle('open'));
+  ham.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') navLinks.classList.toggle('open'); });
+
+  // scroll-reveal for timeline events
+  const events = document.querySelectorAll('.tl-event');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  events.forEach(e => io.observe(e));
+</script>
+</body>
+</html>
