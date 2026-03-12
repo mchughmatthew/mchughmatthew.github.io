@@ -1,607 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Matthew D. McHugh, PhD, JD, MPH, RN, FAAN</title>
-<meta name="description" content="Matthew D. McHugh is Professor and Independence Chair at the University of Pennsylvania School of Nursing, and Director of CHOPR. His research focuses on nurse staffing, health policy, burnout, and patient outcomes.">
-<link rel="icon" href="https://www.nursing.upenn.edu/favicon.ico">
-<!-- Open Graph / Social -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://mchughmatthew.github.io/">
-<meta property="og:title" content="Matthew D. McHugh, PhD, JD, MPH, RN, FAAN">
-<meta property="og:description" content="Professor & Independence Chair, University of Pennsylvania School of Nursing. Director, Center for Health Outcomes and Policy Research (CHOPR). Research on nurse staffing, health policy, and patient outcomes.">
-<meta property="og:image" content="https://mchughmatthew.github.io/images/og-preview.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Matthew D. McHugh, PhD, JD, MPH, RN, FAAN">
-<meta name="twitter:description" content="Professor & Independence Chair, Penn Nursing. Director, CHOPR. Research on nurse staffing, health policy, and patient outcomes.">
-<meta name="twitter:image" content="https://mchughmatthew.github.io/images/og-preview.jpg">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5LNP9W9B62"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-5LNP9W9B62');
-</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --navy: #0c1b33;
-    --navy-mid: #162645;
-    --navy-light: #1e3560;
-    --gold: #fff8db;
-    --gold-light: #fff8db;
-    --cream: #f8f4ef;
-    --warm-white: #fdfaf6;
-    --text: #1a1a2e;
-    --muted: #6b7280;
-    --border: #e5dfd6;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-  body { font-family: 'DM Sans', sans-serif; color: var(--text); background: var(--warm-white); line-height: 1.6; }
-
-  nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-    background: rgba(12,27,51,0.97); backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255,248,219,0.2);
-    padding: 0 2rem; height: 60px;
-    display: flex; align-items: center; justify-content: space-between;
-  }
-  nav .nav-brand {
-    font-family: 'Cormorant Garamond', serif; font-weight: 500;
-    font-size: 1.1rem; color: var(--gold-light); letter-spacing: 0.03em; text-decoration: none;
-  }
-  nav ul { list-style: none; display: flex; gap: 2rem; align-items: center; }
-  nav ul a {
-    color: rgba(255,255,255,0.75); text-decoration: none;
-    font-size: 0.85rem; font-weight: 400; letter-spacing: 0.05em;
-    text-transform: uppercase; transition: color 0.2s;
-  }
-  nav ul a:hover { color: var(--gold-light); }
-
-  #hero {
-    background: var(--navy); padding: 120px 2rem 80px;
-    position: relative; overflow: hidden;
-  }
-  #hero::before {
-    content: ''; position: absolute; top: -50%; right: -20%;
-    width: 600px; height: 600px;
-    background: radial-gradient(circle, rgba(255,248,219,0.08) 0%, transparent 70%);
-    pointer-events: none;
-  }
-  #hero::after {
-    content: ''; position: absolute; bottom: 0; left: 0; right: 0;
-    height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent);
-  }
-  .hero-inner { max-width: 860px; margin: 0 auto; }
-  .hero-eyebrow {
-    font-family: 'DM Mono', monospace; font-size: 0.75rem;
-    color: var(--gold); letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 1.5rem;
-  }
-  #hero h1 {
-    font-family: 'Cormorant Garamond', serif; font-weight: 300;
-    font-size: clamp(2.8rem, 6vw, 5rem); color: #fff;
-    line-height: 1.05; letter-spacing: -0.01em; margin-bottom: 0.4rem;
-  }
-  .hero-credentials {
-    font-family: 'Cormorant Garamond', serif; font-size: 1.25rem;
-    color: var(--gold-light); font-weight: 400; letter-spacing: 0.05em; margin-bottom: 1.5rem;
-  }
-  .hero-title {
-    font-size: 1rem; color: rgba(255,255,255,0.65); font-weight: 300;
-    line-height: 1.7; max-width: 560px; margin-bottom: 2rem;
-  }
-  .hero-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem; }
-  .tag {
-    font-family: 'DM Mono', monospace; font-size: 0.72rem;
-    color: var(--gold); border: 1px solid rgba(255,248,219,0.4);
-    padding: 0.3rem 0.7rem; border-radius: 2px; letter-spacing: 0.05em;
-    cursor: pointer; transition: background 0.15s, color 0.15s;
-  }
-  .tag:hover { background: rgba(255,248,219,0.12); color: #fff; }
-  a.tag { text-decoration: none; }
-  .hero-links { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; }
-  .hero-links a {
-    display: inline-flex; align-items: center; gap: 0.4rem;
-    color: rgba(255,255,255,0.6); text-decoration: none;
-    font-size: 0.82rem; border: 1px solid rgba(255,255,255,0.15);
-    padding: 0.45rem 1rem; border-radius: 3px;
-    transition: all 0.2s; letter-spacing: 0.03em;
-  }
-  .hero-links a:hover { border-color: var(--gold); color: var(--gold-light); background: rgba(255,248,219,0.06); }
-  .hero-links a.cv-btn {
-    background: var(--gold); color: var(--navy); border-color: var(--gold); font-weight: 700;
-  }
-  .hero-links a.cv-btn:hover { background: var(--gold-light); border-color: var(--gold-light); color: var(--navy); }
-
-  section { padding: 80px 2rem; }
-  .section-inner { max-width: 900px; margin: 0 auto; }
-  .section-label {
-    font-family: 'DM Mono', monospace; font-size: 0.7rem;
-    color: var(--navy); letter-spacing: 0.2em; text-transform: uppercase;
-    margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.8rem;
-  }
-  .section-label::after {
-    content: ''; flex: 1; max-width: 60px; height: 1px; background: var(--navy); opacity: 0.4;
-  }
-  h2 {
-    font-family: 'Cormorant Garamond', serif; font-weight: 400;
-    font-size: 2.5rem; color: var(--navy); margin-bottom: 2rem; line-height: 1.15;
-  }
-
-  #about { background: var(--warm-white); }
-  .about-grid { display: grid; grid-template-columns: 1fr 320px; gap: 4rem; align-items: start; }
-  .about-bio p { font-size: 1.05rem; color: #333; line-height: 1.8; margin-bottom: 1.2rem; font-weight: 300; }
-  .about-bio strong { color: var(--navy); font-weight: 500; }
-  .hero-chopr-link { color: inherit; text-decoration: underline; text-underline-offset: 3px; opacity: 0.85; transition: color 0.15s, opacity 0.15s; }
-  .hero-chopr-link:hover { color: var(--gold); opacity: 1; }
-  .prose-link { color: var(--navy); text-decoration: underline; text-underline-offset: 3px; transition: color 0.15s; }
-  .prose-link:hover { color: #1a6fd4; }
-  .sidebar-card { background: var(--navy); padding: 1.8rem; border-radius: 4px; }
-  .sidebar-sticky { position: sticky; top: 80px; display: flex; flex-direction: column; gap: 1.2rem; }
-  .sidebar-card h3 {
-    font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 500;
-    color: var(--gold-light); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.2rem;
-  }
-  .edu-item { margin-bottom: 1.2rem; padding-bottom: 1.2rem; border-bottom: 1px solid rgba(255,255,255,0.07); }
-  .edu-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-  .edu-degree { font-size: 0.8rem; font-weight: 600; color: rgba(255,255,255,0.9); margin-bottom: 0.1rem; }
-  .edu-school { font-size: 0.78rem; color: rgba(255,255,255,0.45); }
-  .edu-degree a { transition: color 0.2s; }
-  .edu-degree a:hover { color: var(--gold) !important; }
-
-  .award-item {
-    background: #fff; padding: 1.2rem 1.4rem;
-    border-left: 3px solid var(--gold); border-radius: 0 4px 4px 0;
-  }
-  .award-name { font-size: 0.88rem; font-weight: 500; color: var(--navy); margin-bottom: 0.25rem; }
-  .award-year { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--muted); }
-
-  #research { background: var(--warm-white); }
-  .research-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem; }
-  .research-card { background: var(--cream); padding: 1.8rem; border-radius: 4px; border-top: 3px solid var(--navy); text-decoration: none; display: block; transition: transform 0.15s, box-shadow 0.15s; cursor: pointer; }
-  .research-card:hover { transform: translateY(-3px); box-shadow: 0 6px 24px rgba(12,27,51,0.10); }
-  .research-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; color: var(--navy); margin-bottom: 0.6rem; }
-  .research-card p { font-size: 0.9rem; color: #555; line-height: 1.65; font-weight: 300; }
-  .research-card .card-arrow { font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--navy); opacity: 0; margin-top: 1rem; display: block; transition: opacity 0.15s; letter-spacing: 0.05em; }
-  .research-card:hover .card-arrow { opacity: 1; }
-
-  #publications { background: var(--warm-white); padding: 80px 2rem; }
-  .pub-controls { display: flex; gap: 1rem; margin-bottom: 2.5rem; flex-wrap: wrap; align-items: center; }
-  #pub-search {
-    flex: 1; min-width: 280px; padding: 0.7rem 1.1rem;
-    border: 1.5px solid var(--border); border-radius: 4px;
-    font-family: 'DM Sans', sans-serif; font-size: 0.9rem;
-    background: #fff; color: var(--text); transition: border-color 0.2s; outline: none;
-  }
-  #pub-search:focus { border-color: var(--navy); }
-  #pub-search::placeholder { color: var(--muted); }
-  .pub-stats { font-family: 'DM Mono', monospace; font-size: 0.75rem; color: var(--muted); white-space: nowrap; }
-  .year-group { margin-bottom: 3rem; }
-  .year-header {
-    font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 300;
-    color: var(--navy); border-bottom: 1px solid var(--border);
-    padding-bottom: 0.5rem; margin-bottom: 1.2rem;
-    display: flex; align-items: baseline; gap: 0.8rem;
-  }
-  .year-count { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--muted); font-weight: 400; }
-  .pub-item { padding: 1.1rem 0; border-bottom: 1px solid rgba(229,223,214,0.5); }
-  .pub-item:last-child { border-bottom: none; }
-  .pub-title { font-size: 0.95rem; font-weight: 500; color: var(--navy); line-height: 1.45; margin-bottom: 0.3rem; }
-  .pub-title a { color: var(--navy); text-decoration: none; transition: color 0.15s; }
-  .pub-title a:hover { color: #6b7280 !important; text-decoration: underline; text-underline-offset: 3px; }
-  .pub-authors { font-size: 0.82rem; color: var(--muted); margin-bottom: 0.25rem; font-weight: 300; line-height: 1.4; }
-  .pub-journal { font-size: 0.82rem; color: var(--muted); font-style: italic; margin-bottom: 0.4rem; }
-  .pub-actions { display: flex; align-items: center; gap: 0.7rem; flex-wrap: wrap; }
-  .btn-abstract {
-    font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--navy);
-    border: 1px solid rgba(12,27,51,0.35); background: none;
-    padding: 0.2rem 0.6rem; border-radius: 2px; cursor: pointer; letter-spacing: 0.05em; transition: all 0.15s;
-  }
-  .btn-abstract:hover { background: rgba(12,27,51,0.08); }
-  .btn-doi { font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--muted); text-decoration: none; letter-spacing: 0.03em; transition: color 0.15s; }
-  .btn-doi:hover { color: #6b7280; }
-  .btn-pdf { font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--navy); text-decoration: none; letter-spacing: 0.03em; transition: all 0.15s; border: 1px solid rgba(12,27,51,0.35); padding: 0.2rem 0.6rem; border-radius: 2px; }
-  .btn-pdf:hover { background: var(--navy); color: var(--gold); }
-  .abstract-text {
-    display: none; margin-top: 0.8rem; padding: 1rem 1.2rem;
-    background: var(--cream); border-left: 3px solid var(--gold);
-    border-radius: 0 4px 4px 0; font-size: 0.85rem; line-height: 1.7; color: #444; font-weight: 300;
-  }
-  .abstract-text.open { display: block; }
-  .no-results { text-align: center; padding: 3rem; color: var(--muted); font-style: italic; }
-  mark { background: rgba(255,248,219,0.2); color: inherit; padding: 0 1px; border-radius: 2px; }
-
-  footer { background: var(--navy); padding: 3rem 2rem; text-align: center; border-top: 1px solid rgba(255,248,219,0.2); }
-  footer p { font-size: 0.82rem; color: rgba(255,255,255,0.35); }
-  footer a { color: var(--gold); text-decoration: none; }
-
-  /* ── Hamburger nav ──────────────────────────────────── */
-  .nav-hamburger {
-    display: none; flex-direction: column; justify-content: center;
-    gap: 5px; background: none; border: none; cursor: pointer;
-    padding: 4px; z-index: 1100;
-  }
-  .nav-hamburger span {
-    display: block; width: 22px; height: 2px;
-    background: rgba(255,255,255,0.8); border-radius: 2px;
-    transition: transform 0.25s, opacity 0.25s;
-  }
-  .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-  .nav-hamburger.open span:nth-child(2) { opacity: 0; }
-  .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
-  @media (max-width: 768px) {
-    .about-grid { grid-template-columns: 1fr; }
-    .research-grid { grid-template-columns: 1fr; }
-    #hero h1 { font-size: 2.5rem; }
-    .nav-hamburger { display: flex; }
-    nav ul {
-      display: none; flex-direction: column; gap: 0;
-      position: fixed; top: 60px; left: 0; right: 0;
-      background: rgba(12,27,51,0.99); backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(255,248,219,0.15);
-      padding: 0.5rem 0 1rem; z-index: 999;
-    }
-    nav ul.open { display: flex; }
-    nav ul li { width: 100%; }
-    nav ul a {
-      display: block; padding: 0.75rem 1.5rem;
-      font-size: 0.85rem; letter-spacing: 0.08em;
-      border-bottom: 1px solid rgba(255,255,255,0.05);
-    }
-    nav ul li:last-child a {
-      margin: 0.75rem 1.5rem 0;
-      display: inline-block; width: auto;
-    }
-  }
-
-  /* ── Contact ─────────────────────────────────────── */
-  #contact { background: var(--navy); padding: 80px 2rem; }
-  .contact-inner { max-width: 860px; margin: 0 auto; }
-  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 2.5rem; }
-  .contact-block h3 { font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--gold); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1rem; }
-  .contact-block p { font-size: 0.92rem; color: rgba(255,255,255,0.7); line-height: 1.8; margin: 0; }
-  .contact-block a { color: rgba(255,255,255,0.85); text-decoration: none; border-bottom: 1px solid rgba(255,248,219,0.3); transition: color 0.15s, border-color 0.15s; }
-  .contact-block a:hover { color: var(--gold); border-color: var(--gold); }
-  .contact-divider { height: 1px; background: linear-gradient(90deg, transparent, rgba(255,248,219,0.3), transparent); margin: 0; }
-  @media (max-width: 600px) { .contact-grid { grid-template-columns: 1fr; gap: 2rem; } }
-
-  /* ── Projects ───────────────────────────────────────── */
-  #projects { background: var(--cream); }
-  .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem; }
-  .project-card { background: #fff; padding: 1.8rem; border-radius: 4px; border-top: 3px solid var(--navy); text-decoration: none; display: block; transition: transform 0.15s, box-shadow 0.15s; }
-  .project-card:hover { transform: translateY(-3px); box-shadow: 0 6px 24px rgba(12,27,51,0.10); }
-  .project-card .card-tag { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.5rem; display: block; }
-  .project-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; color: var(--navy); margin-bottom: 0.6rem; line-height: 1.3; }
-  .project-card p { font-size: 0.88rem; color: #555; line-height: 1.65; font-weight: 300; }
-  .project-card .card-arrow { font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--navy); opacity: 0; margin-top: 1rem; display: block; transition: opacity 0.15s; letter-spacing: 0.05em; }
-  .project-card:hover .card-arrow { opacity: 1; }
-  @media (max-width: 768px) { .projects-grid { grid-template-columns: 1fr; } }
-</style>
-</head>
-<body>
-
-<nav>
-  <a href="#" class="nav-brand">Matthew D. McHugh</a>
-  <button class="nav-hamburger" id="nav-toggle" aria-label="Toggle navigation">
-    <span></span><span></span><span></span>
-  </button>
-  <ul id="nav-menu">
-    <li><a href="#about">About</a></li>
-    <li><a href="#research">Research</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#publications">Publications</a></li>
-    <li><a href="training.html">Training</a></li>
-    <li><a href="https://www.nursing.upenn.edu/chopr/" target="_blank">CHOPR</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="cv.pdf" download style="font-family:'DM Mono',monospace;font-size:0.72rem;color:var(--navy);background:var(--gold);padding:0.35rem 0.9rem;border-radius:2px;letter-spacing:0.05em;text-transform:uppercase;text-decoration:none;font-weight:500;transition:background 0.15s;">⬇ CV</a></li>
-  </ul>
-</nav>
-
-<section id="hero">
-  <div class="hero-inner">
-    <p class="hero-eyebrow">University of Pennsylvania School of Nursing</p>
-    <h1>Matthew D.<br>McHugh</h1>
-    <p class="hero-credentials">PhD &middot; JD &middot; MPH &middot; RN &middot; FAAN</p>
-    <p class="hero-title">
-      Professor &amp; Independence Chair for Nursing Education<br>
-      Director, <a href="https://www.nursing.upenn.edu/chopr/" target="_blank" class="hero-chopr-link">Center for Health Outcomes and Policy Research</a>
-    </p>
-    <div class="hero-tags">
-      <a href="nursestaffing.html" class="tag">#nursestaffing</a>
-      <a href="burnout.html" class="tag">#burnout</a>
-      <a href="policy.html" class="tag">#policy_evaluation</a>
-      <a href="workenvironment.html" class="tag">#healthyworkenvironment</a>
-    </div>
-    <div class="hero-links">
-      <a href="cv.pdf" download>Download CV</a>
-      <a href="https://www.nursing.upenn.edu/live/profiles/92-matthew-mchugh" target="_blank">Penn Profile</a>
-      <a href="https://www.nursing.upenn.edu/chopr/" target="_blank">CHOPR</a>
-      <a href="https://scholar.google.com/citations?user=5VOnGdMAAAAJ&hl=en" target="_blank">Google Scholar</a>
-      <a href="https://www.linkedin.com/in/matthew-mchugh-phd-jd-mph-rn-73442844/" target="_blank">LinkedIn</a>
-      <a href="https://github.com/mchughmatthew" target="_blank">GitHub</a>
-    </div>
-  </div>
-</section>
-
-<section id="about">
-  <div class="section-inner">
-    <p class="section-label">About</p>
-    <div class="about-grid">
-      <div class="about-bio">
-        <h2>Advancing Nursing Science<br>to Shape Health Policy</h2>
-        <p>Matthew D. McHugh is <strong>Professor and Independence Chair for Nursing Education</strong> at the University of Pennsylvania School of Nursing, where he directs the <strong><a href="https://www.nursing.upenn.edu/chopr/" target="_blank" rel="noopener noreferrer" class="prose-link">Center for Health Outcomes and Policy Research (CHOPR)</a></strong>. He is an elected member of the <strong>National Academy of Medicine</strong>, a Fellow of the American Academy of Nursing, and Senior Fellow at the <strong><a href="https://ldi.upenn.edu/fellows/fellows-directory/matthew-d-mchugh-phd-rn/" target="_blank" rel="noopener noreferrer" class="prose-link">Leonard Davis Institute of Health Economics</a></strong>.</p>
-        <p>The fundamental question underlying Dr. McHugh&rsquo;s program of research is &ldquo;<em>How does nursing influence the achievement of our most important national and international health policy goals?</em>&rdquo; He directs highly visible studies that draw on his expertise in nursing, law, public health, and health services research to evaluate how nursing can be a force for quality, equity, and innovation in health services. His work has directly informed policy discussions at state, national, and international levels, including safe nurse staffing policy in California, Pennsylvania, New York, and Australia.</p>
-        <p>McHugh holds a <strong>PhD in Nursing</strong> from Penn, an <strong>MPH</strong> from Harvard, and a <strong>JD</strong> from Northeastern University School of Law&mdash;bringing disciplinary depth to the intersection of health policy, law, and nursing science. He began his career as a registered nurse and family nurse practitioner, grounding his research in clinical practice.</p>
-      </div>
-      <div>
-        <div class="sidebar-sticky">
-        <div class="sidebar-card">
-          <h3>Education</h3>
-          <div class="edu-item"><div class="edu-degree">JD &middot; Law</div><div class="edu-school">Northeastern University School of Law</div></div>
-          <div class="edu-item"><div class="edu-degree">PhD &middot; Nursing</div><div class="edu-school">University of Pennsylvania</div></div>
-          <div class="edu-item"><div class="edu-degree">MPH &middot; Health Policy &amp; Management</div><div class="edu-school">Harvard University</div></div>
-          <div class="edu-item"><div class="edu-degree">MSN &middot; Family NP / Psych CNS</div><div class="edu-school">University of Pennsylvania</div></div>
-          <div class="edu-item"><div class="edu-degree">ASN/BSN &middot; Nursing</div><div class="edu-school">Gwynedd-Mercy University</div></div>
-        </div>
-        <div class="sidebar-card">
-          <h3>Training Opportunities</h3>
-          <div class="edu-item">
-            <div class="edu-degree"><a href="training.html" style="color:rgba(255,255,255,0.9);text-decoration:underline;text-underline-offset:3px;">Pre/Postdoctoral Fellowships</a></div>
-            <div class="edu-school">Dr. McHugh leads the NINR-funded T32 Training Program &ldquo;Advanced Training in Nursing Outcomes Research.&rdquo;</div>
-          </div>
-          <div class="edu-item">
-            <div class="edu-degree"><a href="https://www.nursing.upenn.edu/nursing-and-healthcare-management-coordinated-dual-degree/" target="_blank" style="color:rgba(255,255,255,0.9);text-decoration:underline;text-underline-offset:3px;">Nursing and Healthcare Management</a></div>
-            <div class="edu-school">Dr. McHugh is faculty director of the Nursing and Health Care Management Coordinated Dual Degree Program, Penn Nursing and the Wharton School.</div>
-          </div>
-        </div>
-        </div> <!-- end sidebar-sticky -->
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="research">
-  <div class="section-inner">
-    <p class="section-label">Center for Health Outcomes and Policy Research</p>
-    <h2>Research Focus</h2>
-    <p style="font-size:1rem; color:#555; font-weight:300; max-width:680px; line-height:1.75; margin-bottom:2.5rem;">
-      CHOPR is a multidisciplinary research center at Penn Nursing dedicated to understanding how features of nursing&mdash;staffing, work environments, and education&mdash;shape patient outcomes and health policy.
-      <a href="https://www.nursing.upenn.edu/chopr/" style="color:var(--navy);" target="_blank">Visit CHOPR &rarr;</a>
-      &nbsp;&nbsp;
-      <a href="chopr_history.html" style="color:var(--muted);">CHOPR History &rarr;</a>
-    </p>
-    <div class="research-grid">
-      <a href="nursestaffing.html" class="research-card"><h3>Nurse Staffing &amp; Policy</h3><p>Evaluating the effects of nurse-to-patient ratio legislation on staffing levels, patient mortality, readmissions, and cost&mdash;with studies in California, Pennsylvania, New York, and Queensland, Australia.</p><span class="card-arrow">Explore research →</span></a>
-      <a href="corporatization.html" class="research-card"><h3>Corporatization in Healthcare</h3><p>Examining how hospital ownership, consolidation, and market pressures shape nursing practice environments, workforce composition, and patient outcomes across health systems.</p><span class="card-arrow">Explore research →</span></a>
-      <a href="burnout.html" class="research-card"><h3>Clinician Burnout</h3><p>Documenting the prevalence, predictors, and consequences of burnout among nurses and clinicians&mdash;and identifying organizational and policy interventions that address its root causes.</p><span class="card-arrow">Explore research →</span></a>
-      <a href="workenvironment.html" class="research-card"><h3>Work Environments</h3><p>Linking organizational conditions&mdash;leadership, staffing, governance, and Magnet Recognition&mdash;to nurse retention, patient safety, and care quality across thousands of healthcare organizations</p><span class="card-arrow">Explore research →</span></a>
-      <a href="healthequity.html" class="research-card"><h3>Health Equity &amp; Disparities</h3><p>Investigating how nursing resources mediate racial and ethnic disparities in surgical outcomes, cardiac arrest survival, readmissions, and care for underserved populations.</p><span class="card-arrow">Explore research →</span></a>
-      <a href="policy.html" class="research-card"><h3>Policy Evaluation &amp; Methods</h3><p>Applying quasi-experimental methods, matched cohort designs, and causal inference to evaluate large-scale health policy interventions including the ACA Graduate Nurse Education Demonstration.</p><span class="card-arrow">Explore research →</span></a>
-    </div>
-  </div>
-</section>
-
-<section id="projects">
-  <div class="section-inner">
-    <p class="section-label">Active Research</p>
-    <h2>Current Projects</h2>
-    <p style="font-size:1rem; color:#555; font-weight:300; max-width:680px; line-height:1.75; margin-bottom:2.5rem;">
-      CHOPR maintains a portfolio of funded multi-site studies examining nurse workforce conditions, clinician well-being, and health policy across the U.S. and internationally.
-    </p>
-    <div class="projects-grid">
-      <a href="aacnhwe.html" class="project-card">
-        <span class="card-tag">Survey · National</span>
-        <h3>AACN-HWE Survey</h3>
-        <p>In collaboration with the American Association of Critical-Care Nurses, a new national survey measuring healthy work environment standards and their relationship to nurse and patient outcomes in critical care settings.</p>
-        <span class="card-arrow">View project →</span>
-      </a>
-      <a href="nurses4all.html" class="project-card">
-        <span class="card-tag">Policy Evaluation · National</span>
-        <h3>Nurses4All</h3>
-        <p>A 10-state study of nurses evaluating the impact of work conditions on nurse and patient outcomes in hospitals, nursing homes, home health, school settings, and primary care.</p>
-        <span class="card-arrow">View project →</span>
-      </a>
-      <a href="nurses4allbc.html" class="project-card">
-        <span class="card-tag">Policy Evaluation · British Columbia</span>
-        <h3>Nurses4All@BC</h3>
-        <p>Evaluating British Columbia's nurse staffing policies and their effects on the nursing workforce and patient outcomes in collaboration with Canadian partners.</p>
-        <span class="card-arrow">View project →</span>
-      </a>
-      <a href="magnet4europe.html" class="project-card">
-        <span class="card-tag">Intervention · EU-Funded</span>
-        <h3>Magnet4Europe Initiative</h3>
-        <p>An EU Commission-funded trial implementing Magnet and Pathway organizational interventions across European hospitals to improve clinician well-being and patient outcomes.</p>
-        <span class="card-arrow">View project →</span>
-      </a>
-      <a href="usmagnets.html" class="project-card">
-        <span class="card-tag">Survey · National</span>
-        <h3>U.S. Clinician Wellbeing Study</h3>
-        <p>A large-scale evaluation of mental health and wellbeing among U.S. hospital nurses and physicians.</p>
-        <span class="card-arrow">View project →</span>
-      </a>
-      <a href="rn4cast.html" class="project-card">
-        <span class="card-tag">Multi-Country · International</span>
-        <h3>RN4CAST International Studies</h3>
-        <p>A landmark multinational study across Europe, Africa, Australia, and the Americas linking nurse staffing and education to patient mortality and quality of care.</p>
-        <span class="card-arrow">View project →</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section id="publications">
-  <div class="section-inner">
-    <p class="section-label">Peer-Reviewed Publications</p>
-    <h2>Publications</h2>
-    <div class="pub-controls">
-      <input type="text" id="pub-search" placeholder="Search by title, author, or journal&hellip;" oninput="filterPubs()">
-      <span class="pub-stats" id="pub-stats">160 publications</span>
-    </div>
-    <div id="pub-list"></div>
-  </div>
-</section>
-
-<div class="contact-divider"></div>
-
-<section id="contact">
-  <div class="contact-inner">
-    <p class="section-label" style="color:var(--gold);">Contact</p>
-    <div class="contact-grid">
-      <div class="contact-block">
-        <h3>Office</h3>
-        <p>
-          University of Pennsylvania<br>
-          School of Nursing<br>
-          418 Curie Boulevard<br>
-          Philadelphia, PA 19104
-        </p>
-      </div>
-      <div class="contact-block">
-        <h3>Get in Touch</h3>
-        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.65rem;">
-          <li><a href="mailto:mchughm@nursing.upenn.edu">mchughm@nursing.upenn.edu</a></li>
-          <li><a href="https://www.nursing.upenn.edu/chopr/" target="_blank">Center for Health Outcomes and Policy Research (CHOPR)</a></li>
-          <li><a href="https://www.nursing.upenn.edu/" target="_blank">Penn Nursing</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <p>Matthew D. McHugh &middot; University of Pennsylvania School of Nursing &middot; <a href="mailto:mchughm@nursing.upenn.edu">mchughm@nursing.upenn.edu</a></p>
-</footer>
-
-<script>
-let PUBS = [];
-
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Matthew D. McHugh, PhD, JD, MPH, RN, FAAN</title> <meta name="description" content="Matthew D. McHugh is Professor and Independence Chair at the University of Pennsylvania School of Nursing, and Director of CHOPR. His research focuses on nurse staffing, health policy, burnout, and patient outcomes."> <link rel="icon" href="https://www.nursing.upenn.edu/favicon.ico"> <!-- Open Graph / Social --> <meta property="og:type" content="website"> <meta property="og:url" content="https://mchughmatthew.github.io/"> <meta property="og:title" content="Matthew D. McHugh, PhD, JD, MPH, RN, FAAN"> <meta property="og:description" content="Professor & Independence Chair, University of Pennsylvania School of Nursing. Director, Center for Health Outcomes and Policy Research (CHOPR). Research on nurse staffing, health policy, and patient outcomes."> <meta property="og:image" content="https://mchughmatthew.github.io/images/og-preview.jpg"> <meta name="twitter:card" content="summary_large_image"> <meta name="twitter:title" content="Matthew D. McHugh, PhD, JD, MPH, RN, FAAN"> <meta name="twitter:description" content="Professor & Independence Chair, Penn Nursing. Director, CHOPR. Research on nurse staffing, health policy, and patient outcomes."> <meta name="twitter:image" content="https://mchughmatthew.github.io/images/og-preview.jpg"> <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-5LNP9W9B62"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-5LNP9W9B62'); </script> <link rel="preconnect" href="https://fonts.googleapis.com"> <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet"> <style> :root { --navy: #0c1b33; --navy-mid: #162645; --navy-light: #1e3560; --gold: #fff8db; --gold-light: #fff8db; --cream: #f8f4ef; --warm-white: #fdfaf6; --text: #1a1a2e; --muted: #6b7280; --border: #e5dfd6; } * { box-sizing: border-box; margin: 0; padding: 0; } html { scroll-behavior: smooth; } body { font-family: 'DM Sans', sans-serif; color: var(--text); background: var(--warm-white); line-height: 1.6; } nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(12,27,51,0.97); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,248,219,0.2); padding: 0 2rem; height: 60px; display: flex; align-items: center; justify-content: space-between; } nav .nav-brand { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.1rem; color: var(--gold-light); letter-spacing: 0.03em; text-decoration: none; } nav ul { list-style: none; display: flex; gap: 2rem; align-items: center; } nav ul a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.85rem; font-weight: 400; letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; } nav ul a:hover { color: var(--gold-light); } #hero { background: var(--navy); padding: 120px 2rem 80px; position: relative; overflow: hidden; } #hero::before { content: ''; position: absolute; top: -50%; right: -20%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(255,248,219,0.08) 0%, transparent 70%); pointer-events: none; } #hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); } .hero-inner { max-width: 860px; margin: 0 auto; } .hero-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.75rem; color: var(--gold); letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 1.5rem; } #hero h1 { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(2.8rem, 6vw, 5rem); color: #fff; line-height: 1.05; letter-spacing: -0.01em; margin-bottom: 0.4rem; } .hero-credentials { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; color: var(--gold-light); font-weight: 400; letter-spacing: 0.05em; margin-bottom: 1.5rem; } .hero-title { font-size: 1rem; color: rgba(255,255,255,0.65); font-weight: 300; line-height: 1.7; max-width: 560px; margin-bottom: 2rem; } .hero-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem; } .tag { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--gold); border: 1px solid rgba(255,248,219,0.4); padding: 0.3rem 0.7rem; border-radius: 2px; letter-spacing: 0.05em; cursor: pointer; transition: background 0.15s, color 0.15s; } .tag:hover { background: rgba(255,248,219,0.12); color: #fff; } a.tag { text-decoration: none; } .hero-links { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; } .hero-links a { display: inline-flex; align-items: center; gap: 0.4rem; color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.82rem; border: 1px solid rgba(255,255,255,0.15); padding: 0.45rem 1rem; border-radius: 3px; transition: all 0.2s; letter-spacing: 0.03em; } .hero-links a:hover { border-color: var(--gold); color: var(--gold-light); background: rgba(255,248,219,0.06); } .hero-links a.cv-btn { background: var(--gold); color: var(--navy); border-color: var(--gold); font-weight: 700; } .hero-links a.cv-btn:hover { background: var(--gold-light); border-color: var(--gold-light); color: var(--navy); } section { padding: 80px 2rem; } .section-inner { max-width: 900px; margin: 0 auto; } .section-label { font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--navy); letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.8rem; } .section-label::after { content: ''; flex: 1; max-width: 60px; height: 1px; background: var(--navy); opacity: 0.4; } h2 { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: 2.5rem; color: var(--navy); margin-bottom: 2rem; line-height: 1.15; } #about { background: var(--warm-white); } .about-grid { display: grid; grid-template-columns: 1fr 320px; gap: 4rem; align-items: start; } .about-bio p { font-size: 1.05rem; color: #333; line-height: 1.8; margin-bottom: 1.2rem; font-weight: 300; } .about-bio strong { color: var(--navy); font-weight: 500; } .hero-chopr-link { color: inherit; text-decoration: underline; text-underline-offset: 3px; opacity: 0.85; transition: color 0.15s, opacity 0.15s; } .hero-chopr-link:hover { color: var(--gold); opacity: 1; } .prose-link { color: var(--navy); text-decoration: underline; text-underline-offset: 3px; transition: color 0.15s; } .prose-link:hover { color: #1a6fd4; } .sidebar-card { background: var(--navy); padding: 1.8rem; border-radius: 4px; } .sidebar-sticky { position: sticky; top: 80px; display: flex; flex-direction: column; gap: 1.2rem; } .sidebar-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 500; color: var(--gold-light); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.2rem; } .edu-item { margin-bottom: 1.2rem; padding-bottom: 1.2rem; border-bottom: 1px solid rgba(255,255,255,0.07); } .edu-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; } .edu-degree { font-size: 0.8rem; font-weight: 600; color: rgba(255,255,255,0.9); margin-bottom: 0.1rem; } .edu-school { font-size: 0.78rem; color: rgba(255,255,255,0.45); } .edu-degree a { transition: color 0.2s; } .edu-degree a:hover { color: var(--gold) !important; } .award-item { background: #fff; padding: 1.2rem 1.4rem; border-left: 3px solid var(--gold); border-radius: 0 4px 4px 0; } .award-name { font-size: 0.88rem; font-weight: 500; color: var(--navy); margin-bottom: 0.25rem; } .award-year { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--muted); } #research { background: var(--warm-white); } .research-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem; } .research-card { background: var(--cream); padding: 1.8rem; border-radius: 4px; border-top: 3px solid var(--navy); text-decoration: none; display: block; transition: transform 0.15s, box-shadow 0.15s; cursor: pointer; } .research-card:hover { transform: translateY(-3px); box-shadow: 0 6px 24px rgba(12,27,51,0.10); } .research-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; color: var(--navy); margin-bottom: 0.6rem; } .research-card p { font-size: 0.9rem; color: #555; line-height: 1.65; font-weight: 300; } .research-card .card-arrow { font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--navy); opacity: 0; margin-top: 1rem; display: block; transition: opacity 0.15s; letter-spacing: 0.05em; } .research-card:hover .card-arrow { opacity: 1; } #publications { background: var(--warm-white); padding: 80px 2rem; } .pub-controls { display: flex; gap: 1rem; margin-bottom: 2.5rem; flex-wrap: wrap; align-items: center; } #pub-search { flex: 1; min-width: 280px; padding: 0.7rem 1.1rem; border: 1.5px solid var(--border); border-radius: 4px; font-family: 'DM Sans', sans-serif; font-size: 0.9rem; background: #fff; color: var(--text); transition: border-color 0.2s; outline: none; } #pub-search:focus { border-color: var(--navy); } #pub-search::placeholder { color: var(--muted); } .pub-stats { font-family: 'DM Mono', monospace; font-size: 0.75rem; color: var(--muted); white-space: nowrap; } .year-group { margin-bottom: 3rem; } .year-header { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 300; color: var(--navy); border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; margin-bottom: 1.2rem; display: flex; align-items: baseline; gap: 0.8rem; } .year-count { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--muted); font-weight: 400; } .pub-item { padding: 1.1rem 0; border-bottom: 1px solid rgba(229,223,214,0.5); } .pub-item:last-child { border-bottom: none; } .pub-title { font-size: 0.95rem; font-weight: 500; color: var(--navy); line-height: 1.45; margin-bottom: 0.3rem; } .pub-title a { color: var(--navy); text-decoration: none; transition: color 0.15s; } .pub-title a:hover { color: #6b7280 !important; text-decoration: underline; text-underline-offset: 3px; } .pub-authors { font-size: 0.82rem; color: var(--muted); margin-bottom: 0.25rem; font-weight: 300; line-height: 1.4; } .pub-journal { font-size: 0.82rem; color: var(--muted); font-style: italic; margin-bottom: 0.4rem; } .pub-actions { display: flex; align-items: center; gap: 0.7rem; flex-wrap: wrap; } .btn-abstract { font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--navy); border: 1px solid rgba(12,27,51,0.35); background: none; padding: 0.2rem 0.6rem; border-radius: 2px; cursor: pointer; letter-spacing: 0.05em; transition: all 0.15s; } .btn-abstract:hover { background: rgba(12,27,51,0.08); } .btn-doi { font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--muted); text-decoration: none; letter-spacing: 0.03em; transition: color 0.15s; } .btn-doi:hover { color: #6b7280; } .btn-pdf { font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--navy); text-decoration: none; letter-spacing: 0.03em; transition: all 0.15s; border: 1px solid rgba(12,27,51,0.35); padding: 0.2rem 0.6rem; border-radius: 2px; } .btn-pdf:hover { background: var(--navy); color: var(--gold); } .abstract-text { display: none; margin-top: 0.8rem; padding: 1rem 1.2rem; background: var(--cream); border-left: 3px solid var(--gold); border-radius: 0 4px 4px 0; font-size: 0.85rem; line-height: 1.7; color: #444; font-weight: 300; } .abstract-text.open { display: block; } .no-results { text-align: center; padding: 3rem; color: var(--muted); font-style: italic; } mark { background: rgba(255,248,219,0.2); color: inherit; padding: 0 1px; border-radius: 2px; } footer { background: var(--navy); padding: 3rem 2rem; text-align: center; border-top: 1px solid rgba(255,248,219,0.2); } footer p { font-size: 0.82rem; color: rgba(255,255,255,0.35); } footer a { color: var(--gold); text-decoration: none; } /* ── Hamburger nav ──────────────────────────────────── */ .nav-hamburger { display: none; flex-direction: column; justify-content: center; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; z-index: 1100; } .nav-hamburger span { display: block; width: 22px; height: 2px; background: rgba(255,255,255,0.8); border-radius: 2px; transition: transform 0.25s, opacity 0.25s; } .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); } .nav-hamburger.open span:nth-child(2) { opacity: 0; } .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); } @media (max-width: 768px) { .about-grid { grid-template-columns: 1fr; } .research-grid { grid-template-columns: 1fr; } #hero h1 { font-size: 2.5rem; } .nav-hamburger { display: flex; } nav ul { display: none; flex-direction: column; gap: 0; position: fixed; top: 60px; left: 0; right: 0; background: rgba(12,27,51,0.99); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,248,219,0.15); padding: 0.5rem 0 1rem; z-index: 999; } nav ul.open { display: flex; } nav ul li { width: 100%; } nav ul a { display: block; padding: 0.75rem 1.5rem; font-size: 0.85rem; letter-spacing: 0.08em; border-bottom: 1px solid rgba(255,255,255,0.05); } nav ul li:last-child a { margin: 0.75rem 1.5rem 0; display: inline-block; width: auto; } } /* ── Contact ─────────────────────────────────────── */ #contact { background: var(--navy); padding: 80px 2rem; } .contact-inner { max-width: 860px; margin: 0 auto; } .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 2.5rem; } .contact-block h3 { font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--gold); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1rem; } .contact-block p { font-size: 0.92rem; color: rgba(255,255,255,0.7); line-height: 1.8; margin: 0; } .contact-block a { color: rgba(255,255,255,0.85); text-decoration: none; border-bottom: 1px solid rgba(255,248,219,0.3); transition: color 0.15s, border-color 0.15s; } .contact-block a:hover { color: var(--gold); border-color: var(--gold); } .contact-divider { height: 1px; background: linear-gradient(90deg, transparent, rgba(255,248,219,0.3), transparent); margin: 0; } @media (max-width: 600px) { .contact-grid { grid-template-columns: 1fr; gap: 2rem; } } /* ── Projects ───────────────────────────────────────── */ #projects { background: var(--cream); } .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem; } .project-card { background: #fff; padding: 1.8rem; border-radius: 4px; border-top: 3px solid var(--navy); text-decoration: none; display: block; transition: transform 0.15s, box-shadow 0.15s; } .project-card:hover { transform: translateY(-3px); box-shadow: 0 6px 24px rgba(12,27,51,0.10); } .project-card .card-tag { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.5rem; display: block; } .project-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; color: var(--navy); margin-bottom: 0.6rem; line-height: 1.3; } .project-card p { font-size: 0.88rem; color: #555; line-height: 1.65; font-weight: 300; } .project-card .card-arrow { font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--navy); opacity: 0; margin-top: 1rem; display: block; transition: opacity 0.15s; letter-spacing: 0.05em; } .project-card:hover .card-arrow { opacity: 1; } @media (max-width: 768px) { .projects-grid { grid-template-columns: 1fr; } } 
+/* ── Featured Publication Cards ─────────────────────── */
+.pub-card { background: #fff; padding: 1.8rem; border-radius: 4px; border-top: 3px solid var(--navy); display: flex; flex-direction: column; transition: transform 0.15s, box-shadow 0.15s; }
+.pub-card:hover { transform: translateY(-3px); box-shadow: 0 6px 24px rgba(12,27,51,0.10); }
+.pub-card .pub-year-tag { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.5rem; }
+.pub-card .pub-card-title { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; color: var(--navy); line-height: 1.35; margin-bottom: 0.5rem; font-weight: 500; }
+.pub-card .pub-card-title a { color: var(--navy); text-decoration: none; transition: color 0.15s; }
+.pub-card .pub-card-title a:hover { color: #1a6fd4; }
+.pub-card .pub-card-authors { font-size: 0.8rem; color: var(--muted); font-weight: 300; line-height: 1.4; margin-bottom: 0.35rem; }
+.pub-card .pub-card-journal { font-size: 0.8rem; color: var(--muted); font-style: italic; margin-bottom: 0.9rem; }
+.pub-card .pub-card-actions { display: flex; gap: 0.6rem; flex-wrap: wrap; align-items: center; margin-top: auto; }
+.view-all-btn { display: inline-flex; align-items: center; gap: 0.5rem; font-family: 'DM Mono', monospace; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--navy); border: 1.5px solid var(--navy); padding: 0.65rem 1.6rem; border-radius: 3px; text-decoration: none; transition: all 0.2s; }
+.view-all-btn:hover { background: var(--navy); color: var(--gold); }
+@media (max-width: 768px) { #featured-pub-grid { grid-template-columns: 1fr !important; } }
+</style> </head> <body> <nav> <a href="#" class="nav-brand">Matthew D. McHugh</a> <button class="nav-hamburger" id="nav-toggle" aria-label="Toggle navigation"> <span></span><span></span><span></span> </button> <ul id="nav-menu"> <li><a href="#about">About</a></li> <li><a href="#research">Research</a></li> <li><a href="#projects">Projects</a></li> <li><a href="publications.html">Publications</a></li> <li><a href="training.html">Training</a></li> <li><a href="https://www.nursing.upenn.edu/chopr/" target="_blank">CHOPR</a></li> <li><a href="#contact">Contact</a></li> <li><a href="cv.pdf" download style="font-family:'DM Mono',monospace;font-size:0.72rem;color:var(--navy);background:var(--gold);padding:0.35rem 0.9rem;border-radius:2px;letter-spacing:0.05em;text-transform:uppercase;text-decoration:none;font-weight:500;transition:background 0.15s;">⬇ CV</a></li> </ul> </nav> <section id="hero"> <div class="hero-inner"> <p class="hero-eyebrow">University of Pennsylvania School of Nursing</p> <h1>Matthew D.<br>McHugh</h1> <p class="hero-credentials">PhD &middot; JD &middot; MPH &middot; RN &middot; FAAN</p> <p class="hero-title"> Professor &amp; Independence Chair for Nursing Education<br> Director, <a href="https://www.nursing.upenn.edu/chopr/" target="_blank" class="hero-chopr-link">Center for Health Outcomes and Policy Research</a> </p> <div class="hero-tags"> <a href="nursestaffing.html" class="tag">#nursestaffing</a> <a href="burnout.html" class="tag">#burnout</a> <a href="policy.html" class="tag">#policy_evaluation</a> <a href="workenvironment.html" class="tag">#healthyworkenvironment</a> </div> <div class="hero-links"> <a href="cv.pdf" download>Download CV</a> <a href="https://www.nursing.upenn.edu/live/profiles/92-matthew-mchugh" target="_blank">Penn Profile</a> <a href="https://www.nursing.upenn.edu/chopr/" target="_blank">CHOPR</a> <a href="https://scholar.google.com/citations?user=5VOnGdMAAAAJ&hl=en" target="_blank">Google Scholar</a> <a href="https://www.linkedin.com/in/matthew-mchugh-phd-jd-mph-rn-73442844/" target="_blank">LinkedIn</a> <a href="https://github.com/mchughmatthew" target="_blank">GitHub</a> </div> </div> </section> <section id="about"> <div class="section-inner"> <p class="section-label">About</p> <div class="about-grid"> <div class="about-bio"> <h2>Advancing Nursing Science<br>to Shape Health Policy</h2> <p>Matthew D. McHugh is <strong>Professor and Independence Chair for Nursing Education</strong> at the University of Pennsylvania School of Nursing, where he directs the <strong><a href="https://www.nursing.upenn.edu/chopr/" target="_blank" rel="noopener noreferrer" class="prose-link">Center for Health Outcomes and Policy Research (CHOPR)</a></strong>. He is an elected member of the <strong>National Academy of Medicine</strong>, a Fellow of the American Academy of Nursing, and Senior Fellow at the <strong><a href="https://ldi.upenn.edu/fellows/fellows-directory/matthew-d-mchugh-phd-rn/" target="_blank" rel="noopener noreferrer" class="prose-link">Leonard Davis Institute of Health Economics</a></strong>.</p> <p>The fundamental question underlying Dr. McHugh&rsquo;s program of research is &ldquo;<em>How does nursing influence the achievement of our most important national and international health policy goals?</em>&rdquo; He directs highly visible studies that draw on his expertise in nursing, law, public health, and health services research to evaluate how nursing can be a force for quality, equity, and innovation in health services. His work has directly informed policy discussions at state, national, and international levels, including safe nurse staffing policy in California, Pennsylvania, New York, and Australia.</p> <p>McHugh holds a <strong>PhD in Nursing</strong> from Penn, an <strong>MPH</strong> from Harvard, and a <strong>JD</strong> from Northeastern University School of Law&mdash;bringing disciplinary depth to the intersection of health policy, law, and nursing science. He began his career as a registered nurse and family nurse practitioner, grounding his research in clinical practice.</p> </div> <div> <div class="sidebar-sticky"> <div class="sidebar-card"> <h3>Education</h3> <div class="edu-item"><div class="edu-degree">JD &middot; Law</div><div class="edu-school">Northeastern University School of Law</div></div> <div class="edu-item"><div class="edu-degree">PhD &middot; Nursing</div><div class="edu-school">University of Pennsylvania</div></div> <div class="edu-item"><div class="edu-degree">MPH &middot; Health Policy &amp; Management</div><div class="edu-school">Harvard University</div></div> <div class="edu-item"><div class="edu-degree">MSN &middot; Family NP / Psych CNS</div><div class="edu-school">University of Pennsylvania</div></div> <div class="edu-item"><div class="edu-degree">ASN/BSN &middot; Nursing</div><div class="edu-school">Gwynedd-Mercy University</div></div> </div> <div class="sidebar-card"> <h3>Training Opportunities</h3> <div class="edu-item"> <div class="edu-degree"><a href="training.html" style="color:rgba(255,255,255,0.9);text-decoration:underline;text-underline-offset:3px;">Pre/Postdoctoral Fellowships</a></div> <div class="edu-school">Dr. McHugh leads the NINR-funded T32 Training Program &ldquo;Advanced Training in Nursing Outcomes Research.&rdquo;</div> </div> <div class="edu-item"> <div class="edu-degree"><a href="https://www.nursing.upenn.edu/nursing-and-healthcare-management-coordinated-dual-degree/" target="_blank" style="color:rgba(255,255,255,0.9);text-decoration:underline;text-underline-offset:3px;">Nursing and Healthcare Management</a></div> <div class="edu-school">Dr. McHugh is faculty director of the Nursing and Health Care Management Coordinated Dual Degree Program, Penn Nursing and the Wharton School.</div> </div> </div> </div> <!-- end sidebar-sticky --> </div> </div> </div> </section> <section id="research"> <div class="section-inner"> <p class="section-label">Center for Health Outcomes and Policy Research</p> <h2>Research Focus</h2> <p style="font-size:1rem; color:#555; font-weight:300; max-width:680px; line-height:1.75; margin-bottom:2.5rem;"> CHOPR is a multidisciplinary research center at Penn Nursing dedicated to understanding how features of nursing&mdash;staffing, work environments, and education&mdash;shape patient outcomes and health policy. <a href="https://www.nursing.upenn.edu/chopr/" style="color:var(--navy);" target="_blank">Visit CHOPR &rarr;</a> &nbsp;&nbsp; <a href="chopr_history.html" style="color:var(--muted);">CHOPR History &rarr;</a> </p> <div class="research-grid"> <a href="nursestaffing.html" class="research-card"><h3>Nurse Staffing &amp; Policy</h3><p>Evaluating the effects of nurse-to-patient ratio legislation on staffing levels, patient mortality, readmissions, and cost&mdash;with studies in California, Pennsylvania, New York, and Queensland, Australia.</p><span class="card-arrow">Explore research →</span></a> <a href="corporatization.html" class="research-card"><h3>Corporatization in Healthcare</h3><p>Examining how hospital ownership, consolidation, and market pressures shape nursing practice environments, workforce composition, and patient outcomes across health systems.</p><span class="card-arrow">Explore research →</span></a> <a href="burnout.html" class="research-card"><h3>Clinician Burnout</h3><p>Documenting the prevalence, predictors, and consequences of burnout among nurses and clinicians&mdash;and identifying organizational and policy interventions that address its root causes.</p><span class="card-arrow">Explore research →</span></a> <a href="workenvironment.html" class="research-card"><h3>Work Environments</h3><p>Linking organizational conditions&mdash;leadership, staffing, governance, and Magnet Recognition&mdash;to nurse retention, patient safety, and care quality across thousands of healthcare organizations</p><span class="card-arrow">Explore research →</span></a> <a href="healthequity.html" class="research-card"><h3>Health Equity &amp; Disparities</h3><p>Investigating how nursing resources mediate racial and ethnic disparities in surgical outcomes, cardiac arrest survival, readmissions, and care for underserved populations.</p><span class="card-arrow">Explore research →</span></a> <a href="policy.html" class="research-card"><h3>Policy Evaluation &amp; Methods</h3><p>Applying quasi-experimental methods, matched cohort designs, and causal inference to evaluate large-scale health policy interventions including the ACA Graduate Nurse Education Demonstration.</p><span class="card-arrow">Explore research →</span></a> </div> </div> </section> <section id="projects"> <div class="section-inner"> <p class="section-label">Active Research</p> <h2>Current Projects</h2> <p style="font-size:1rem; color:#555; font-weight:300; max-width:680px; line-height:1.75; margin-bottom:2.5rem;"> CHOPR maintains a portfolio of funded multi-site studies examining nurse workforce conditions, clinician well-being, and health policy across the U.S. and internationally. </p> <div class="projects-grid"> <a href="aacnhwe.html" class="project-card"> <span class="card-tag">Survey · National</span> <h3>AACN-HWE Survey</h3> <p>In collaboration with the American Association of Critical-Care Nurses, a new national survey measuring healthy work environment standards and their relationship to nurse and patient outcomes in critical care settings.</p> <span class="card-arrow">View project →</span> </a> <a href="nurses4all.html" class="project-card"> <span class="card-tag">Policy Evaluation · National</span> <h3>Nurses4All</h3> <p>A 10-state study of nurses evaluating the impact of work conditions on nurse and patient outcomes in hospitals, nursing homes, home health, school settings, and primary care.</p> <span class="card-arrow">View project →</span> </a> <a href="nurses4allbc.html" class="project-card"> <span class="card-tag">Policy Evaluation · British Columbia</span> <h3>Nurses4All@BC</h3> <p>Evaluating British Columbia's nurse staffing policies and their effects on the nursing workforce and patient outcomes in collaboration with Canadian partners.</p> <span class="card-arrow">View project →</span> </a> <a href="magnet4europe.html" class="project-card"> <span class="card-tag">Intervention · EU-Funded</span> <h3>Magnet4Europe Initiative</h3> <p>An EU Commission-funded trial implementing Magnet and Pathway organizational interventions across European hospitals to improve clinician well-being and patient outcomes.</p> <span class="card-arrow">View project →</span> </a> <a href="usmagnets.html" class="project-card"> <span class="card-tag">Survey · National</span> <h3>U.S. Clinician Wellbeing Study</h3> <p>A large-scale evaluation of mental health and wellbeing among U.S. hospital nurses and physicians.</p> <span class="card-arrow">View project →</span> </a> <a href="rn4cast.html" class="project-card"> <span class="card-tag">Multi-Country · International</span> <h3>RN4CAST International Studies</h3> <p>A landmark multinational study across Europe, Africa, Australia, and the Americas linking nurse staffing and education to patient mortality and quality of care.</p> <span class="card-arrow">View project →</span> </a> </div> </div> </section> <section id="publications" style="background:var(--cream);"> <div class="section-inner"> <p class="section-label">Peer-Reviewed Publications</p> <h2>Selected Publications</h2> <p style="font-size:1rem; color:#555; font-weight:300; max-width:680px; line-height:1.75; margin-bottom:2.5rem;">Recent peer-reviewed work from CHOPR spanning nurse staffing policy, clinician wellbeing, health equity, and nursing outcomes research.</p> <div id="featured-pub-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-bottom:2.5rem;"></div> <div style="text-align:center;margin-top:1rem;"> <a href="publications.html" class="view-all-btn">View All Publications &rarr;</a> </div> </div> </section> <div class="contact-divider"></div> <section id="contact"> <div class="contact-inner"> <p class="section-label" style="color:var(--gold);">Contact</p> <div class="contact-grid"> <div class="contact-block"> <h3>Office</h3> <p> University of Pennsylvania<br> School of Nursing<br> 418 Curie Boulevard<br> Philadelphia, PA 19104 </p> </div> <div class="contact-block"> <h3>Get in Touch</h3> <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.65rem;"> <li><a href="mailto:mchughm@nursing.upenn.edu">mchughm@nursing.upenn.edu</a></li> <li><a href="https://www.nursing.upenn.edu/chopr/" target="_blank">Center for Health Outcomes and Policy Research (CHOPR)</a></li> <li><a href="https://www.nursing.upenn.edu/" target="_blank">Penn Nursing</a></li> </ul> </div> </div> </div> </section> <footer> <p>Matthew D. McHugh &middot; University of Pennsylvania School of Nursing &middot; <a href="mailto:mchughm@nursing.upenn.edu">mchughm@nursing.upenn.edu</a></p> </footer> <script>
 function parseBib(text) {
   const entries = [];
-  // Match each @type{key, ... }
   const entryRe = /@(\w+)\s*\{\s*([^,]+),([\s\S]*?)\n\}/g;
   let m;
   while ((m = entryRe.exec(text)) !== null) {
-    const id = m[2].trim();
-    const body = m[3];
-    const entry = { id: id };
-    // Extract fields: fieldname = {value} or fieldname = value
+    const id = m[2].trim(), body = m[3], entry = { id };
     const fieldRe = /^\s*(\w+)\s*=\s*\{([\s\S]*?)\}\s*(?:,|$)/gm;
     let fm;
-    while ((fm = fieldRe.exec(body)) !== null) {
-      entry[fm[1].toLowerCase()] = fm[2].trim();
-    }
-    // year cleanup
+    while ((fm = fieldRe.exec(body)) !== null) entry[fm[1].toLowerCase()] = fm[2].trim();
     if (entry.year) entry.year = entry.year.replace(/[{}]/g,'').trim();
     entries.push(entry);
   }
   return entries;
 }
-
-async function loadPubs() {
+function escHtml(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function fmtAuthors(s) {
+  if (!s) return '';
+  return s.split(' and ').map(a=>a.trim()).join(', ')
+    .replace(/McHugh,?\s*M\.?D\.?/gi,'<strong style="color:var(--navy)">McHugh, M.D.</strong>');
+}
+async function loadFeaturedPubs() {
+  const grid = document.getElementById('featured-pub-grid');
+  if (!grid) return;
   try {
     const res = await fetch('publications.bib');
-    if (!res.ok) throw new Error('Failed to load publications.bib');
-    const text = await res.text();
-    PUBS = parseBib(text);
-    renderPubs(PUBS);
+    if (!res.ok) throw new Error('bib fetch failed');
+    const all = parseBib(await res.text());
+    const sorted = all.filter(p => p.year && !isNaN(+p.year)).sort((a,b) => +b.year - +a.year).slice(0,6);
+    grid.innerHTML = sorted.map(p => {
+      const titleEl = p.url ? `<a href="${escHtml(p.url)}" target="_blank" rel="noopener">${escHtml(p.title)}</a>` : escHtml(p.title);
+      const doi = p.url ? `<a href="${escHtml(p.url)}" class="btn-doi" target="_blank">DOI &rarr;</a>` : '';
+      const pdf = p.pdf ? `<a href="${escHtml(p.pdf)}" class="btn-pdf" target="_blank">&darr; PDF</a>` : '';
+      return `<div class="pub-card">
+        <div class="pub-year-tag">${escHtml(p.year||'')}${p.journal ? ' &middot; ' + escHtml(p.journal) : ''}</div>
+        <div class="pub-card-title">${titleEl}</div>
+        <div class="pub-card-authors">${fmtAuthors(p.author)}</div>
+        <div class="pub-card-actions">${doi}${pdf}</div>
+      </div>`;
+    }).join('');
   } catch(e) {
-    document.getElementById('pub-list').innerHTML =
-      '<div class="no-results">Could not load publications. Please try refreshing.</div>';
+    grid.innerHTML = '<p style="color:var(--muted);font-size:0.9rem;grid-column:1/-1;">Could not load publications.</p>';
     console.error(e);
   }
 }
-
-function escHtml(str) {
-  return String(str||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-}
-function highlightText(text, query) {
-  if (!query || query.length < 2) return escHtml(text);
-  let escaped; try { escaped = query.replace(/[\-.*+?^${}()|\\]/g, '\\$&'); } catch(e) { escaped = query; }
-  const re = new RegExp('(' + escaped + ')', 'gi');
-  return escHtml(text).replace(re, '<mark>$1</mark>');
-}
-function formatAuthors(str) {
-  if (!str) return '';
-  return str.split(' and ').map(a=>a.trim()).join(', ')
-    .replace(/McHugh,?\s*M\.?D\.?/gi, '<strong style="color:var(--navy)">McHugh, M.D.</strong>');
-}
-function renderPubs(filtered) {
-  const container = document.getElementById('pub-list');
-  const q = document.getElementById('pub-search').value.toLowerCase().trim();
-  if (!filtered.length) {
-    container.innerHTML = '<div class="no-results">No publications match your search.</div>';
-    document.getElementById('pub-stats').textContent = '0 publications';
-    return;
-  }
-  document.getElementById('pub-stats').textContent = filtered.length + ' publication' + (filtered.length!==1?'s':'');
-  const byYear = {};
-  filtered.forEach(p => { const y=p.year||'Other'; if(!byYear[y]) byYear[y]=[]; byYear[y].push(p); });
-  const years = Object.keys(byYear).sort((a,b)=>b-a);
-  let html = '';
-  years.forEach(year => {
-    const items = byYear[year];
-    html += `<div class="year-group"><div class="year-header">${year} <span class="year-count">${items.length} paper${items.length>1?'s':''}</span></div>`;
-    items.forEach((p,i) => {
-      const uid = (p.id||(year+'_'+i)).replace(/[^a-zA-Z0-9_]/g,'_');
-      const titleHtml = q ? highlightText(p.title,q) : escHtml(p.title);
-      const journalHtml = q ? highlightText(p.journal,q) : escHtml(p.journal);
-      const titleEl = p.url ? `<a href="${escHtml(p.url)}" target="_blank" rel="noopener">${titleHtml}</a>` : titleHtml;
-      const abstractBtn = p.abstract ? `<button class="btn-abstract" onclick="toggleAbstract('${uid}',this)">Abstract ▾</button>` : '';
-      const doiLink = p.url ? `<a href="${escHtml(p.url)}" class="btn-doi" target="_blank">DOI →</a>` : '';
-      const pdfLink = p.pdf ? `<a href="${escHtml(p.pdf)}" class="btn-pdf" target="_blank">⬇ PDF</a>` : '';
-      const absText = p.abstract ? p.abstract.slice(0,600)+(p.abstract.length>600?'…':'') : '';
-      html += `<div class="pub-item">
-        <div class="pub-title">${titleEl}</div>
-        <div class="pub-authors">${formatAuthors(p.author)}</div>
-        <div class="pub-journal">${journalHtml}${p.year?', '+p.year:''}</div>
-        <div class="pub-actions">${abstractBtn}${doiLink}${pdfLink}</div>
-        ${p.abstract?`<div class="abstract-text" id="abs_${uid}">${q?highlightText(absText,q):escHtml(absText)}</div>`:''}
-      </div>`;
-    });
-    html += '</div>';
-  });
-  container.innerHTML = html;
-}
-function toggleAbstract(uid, btn) {
-  const el = document.getElementById('abs_' + uid);
-  if (!el) return;
-  const open = el.classList.toggle('open');
-  btn.textContent = open ? 'Abstract ▴' : 'Abstract ▾';
-}
-function filterPubs() {
-  const raw = document.getElementById('pub-search').value.toLowerCase().trim();
-  if (!raw) { renderPubs(PUBS); return; }
-  const terms = raw.split(/\s+/).filter(Boolean);
-  const filtered = PUBS.filter(p => {
-    const haystack = [p.title, p.author, p.journal, p.abstract].join(' ').toLowerCase();
-    return terms.some(t => haystack.includes(t));
-  });
-  renderPubs(filtered);
-}
 document.addEventListener('DOMContentLoaded', () => {
-  loadPubs();
-  // Hamburger nav toggle
-  const toggle = document.getElementById('nav-toggle');
-  const menu = document.getElementById('nav-menu');
+  loadFeaturedPubs();
+  const toggle = document.getElementById('nav-toggle'), menu = document.getElementById('nav-menu');
   if (toggle && menu) {
-    toggle.addEventListener('click', () => {
-      toggle.classList.toggle('open');
-      menu.classList.toggle('open');
-    });
-    // Close menu when a nav link is clicked
-    menu.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
-        toggle.classList.remove('open');
-        menu.classList.remove('open');
-      });
-    });
+    toggle.addEventListener('click', () => { toggle.classList.toggle('open'); menu.classList.toggle('open'); });
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { toggle.classList.remove('open'); menu.classList.remove('open'); }));
   }
 });
-</script>
-</body>
+</script> 
+</body> 
 </html>
