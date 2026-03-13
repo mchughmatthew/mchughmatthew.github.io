@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Publications — Matthew D. McHugh</title>
-  <meta name="description" content="Publications by Matthew D. McHugh, Professor and Director of CHOPR at Penn Nursing. Research on nurse staffing, health policy, burnout, and patient outcomes.">
+  <meta name="description" content="Peer-reviewed publications by Matthew D. McHugh, Professor and Director of CHOPR at Penn Nursing. Research on nurse staffing, health policy, burnout, and patient outcomes.">
   <link rel="icon" href="https://www.nursing.upenn.edu/favicon.ico">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5LNP9W9B62"></script>
@@ -119,8 +119,8 @@
 <div class="page-header">
   <div class="page-header-inner">
     <p class="page-eyebrow">Center for Health Outcomes and Policy Research</p>
-    <h1>Publications</h1>
-    <p>Publications spanning nurse staffing policy, clinician burnout, health equity, work environments, and nursing outcomes research.</p>
+    <h1>Peer-Reviewed<br>Publications</h1>
+    <p>160 publications spanning nurse staffing policy, clinician burnout, health equity, work environments, and nursing outcomes research.</p>
   </div>
 </div>
 
@@ -133,10 +133,10 @@
 </main>
 
 <footer>
-  <p>Matthew D. McHugh &middot; University of Pennsylvania School of Nursing &middot; <a href="mailto:mchughm@nursing.upenn.edu">mchughm@nursing.upenn.edu</a></p>
+  <p>Matthew D. McHugh &middot; University of Pennsylvania School of Nursing &middot; <a href="/cdn-cgi/l/email-protection#1479777c61737c79547a6166677d7a733a6164717a7a3a717061"><span class="__cf_email__" data-cfemail="0e636d667b6966634e607b7c7d676069207b7e6b6060206b6a7b">[email&#160;protected]</span></a></p>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 let PUBS = [];
 
 function parseBib(text) {
@@ -192,9 +192,10 @@ function renderPubs(filtered) {
       const uid = (p.id || (year + '_' + i)).replace(/[^a-zA-Z0-9_]/g, '_');
       const titleHtml = q ? highlightText(p.title, q) : escHtml(p.title);
       const journalHtml = q ? highlightText(p.journal, q) : escHtml(p.journal);
-      const titleEl = p.url ? `<a href="${escHtml(p.url)}" target="_blank" rel="noopener">${titleHtml}</a>` : titleHtml;
+      const linkUrl = p.doi ? `https://doi.org/${p.doi}` : (p.url || '');
+      const titleEl = linkUrl ? `<a href="${escHtml(linkUrl)}" target="_blank" rel="noopener">${titleHtml}</a>` : titleHtml;
       const abstractBtn = p.abstract ? `<button class="btn-abstract" onclick="toggleAbstract('${uid}',this)">Abstract &#9662;</button>` : '';
-      const doiLink = p.url ? `<a href="${escHtml(p.url)}" class="btn-doi" target="_blank">DOI &rarr;</a>` : '';
+      const doiLink = p.doi ? `<a href="https://doi.org/${escHtml(p.doi)}" class="btn-doi" target="_blank">DOI &rarr;</a>` : (p.url ? `<a href="${escHtml(p.url)}" class="btn-doi" target="_blank">DOI &rarr;</a>` : '');
       const pdfLink = p.pdf ? `<a href="${escHtml(p.pdf)}" class="btn-pdf" target="_blank">&#11015; PDF</a>` : '';
       const absText = p.abstract ? p.abstract.slice(0, 600) + (p.abstract.length > 600 ? '&hellip;' : '') : '';
       html += `<div class="pub-item">
@@ -247,10 +248,4 @@ document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.getElementById('nav-toggle');
   const menu = document.getElementById('nav-menu');
   if (toggle && menu) {
-    toggle.addEventListener('click', () => { toggle.classList.toggle('open'); menu.classList.toggle('open'); });
-    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { toggle.classList.remove('open'); menu.classList.remove('open'); }));
-  }
-});
-</script>
-</body>
-</html>
+    toggle.addEventListener('click', () =
