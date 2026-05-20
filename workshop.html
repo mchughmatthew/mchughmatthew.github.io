@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Workshop &middot; Matthew D. McHugh</title>
+<meta name="description" content="Woodturning, chairmaking and metalwork - the hand work Matthew D. McHugh does outside of health policy research.">
+<link rel="icon" href="https://www.nursing.upenn.edu/favicon.ico">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mchughmatthew.github.io/workshop.html">
+<meta property="og:title" content="Workshop &middot; Matthew D. McHugh">
+<meta property="og:description" content="Woodturning, chairmaking and metalwork - the hand work Matthew D. McHugh does outside of health policy research.">
+<meta property="og:image" content="https://mchughmatthew.github.io/images/og-preview.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Workshop &middot; Matthew D. McHugh">
+<meta name="twitter:description" content="Woodturning, chairmaking and metalwork - the hand work Matthew D. McHugh does outside of health policy research.">
+<meta name="twitter:image" content="https://mchughmatthew.github.io/images/og-preview.jpg">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5LNP9W9B62"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5LNP9W9B62');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0c1b33;
+    --navy-mid: #162645;
+    --navy-light: #1e3560;
+    --gold: #fff8db;
+    --gold-light: #fff8db;
+    --cream: #f8f4ef;
+    --warm-white: #fdfaf6;
+    --text: #1a1a2e;
+    --muted: #6b7280;
+    --border: #e5dfd6;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', sans-serif; color: var(--text); background: var(--warm-white); line-height: 1.6; }
+
+  /* nav */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    background: rgba(12,27,51,0.97); backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,248,219,0.2);
+    padding: 0 2rem; height: 60px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  nav .nav-brand {
+    font-family: 'Cormorant Garamond', serif; font-weight: 500;
+    font-size: 1.1rem; color: var(--gold-light); letter-spacing: 0.03em; text-decoration: none;
+  }
+  nav ul { list-style: none; display: flex; gap: 2rem; align-items: center; }
+  nav ul a {
+    color: rgba(255,255,255,0.75); text-decoration: none;
+    font-size: 0.85rem; font-weight: 400; letter-spacing: 0.05em;
+    text-transform: uppercase; transition: color 0.2s;
+  }
+  nav ul a:hover { color: var(--gold-light); }
+  nav ul a.active { color: var(--gold-light); }
+
+  .nav-hamburger {
+    display: none; flex-direction: column; justify-content: center; gap: 5px;
+    background: none; border: none; cursor: pointer; padding: 4px; z-index: 1100;
+  }
+  .nav-hamburger span {
+    display: block; width: 22px; height: 2px;
+    background: rgba(255,255,255,0.8); border-radius: 2px;
+    transition: transform 0.25s, opacity 0.25s;
+  }
+  .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+  .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  /* hero */
+  #hero { background: var(--navy); padding: 120px 2rem 80px; position: relative; overflow: hidden; }
+  #hero::before {
+    content: ''; position: absolute; top: -50%; right: -20%;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(255,248,219,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  #hero::after {
+    content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+    height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+  .hero-inner { max-width: 860px; margin: 0 auto; }
+  .hero-eyebrow {
+    font-family: 'DM Mono', monospace; font-size: 0.75rem;
+    color: var(--gold); letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 1.5rem;
+  }
+  #hero h1 {
+    font-family: 'Cormorant Garamond', serif; font-weight: 300;
+    font-size: clamp(2.8rem, 6vw, 5rem); color: #fff;
+    line-height: 1.05; letter-spacing: -0.01em; margin-bottom: 0.4rem;
+  }
+  .hero-title {
+    font-size: 1rem; color: rgba(255,255,255,0.65); font-weight: 300;
+    line-height: 1.7; max-width: 560px; margin-top: 1.2rem;
+  }
+
+  /* sections */
+  section { padding: 80px 2rem; }
+  .section-inner { max-width: 900px; margin: 0 auto; }
+  .section-label {
+    font-family: 'DM Mono', monospace; font-size: 0.7rem;
+    color: var(--navy); letter-spacing: 0.2em; text-transform: uppercase;
+    margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.8rem;
+  }
+  .section-label::after {
+    content: ''; flex: 1; max-width: 60px; height: 1px; background: var(--navy); opacity: 0.4;
+  }
+  h2 {
+    font-family: 'Cormorant Garamond', serif; font-weight: 400;
+    font-size: 2.5rem; color: var(--navy); margin-bottom: 1.4rem; line-height: 1.15;
+  }
+
+  /* cards */
+  .research-card {
+    background: var(--cream); padding: 1.8rem; border-radius: 4px;
+    border-top: 3px solid var(--navy);
+  }
+  .research-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; color: var(--navy); margin-bottom: 0.6rem; }
+  .research-card p { font-size: 0.9rem; color: #555; line-height: 1.65; font-weight: 300; }
+
+  /* footer */
+  footer { background: var(--navy); padding: 3rem 2rem; text-align: center; border-top: 1px solid rgba(255,248,219,0.2); }
+  footer p { font-size: 0.82rem; color: rgba(255,255,255,0.35); }
+  footer a { color: var(--gold); text-decoration: none; }
+
+  /* ===================  Workshop additions  =================== */
+
+  .crumb {
+    font-family: 'DM Mono', monospace; font-size: 0.72rem;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 1.6rem;
+  }
+  .crumb a { color: var(--muted); text-decoration: none; transition: color 0.15s; }
+  .crumb a:hover { color: var(--navy); }
+  .crumb span { color: var(--border); margin: 0 0.45rem; }
+
+  .prose p { font-size: 1.05rem; color: #333; line-height: 1.8; margin-bottom: 1.2rem; font-weight: 300; }
+  .prose p:last-child { margin-bottom: 0; }
+  .prose .ph { color: var(--muted); font-style: italic; }
+  .after-gallery { margin-top: 1.6rem; }
+  .inline-link { color: var(--navy); text-decoration: underline; text-underline-offset: 3px; }
+  .inline-link:hover { color: var(--navy-light); }
+
+  /* hub category cards (as links) */
+  .hub-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem; }
+  a.research-card { display: block; text-decoration: none; transition: transform 0.15s, box-shadow 0.15s; }
+  a.research-card:hover { transform: translateY(-3px); box-shadow: 0 6px 24px rgba(12,27,51,0.10); }
+  .card-more {
+    display: inline-block; margin-top: 0.9rem;
+    font-family: 'DM Mono', monospace; font-size: 0.72rem;
+    letter-spacing: 0.08em; text-transform: uppercase; color: var(--navy);
+  }
+
+  /* image gallery */
+  .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.8rem; }
+  .gallery-item {
+    position: relative; aspect-ratio: 4 / 3; overflow: hidden;
+    border-radius: 4px; background: var(--cream);
+  }
+  .gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
+  .gallery-item[data-full] { cursor: pointer; }
+  .gallery-item[data-full]:hover img { transform: scale(1.05); }
+  .gallery-item figcaption {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    padding: 1.1rem 0.85rem 0.6rem;
+    background: linear-gradient(transparent, rgba(12,27,51,0.88));
+    color: #fff; font-size: 0.78rem; font-weight: 300;
+    opacity: 0; transition: opacity 0.25s;
+  }
+  .gallery-item[data-full]:hover figcaption { opacity: 1; }
+
+  /* placeholder slots (gallery + step) */
+  .gallery-item.placeholder, .step-figure.placeholder {
+    display: flex; align-items: center; justify-content: center;
+    border: 1px dashed #cdbfae; background: #f3ede4; padding: 0.8rem;
+  }
+  .gallery-item.placeholder span, .step-figure.placeholder span {
+    font-family: 'DM Mono', monospace; font-size: 0.67rem;
+    color: #a08f78; text-align: center; line-height: 1.5;
+    letter-spacing: 0.02em; word-break: break-all;
+  }
+  .gallery-item.placeholder::before, .step-figure.placeholder::before {
+    content: '+'; position: absolute; top: 0.45rem; right: 0.7rem;
+    font-family: 'DM Mono', monospace; font-size: 1rem; color: #c9b7a0;
+  }
+
+  /* cross-link callout */
+  .callout {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 1.5rem; flex-wrap: wrap;
+    background: var(--navy); padding: 1.8rem 2rem;
+    border-radius: 4px; margin-top: 1.8rem; text-decoration: none;
+    transition: background 0.2s;
+  }
+  .callout:hover { background: var(--navy-mid); }
+  .callout-text h3 {
+    font-family: 'Cormorant Garamond', serif; font-size: 1.5rem;
+    font-weight: 400; color: var(--gold-light); margin-bottom: 0.25rem;
+  }
+  .callout-text p { font-size: 0.88rem; color: rgba(255,255,255,0.6); font-weight: 300; }
+  .callout-arrow {
+    font-family: 'DM Mono', monospace; font-size: 0.74rem;
+    color: var(--gold); letter-spacing: 0.05em; white-space: nowrap;
+    border: 1px solid rgba(255,248,219,0.4); padding: 0.55rem 1rem; border-radius: 3px;
+  }
+
+  /* process steps */
+  .steps { margin-top: 2.2rem; }
+  .process-step {
+    display: grid; grid-template-columns: 56px 1fr; gap: 1.6rem;
+    padding-bottom: 2.6rem; position: relative;
+  }
+  .process-step:last-child { padding-bottom: 0; }
+  .process-step:not(:last-child)::before {
+    content: ''; position: absolute; left: 27px; top: 60px; bottom: 0;
+    width: 1px; background: var(--border);
+  }
+  .step-number {
+    width: 56px; height: 56px; border-radius: 50%;
+    background: var(--navy); color: var(--gold-light);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; flex-shrink: 0;
+  }
+  .step-body h3 {
+    font-family: 'Cormorant Garamond', serif; font-size: 1.6rem;
+    color: var(--navy); margin-bottom: 0.6rem; font-weight: 400;
+  }
+  .step-figure {
+    position: relative; aspect-ratio: 16 / 9; max-width: 560px;
+    overflow: hidden; border-radius: 4px; background: var(--cream); margin-top: 1rem;
+  }
+  .step-figure img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
+  .step-figure[data-full] { cursor: pointer; }
+  .step-figure[data-full]:hover img { transform: scale(1.04); }
+
+  .project-meta {
+    font-family: 'DM Mono', monospace; font-size: 0.72rem;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 1.2rem;
+  }
+
+  /* lightbox */
+  .lightbox {
+    position: fixed; inset: 0; z-index: 2000;
+    background: rgba(8,16,32,0.94); backdrop-filter: blur(4px);
+    display: none; align-items: center; justify-content: center; padding: 3rem 2rem;
+  }
+  .lightbox.open { display: flex; }
+  .lightbox img { max-width: 100%; max-height: 80vh; object-fit: contain; border-radius: 3px; box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+  .lightbox-caption {
+    position: absolute; bottom: 1.6rem; left: 0; right: 0; text-align: center;
+    color: rgba(255,255,255,0.8); font-size: 0.85rem; font-weight: 300; padding: 0 2rem;
+  }
+  .lightbox-close {
+    position: absolute; top: 1.4rem; right: 1.8rem;
+    width: 40px; height: 40px; border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.3); background: none;
+    color: #fff; font-size: 1.4rem; cursor: pointer; line-height: 1;
+    display: flex; align-items: center; justify-content: center; transition: background 0.2s;
+  }
+  .lightbox-close:hover { background: rgba(255,255,255,0.12); }
+
+  /* scroll reveal */
+  .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.revealed { opacity: 1; transform: none; }
+
+  @media (max-width: 768px) {
+    .nav-hamburger { display: flex; }
+    nav ul {
+      display: none; flex-direction: column; gap: 0;
+      position: fixed; top: 60px; left: 0; right: 0;
+      background: rgba(12,27,51,0.99); backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,248,219,0.15);
+      padding: 0.5rem 0 1rem; z-index: 999;
+    }
+    nav ul.open { display: flex; }
+    nav ul li { width: 100%; }
+    nav ul a {
+      display: block; padding: 0.75rem 1.5rem;
+      font-size: 0.85rem; letter-spacing: 0.08em;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    nav ul li:last-child a { margin: 0.75rem 1.5rem 0; display: inline-block; width: auto; }
+    #hero h1 { font-size: 2.5rem; }
+    .hub-grid { grid-template-columns: 1fr; }
+    .gallery { grid-template-columns: repeat(2, 1fr); }
+    .callout { flex-direction: column; align-items: flex-start; }
+    .process-step { grid-template-columns: 44px 1fr; gap: 1rem; }
+    .step-number { width: 44px; height: 44px; font-size: 1.2rem; }
+    .process-step:not(:last-child)::before { left: 21px; top: 48px; }
+    h2 { font-size: 2rem; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">Matthew D. McHugh</a>
+  <button class="nav-hamburger" id="nav-toggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+  <ul id="nav-menu">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#research">Research</a></li>
+    <li><a href="index.html#projects">Projects</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="training.html">Training</a></li>
+    <li><a href="workshop.html" class="active">Workshop</a></li>
+    <li><a href="https://www.nursing.upenn.edu/chopr/" target="_blank">CHOPR</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+    <li>
+      <a href="cv.pdf" download
+         style="font-family:'DM Mono',monospace;font-size:0.72rem;color:var(--navy);
+                background:var(--gold);padding:0.35rem 0.9rem;border-radius:2px;
+                letter-spacing:0.05em;text-transform:uppercase;text-decoration:none;
+                font-weight:500;transition:background 0.15s;">
+        &#11015; CV
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<section id="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">Beyond the Office</p>
+    <h1>Workshop</h1>
+    <p class="hero-title">Hand work in wood and metal &mdash; what I make away from the desk.</p>
+  </div>
+</section>
+
+<section>
+  <div class="section-inner">
+    <p class="section-label">Outside of Work</p>
+    <h2>In the Workshop</h2>
+    <div class="prose reveal">
+      <p>Away from health policy and nursing research, I spend my time making things by hand. <span class="ph">[Add a sentence or two here about how you came to woodworking and metalwork, and what keeps you at the bench.]</span></p>
+    </div>
+    <div class="hub-grid">
+      <a class="research-card reveal" href="workshop-bowls.html">
+        <h3>Bowls</h3>
+        <p>Vessels turned on the lathe and shaped with hand tools &mdash; and how a log becomes a blank.</p>
+        <span class="card-more">Explore &rarr;</span>
+      </a>
+      <a class="research-card reveal" href="workshop-chairs.html">
+        <h3>Chairs</h3>
+        <p>Two chairmaking projects: an Appalachian ladderback and a sackback Windsor.</p>
+        <span class="card-more">Explore &rarr;</span>
+      </a>
+      <a class="research-card reveal" href="workshop-metalwork.html">
+        <h3>Metalwork</h3>
+        <p>Working in steel and copper &mdash; welded and formed.</p>
+        <span class="card-more">Explore &rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>
+    Matthew D. McHugh &middot; University of Pennsylvania School of Nursing &middot;
+    <a href="mailto:mchughm@nursing.upenn.edu">mchughm@nursing.upenn.edu</a>
+  </p>
+</footer>
+
+<script>
+(function(){
+  var els = document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){
+    els.forEach(function(el){ el.classList.add('revealed'); });
+  } else {
+    var obs = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ en.target.classList.add('revealed'); obs.unobserve(en.target); }
+      });
+    }, { threshold: 0.12 });
+    els.forEach(function(el){ obs.observe(el); });
+  }
+  var toggle = document.getElementById('nav-toggle');
+  var menu = document.getElementById('nav-menu');
+  if(toggle && menu){
+    toggle.addEventListener('click', function(){
+      toggle.classList.toggle('open');
+      menu.classList.toggle('open');
+    });
+    menu.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        toggle.classList.remove('open');
+        menu.classList.remove('open');
+      });
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
