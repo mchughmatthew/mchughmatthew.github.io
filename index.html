@@ -39,18 +39,18 @@
     --muted:     #6b7280;
     --border:    #e5dfd6;
   }
- 
+
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
- 
+
   body {
     font-family: 'DM Sans', sans-serif;
     color: var(--text);
     background: var(--warm-white);
     line-height: 1.6;
   }
- 
-  /* ── Nav ─────────────────────────────────────────── */
+
+  /* -- Nav -- */
   nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -88,8 +88,8 @@
     transition: color 0.2s;
   }
   nav ul a:hover { color: var(--gold-light); }
- 
-  /* ── Hero ─────────────────────────────────────────── */
+
+  /* -- Hero -- */
   #hero {
     background: var(--navy);
     padding: 120px 2rem 80px;
@@ -164,7 +164,7 @@
   }
   .tag:hover { background: rgba(255,248,219,0.12); color: #fff; }
   a.tag { text-decoration: none; }
- 
+
   .hero-links {
     display: flex;
     flex-wrap: wrap;
@@ -200,8 +200,8 @@
     border-color: var(--gold-light);
     color: var(--navy);
   }
- 
-  /* ── Sections ─────────────────────────────────────── */
+
+  /* -- Sections -- */
   section { padding: 80px 2rem; }
   .section-inner { max-width: 900px; margin: 0 auto; }
   .section-label {
@@ -231,8 +231,8 @@
     margin-bottom: 2rem;
     line-height: 1.15;
   }
- 
-  /* ── About ─────────────────────────────────────────── */
+
+  /* -- About -- */
   #about { background: var(--warm-white); }
   .about-grid {
     display: grid;
@@ -248,7 +248,7 @@
     font-weight: 300;
   }
   .about-bio strong { color: var(--navy); font-weight: 500; }
- 
+
   .hero-chopr-link {
     color: inherit;
     text-decoration: underline;
@@ -257,7 +257,7 @@
     transition: color 0.15s, opacity 0.15s;
   }
   .hero-chopr-link:hover { color: var(--gold); opacity: 1; }
- 
+
   .prose-link {
     color: var(--navy);
     text-decoration: underline;
@@ -265,8 +265,8 @@
     transition: color 0.15s;
   }
   .prose-link:hover { color: #1a6fd4; }
- 
-  /* ── Sidebar ──────────────────────────────────────── */
+
+  /* -- Sidebar -- */
   .sidebar-card {
     background: var(--navy);
     padding: 1.8rem;
@@ -298,7 +298,7 @@
   .edu-school  { font-size: 0.78rem; color: rgba(255,255,255,0.45); }
   .edu-degree a { transition: color 0.2s; }
   .edu-degree a:hover { color: var(--gold) !important; }
- 
+
   .award-item {
     background: #fff;
     padding: 1.2rem 1.4rem;
@@ -307,8 +307,8 @@
   }
   .award-name { font-size: 0.88rem; font-weight: 500; color: var(--navy); margin-bottom: 0.25rem; }
   .award-year { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--muted); }
- 
-  /* ── Research ─────────────────────────────────────── */
+
+  /* -- Research -- */
   #research { background: var(--warm-white); }
   .research-grid {
     display: grid;
@@ -348,8 +348,8 @@
     letter-spacing: 0.05em;
   }
   .research-card:hover .card-arrow { opacity: 1; }
- 
-  /* ── Publications ─────────────────────────────────── */
+
+  /* -- Publications -- */
   #publications { background: var(--warm-white); padding: 80px 2rem; }
   .pub-controls {
     display: flex;
@@ -455,8 +455,8 @@
   .abstract-text.open { display: block; }
   .no-results { text-align: center; padding: 3rem; color: var(--muted); font-style: italic; }
   mark { background: rgba(255,248,219,0.2); color: inherit; padding: 0 1px; border-radius: 2px; }
- 
-  /* ── Footer ───────────────────────────────────────── */
+
+  /* -- Footer -- */
   footer {
     background: var(--navy);
     padding: 3rem 2rem;
@@ -465,8 +465,8 @@
   }
   footer p { font-size: 0.82rem; color: rgba(255,255,255,0.35); }
   footer a { color: var(--gold); text-decoration: none; }
- 
-  /* ── Hamburger nav ────────────────────────────────── */
+
+  /* -- Hamburger nav -- */
   .nav-hamburger {
     display: none;
     flex-direction: column;
@@ -488,7 +488,7 @@
   .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .nav-hamburger.open span:nth-child(2) { opacity: 0; }
   .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
- 
+
   @media (max-width: 768px) {
     .about-grid    { grid-template-columns: 1fr; }
     .research-grid { grid-template-columns: 1fr; }
@@ -521,8 +521,8 @@
       width: auto;
     }
   }
- 
-  /* ── Contact ──────────────────────────────────────── */
+
+  /* -- Contact -- */
   #contact { background: var(--navy); padding: 80px 2rem; }
   .contact-inner { max-width: 860px; margin: 0 auto; }
   .contact-grid {
@@ -552,12 +552,12 @@
     background: linear-gradient(90deg, transparent, rgba(255,248,219,0.3), transparent);
     margin: 0;
   }
- 
+
   @media (max-width: 600px) {
     .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
   }
- 
-  /* ── Projects ─────────────────────────────────────── */
+
+  /* -- Projects -- */
   #projects { background: var(--cream); }
   .projects-grid {
     display: grid;
@@ -606,12 +606,12 @@
     letter-spacing: 0.05em;
   }
   .project-card:hover .card-arrow { opacity: 1; }
- 
+
   @media (max-width: 768px) {
     .projects-grid { grid-template-columns: 1fr; }
   }
- 
-  /* ── Featured Publication Cards ───────────────────── */
+
+  /* -- Featured Publication Cards -- */
   .pub-card {
     background: #fff;
     padding: 1.8rem;
@@ -646,7 +646,7 @@
   .pub-card .pub-card-authors { font-size: 0.8rem; color: var(--muted); font-weight: 300; line-height: 1.4; margin-bottom: 0.35rem; }
   .pub-card .pub-card-journal  { font-size: 0.8rem; color: var(--muted); font-style: italic; margin-bottom: 0.9rem; }
   .pub-card .pub-card-actions  { display: flex; gap: 0.6rem; flex-wrap: wrap; align-items: center; margin-top: auto; }
- 
+
   .view-all-btn {
     display: inline-flex;
     align-items: center;
@@ -663,17 +663,17 @@
     transition: all 0.2s;
   }
   .view-all-btn:hover { background: var(--navy); color: var(--gold); }
- 
+
   @media (max-width: 768px) {
     #featured-pub-grid { grid-template-columns: 1fr !important; }
   }
 </style>
 </head>
 <body>
- 
-<!-- ═══════════════════════════════════════════════════
+
+<!-- ===================================================
      NAV
-════════════════════════════════════════════════════ -->
+==================================================== -->
 <nav>
   <a href="#" class="nav-brand">Matthew D. McHugh</a>
   <button class="nav-hamburger" id="nav-toggle" aria-label="Toggle navigation">
@@ -685,6 +685,7 @@
     <li><a href="#projects">Projects</a></li>
     <li><a href="publications.html">Publications</a></li>
     <li><a href="training.html">Training</a></li>
+    <li><a href="workshop.html">Workshop</a></li>
     <li><a href="https://www.nursing.upenn.edu/chopr/" target="_blank">CHOPR</a></li>
     <li><a href="#contact">Contact</a></li>
     <li>
@@ -698,10 +699,10 @@
     </li>
   </ul>
 </nav>
- 
-<!-- ═══════════════════════════════════════════════════
+
+<!-- ===================================================
      HERO
-════════════════════════════════════════════════════ -->
+==================================================== -->
 <section id="hero">
   <div class="hero-inner">
     <p class="hero-eyebrow">University of Pennsylvania School of Nursing</p>
@@ -727,15 +728,15 @@
     </div>
   </div>
 </section>
- 
-<!-- ═══════════════════════════════════════════════════
+
+<!-- ===================================================
      ABOUT
-════════════════════════════════════════════════════ -->
+==================================================== -->
 <section id="about">
   <div class="section-inner">
     <p class="section-label">About</p>
     <div class="about-grid">
- 
+
       <div class="about-bio">
         <h2>Advancing Nursing Science<br>to Shape Health Policy</h2>
         <p>
@@ -770,10 +771,10 @@
           as a registered nurse and family nurse practitioner.
         </p>
       </div>
- 
+
       <div>
         <div class="sidebar-sticky">
- 
+
           <!-- Education -->
           <div class="sidebar-card">
             <h3>Education</h3>
@@ -798,7 +799,7 @@
               <div class="edu-school">Gwynedd-Mercy University</div>
             </div>
           </div>
- 
+
           <!-- Training -->
           <div class="sidebar-card">
             <h3>Training Opportunities</h3>
@@ -827,17 +828,17 @@
               </div>
             </div>
           </div>
- 
+
         </div><!-- end .sidebar-sticky -->
       </div>
- 
+
     </div><!-- end .about-grid -->
   </div>
 </section>
- 
-<!-- ═══════════════════════════════════════════════════
+
+<!-- ===================================================
      RESEARCH
-════════════════════════════════════════════════════ -->
+==================================================== -->
 <section id="research">
   <div class="section-inner">
     <p class="section-label">Center for Health Outcomes and Policy Research</p>
@@ -894,10 +895,10 @@
     </div>
   </div>
 </section>
- 
-<!-- ═══════════════════════════════════════════════════
+
+<!-- ===================================================
      PROJECTS
-════════════════════════════════════════════════════ -->
+==================================================== -->
 <section id="projects">
   <div class="section-inner">
     <p class="section-label">Active Research</p>
@@ -953,10 +954,10 @@
     </div>
   </div>
 </section>
- 
-<!-- ═══════════════════════════════════════════════════
+
+<!-- ===================================================
      PUBLICATIONS (featured)
-════════════════════════════════════════════════════ -->
+==================================================== -->
 <section id="publications" style="background:var(--cream);">
   <div class="section-inner">
     <p class="section-label">Peer-Reviewed Publications</p>
@@ -971,10 +972,10 @@
     </div>
   </div>
 </section>
- 
-<!-- ═══════════════════════════════════════════════════
+
+<!-- ===================================================
      CONTACT
-════════════════════════════════════════════════════ -->
+==================================================== -->
 <div class="contact-divider"></div>
 <section id="contact">
   <div class="contact-inner">
@@ -1000,22 +1001,22 @@
     </div>
   </div>
 </section>
- 
-<!-- ═══════════════════════════════════════════════════
+
+<!-- ===================================================
      FOOTER
-════════════════════════════════════════════════════ -->
+==================================================== -->
 <footer>
   <p>
     Matthew D. McHugh &middot; University of Pennsylvania School of Nursing &middot;
     <a href="mailto:mchughm@nursing.upenn.edu">mchughm@nursing.upenn.edu</a>
   </p>
 </footer>
- 
-<!-- ═══════════════════════════════════════════════════
+
+<!-- ===================================================
      SCRIPTS
-════════════════════════════════════════════════════ -->
+==================================================== -->
 <script>
-  /* ── BibTeX parser ───────────────────────────────── */
+  /* -- BibTeX parser -- */
   function parseBib(text) {
     const entries = [];
     const entryRe = /@(\w+)\s*\{\s*([^,]+),([\s\S]*?)\n\}/g;
@@ -1034,8 +1035,8 @@
     }
     return entries;
   }
- 
-  /* ── Helpers ─────────────────────────────────────── */
+
+  /* -- Helpers -- */
   function escHtml(s) {
     return String(s || '')
       .replace(/&/g,  '&amp;')
@@ -1043,7 +1044,7 @@
       .replace(/>/g,  '&gt;')
       .replace(/"/g,  '&quot;');
   }
- 
+
   function fmtAuthors(s) {
     if (!s) return '';
     return s.split(' and ')
@@ -1052,8 +1053,8 @@
       .replace(/McHugh,?\s*M\.?D\.?/gi,
         '<strong style="color:var(--navy)">McHugh, M.D.</strong>');
   }
- 
-  /* ── Featured publications ───────────────────────── */
+
+  /* -- Featured publications -- */
   async function loadFeaturedPubs() {
     const grid = document.getElementById('featured-pub-grid');
     if (!grid) return;
@@ -1065,7 +1066,7 @@
         .filter(p => p.year && !isNaN(+p.year))
         .sort((a, b) => +b.year - +a.year)
         .slice(0, 6);
- 
+
       grid.innerHTML = sorted.map(p => {
         const linkUrl  = p.doi ? `https://doi.org/${p.doi}` : (p.url || '');
         const titleEl  = linkUrl
@@ -1077,7 +1078,7 @@
         const pdf = p.pdf
           ? `<a href="${escHtml(p.pdf)}" class="btn-pdf" target="_blank">&darr; PDF</a>`
           : '';
- 
+
         return `<div class="pub-card">
           <div class="pub-year-tag">${escHtml(p.year || '')}${p.journal ? ' &middot; ' + escHtml(p.journal) : ''}</div>
           <div class="pub-card-title">${titleEl}</div>
@@ -1090,11 +1091,11 @@
       console.error(e);
     }
   }
- 
-  /* ── Init ────────────────────────────────────────── */
+
+  /* -- Init -- */
   document.addEventListener('DOMContentLoaded', () => {
     loadFeaturedPubs();
- 
+
     // Mobile nav toggle
     const toggle = document.getElementById('nav-toggle');
     const menu   = document.getElementById('nav-menu');
@@ -1112,6 +1113,6 @@
     }
   });
 </script>
- 
+
 </body>
 </html>
