@@ -1,1 +1,3 @@
 # mchughmatthew.github.io
+Personal academic website for Matthew D. McHugh, PhD, JD, MPH, RN, FAAN — Independence Chair for Nursing Education and Professor at the University of Pennsylvania School of Nursing, and Director of the Center for Health Outcomes and Policy Research (CHOPR).
+The site presents Dr. McHugh's research program in nurse staffing, hospital quality, Magnet designation, clinician well-being, and health systems policy, along with his publications, professional background, and current work. It is built as a static site and hosted via GitHub Pages.
