@@ -211,13 +211,11 @@ the log-process step descriptions, and the chair "project meta" lines.
 
 ## Open / outstanding items
 
-- **Nav link rollout:** the "Workshop" link has been added to `index.html`,
-  but the other existing pages (the six research pages, six project pages,
-  `publications.html`, `training.html`, `chopr_history.html`) still need the
-  same `<li><a href="workshop.html">Workshop</a></li>` added to their nav so
-  the section is reachable site-wide. Likewise the "News" link
-  (`<li><a href="news.html">News</a></li>`) currently exists only in the
-  navs of `index.html` and `news.html`.
+- ~~Nav link rollout~~ — done (July 2026): "News" and "Workshop" nav links
+  are now present on every page site-wide, and every page now has the
+  mobile hamburger menu (`chopr_history.html` uses its own older but
+  working hamburger pattern; all others use the standard
+  `nav-toggle`/`nav-menu` pattern).
 - **Workshop content:** galleries are still placeholders — add the real
   photos to `images/workshop/` and swap in real `<figure>` blocks; replace
   the bracketed `[text]` with real copy.
