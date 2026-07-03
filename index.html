@@ -664,8 +664,43 @@
   }
   .view-all-btn:hover { background: var(--navy); color: var(--gold); }
 
+  /* -- News carousel -- */
+  #news { background: var(--navy); position: relative; }
+  #news::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,248,219,0.3), transparent); }
+  #news .section-label { color: var(--gold); }
+  #news .section-label::after { background: var(--gold); }
+  .news-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; }
+  .news-head h2 { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 2.2rem; color: #fff; line-height: 1.1; }
+  .news-all-link { font-family: 'DM Mono', monospace; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(255,248,219,0.4); padding-bottom: 2px; transition: border-color 0.2s; }
+  .news-all-link:hover { border-color: var(--gold); }
+  .news-carousel { position: relative; }
+  .news-viewport { overflow: hidden; border-radius: 6px; }
+  .news-track { display: flex; transition: transform 0.55s cubic-bezier(0.4,0,0.2,1); }
+  .news-slide { min-width: 100%; background: var(--navy-mid); border: 1px solid rgba(255,248,219,0.15); border-radius: 6px; padding: 2.2rem 2.5rem; }
+  .news-slide-meta { display: flex; align-items: center; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 1rem; }
+  .news-slide-tag { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.22rem 0.6rem; border-radius: 2px; }
+  .news-tag-release { background: var(--gold); color: var(--navy); }
+  .news-tag-coverage { border: 1px solid rgba(255,248,219,0.5); color: var(--gold); }
+  .news-slide-date { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: rgba(255,255,255,0.5); }
+  .news-slide-title { font-family: 'Cormorant Garamond', serif; font-size: 1.55rem; font-weight: 500; color: #fff; line-height: 1.25; margin-bottom: 0.7rem; }
+  .news-slide-blurb { font-size: 0.9rem; color: rgba(255,255,255,0.65); font-weight: 300; line-height: 1.7; max-width: 640px; margin-bottom: 1.1rem; }
+  .news-slide-foot { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+  .news-slide-src { font-family: 'DM Mono', monospace; font-size: 0.68rem; letter-spacing: 0.03em; color: rgba(255,255,255,0.45); }
+  .news-slide-link { font-size: 0.85rem; font-weight: 500; color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(255,248,219,0.4); padding-bottom: 1px; transition: border-color 0.2s; }
+  .news-slide-link:hover { border-color: var(--gold); }
+  .news-arrow { position: absolute; top: 50%; transform: translateY(-50%); width: 38px; height: 38px; border-radius: 50%; background: var(--navy-light); border: 1px solid rgba(255,248,219,0.3); color: var(--gold); cursor: pointer; font-size: 1rem; line-height: 1; display: flex; align-items: center; justify-content: center; transition: background 0.2s; z-index: 2; }
+  .news-arrow:hover { background: var(--navy-mid); }
+  .news-arrow-prev { left: -19px; }
+  .news-arrow-next { right: -19px; }
+  .news-dots { display: flex; gap: 8px; justify-content: center; margin-top: 1.5rem; }
+  .news-dot { width: 8px; height: 8px; border-radius: 50%; border: none; padding: 0; background: rgba(255,255,255,0.25); cursor: pointer; transition: all 0.3s; }
+  .news-dot.active { background: var(--gold); width: 20px; border-radius: 4px; }
+
   @media (max-width: 768px) {
     #featured-pub-grid { grid-template-columns: 1fr !important; }
+    .news-slide { padding: 1.5rem 1.4rem; }
+    .news-arrow-prev { left: -8px; }
+    .news-arrow-next { right: -8px; }
   }
 </style>
 </head>
@@ -684,6 +719,7 @@
     <li><a href="#research">Research</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="publications.html">Publications</a></li>
+    <li><a href="news.html">News</a></li>
     <li><a href="training.html">Training</a></li>
     <li><a href="workshop.html">Workshop</a></li>
     <li><a href="https://www.nursing.upenn.edu/chopr/" target="_blank">CHOPR</a></li>
@@ -974,6 +1010,89 @@
 </section>
 
 <!-- ===================================================
+     NEWS (rotating)
+==================================================== -->
+<section id="news">
+  <div class="section-inner">
+    <p class="section-label">In the News</p>
+    <div class="news-head">
+      <h2>News &amp; Media</h2>
+      <a href="news.html" class="news-all-link">All Coverage &rarr;</a>
+    </div>
+    <div class="news-carousel" id="news-carousel">
+      <div class="news-viewport">
+        <div class="news-track" id="news-track">
+
+          <div class="news-slide">
+            <div class="news-slide-meta"><span class="news-slide-tag news-tag-release">Press Release</span><span class="news-slide-date">May 5, 2026</span></div>
+            <div class="news-slide-title">A Safe Staffing Policy for Pennsylvania Could Prevent Deaths and Produce Savings</div>
+            <div class="news-slide-blurb">A CHOPR study of more than 547,000 patients across 132 Pennsylvania hospitals projects that safe-staffing ratios could prevent up to 3,040 deaths a year while generating roughly $305 million in savings.</div>
+            <div class="news-slide-foot">
+              <span class="news-slide-src">Penn Nursing News &middot; Medical Care</span>
+              <a href="https://www.nursing.upenn.edu/live/news/3630-a-safe-staffing-policy-for-pennsylvania-could" target="_blank" rel="noopener" class="news-slide-link">Read more &rarr;</a>
+            </div>
+          </div>
+
+          <div class="news-slide">
+            <div class="news-slide-meta"><span class="news-slide-tag news-tag-coverage">Media Coverage</span><span class="news-slide-date">May 7, 2026</span></div>
+            <div class="news-slide-title">Pennsylvania staffing study picked up by Philly Voice, Pittsburgh Post-Gazette, and more</div>
+            <div class="news-slide-blurb">Coverage of the Medical Care findings that each additional patient per nurse raises the odds of 30-day mortality by 8% — and that safe staffing could pay for itself.</div>
+            <div class="news-slide-foot">
+              <span class="news-slide-src">Philly Voice &middot; Post-Gazette &middot; Becker's &middot; Nurse.org</span>
+              <a href="https://www.phillyvoice.com/nurses-workloads-patients-saff-levels-shortage/" target="_blank" rel="noopener" class="news-slide-link">Read more &rarr;</a>
+            </div>
+          </div>
+
+          <div class="news-slide">
+            <div class="news-slide-meta"><span class="news-slide-tag news-tag-release">Press Release</span><span class="news-slide-date">February 9, 2026</span></div>
+            <div class="news-slide-title">What Would Bring Nurses Back? How Hospitals Can Reverse Nursing Workforce Losses</div>
+            <div class="news-slide-blurb">A JAMA Network Open study of 4,043 RNs who left hospital direct care finds most are motivated to return — and safe nurse staffing levels top the list of factors that would bring them back.</div>
+            <div class="news-slide-foot">
+              <span class="news-slide-src">Penn Nursing News &middot; JAMA Network Open</span>
+              <a href="https://www.nursing.upenn.edu/live/news/3445-what-would-bring-nurses-back-new-research-shows" target="_blank" rel="noopener" class="news-slide-link">Read more &rarr;</a>
+            </div>
+          </div>
+
+          <div class="news-slide">
+            <div class="news-slide-meta"><span class="news-slide-tag news-tag-coverage">Media Coverage</span><span class="news-slide-date">February 10, 2026</span></div>
+            <div class="news-slide-title">Nurse workforce findings covered by MedPage Today, KFF Health News, and HealthDay</div>
+            <div class="news-slide-blurb">The reattraction study drew broad national coverage — adequate staffing tops the list of factors that could bring registered nurses back to hospital practice.</div>
+            <div class="news-slide-foot">
+              <span class="news-slide-src">MedPage Today &middot; KFF &middot; HealthDay &middot; Becker's</span>
+              <a href="https://www.medpagetoday.com/nursing/nursing/119808" target="_blank" rel="noopener" class="news-slide-link">Read more &rarr;</a>
+            </div>
+          </div>
+
+          <div class="news-slide">
+            <div class="news-slide-meta"><span class="news-slide-tag news-tag-release">Press Release</span><span class="news-slide-date">January 7, 2026</span></div>
+            <div class="news-slide-title">Landmark Magnet4Europe Intervention Improves Clinician Wellbeing and Patient Safety Across Europe</div>
+            <div class="news-slide-blurb">The Magnet4Europe trial, co-led by CHOPR and KU Leuven, twinned 56 European hospitals with 65 U.S. Magnet hospitals and found significant drops in nurse burnout, intent to leave, and unfavorable safety ratings.</div>
+            <div class="news-slide-foot">
+              <span class="news-slide-src">Penn Nursing News &middot; Magnet4Europe</span>
+              <a href="https://www.nursing.upenn.edu/live/news/3399-landmark-magnet4europe-intervention-improves" target="_blank" rel="noopener" class="news-slide-link">Read more &rarr;</a>
+            </div>
+          </div>
+
+          <div class="news-slide">
+            <div class="news-slide-meta"><span class="news-slide-tag news-tag-coverage">Media Coverage</span><span class="news-slide-date">June 10, 2025</span></div>
+            <div class="news-slide-title">Quoted in Science on the proposed elimination of the nursing research institute</div>
+            <div class="news-slide-blurb">Matthew McHugh, Martha Curley, and Mary Naylor are quoted in Science on what the proposed federal budget would mean for the National Institute of Nursing Research.</div>
+            <div class="news-slide-foot">
+              <span class="news-slide-src">Science</span>
+              <a href="https://www.science.org/content/article/trump-budget-proposes-killing-nursing-research-institute" target="_blank" rel="noopener" class="news-slide-link">Read more &rarr;</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <button class="news-arrow news-arrow-prev" id="news-prev" aria-label="Previous news item">&larr;</button>
+      <button class="news-arrow news-arrow-next" id="news-next" aria-label="Next news item">&rarr;</button>
+      <div class="news-dots" id="news-dots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
      CONTACT
 ==================================================== -->
 <div class="contact-divider"></div>
@@ -1092,9 +1211,51 @@
     }
   }
 
+  /* -- News carousel -- */
+  function initNewsCarousel() {
+    const carousel = document.getElementById('news-carousel');
+    const track    = document.getElementById('news-track');
+    const dotsWrap = document.getElementById('news-dots');
+    if (!carousel || !track || !dotsWrap) return;
+
+    const slides = track.querySelectorAll('.news-slide');
+    let idx = 0, timer = null;
+
+    slides.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.className = 'news-dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', 'Go to news item ' + (i + 1));
+      dot.addEventListener('click', () => { go(i); restart(); });
+      dotsWrap.appendChild(dot);
+    });
+    const dots = dotsWrap.querySelectorAll('.news-dot');
+
+    function render() {
+      track.style.transform = 'translateX(-' + (idx * 100) + '%)';
+      dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+    }
+    function go(i) {
+      idx = (i + slides.length) % slides.length;
+      render();
+    }
+    function restart() {
+      clearInterval(timer);
+      timer = setInterval(() => go(idx + 1), 6000);
+    }
+
+    document.getElementById('news-prev').addEventListener('click', () => { go(idx - 1); restart(); });
+    document.getElementById('news-next').addEventListener('click', () => { go(idx + 1); restart(); });
+    carousel.addEventListener('mouseenter', () => clearInterval(timer));
+    carousel.addEventListener('mouseleave', restart);
+
+    render();
+    restart();
+  }
+
   /* -- Init -- */
   document.addEventListener('DOMContentLoaded', () => {
     loadFeaturedPubs();
+    initNewsCarousel();
 
     // Mobile nav toggle
     const toggle = document.getElementById('nav-toggle');

@@ -68,8 +68,20 @@ Linked from the Projects section of the homepage:
 ### Other pages
 
 - `publications.html` — full searchable, year-grouped publication list (~160 entries)
+- `news.html` — News & Media page: all Penn Nursing press releases and media
+  coverage of CHOPR research (sourced from Ed Federico's announcement emails),
+  year-grouped with Press Release / Media Coverage filter buttons. Static
+  markup — new items are added by hand as `.news-item` divs.
 - `training.html` — training opportunities / T32 program
 - `chopr_history.html` — history of CHOPR (note: underscore in the filename)
+
+### Homepage news carousel
+
+`index.html` has an "In the News" section (`#news`, navy background, between
+Publications and Contact) — an auto-rotating carousel (6s interval, pauses on
+hover, arrows + dots) of ~6 highlight items as static `.news-slide` divs
+inside `#news-track`. "All Coverage →" links to `news.html`. To feature a
+new item, add/replace a `.news-slide` and the dots update automatically.
 
 ### Workshop section (personal — hobbies, added most recently)
 
@@ -203,7 +215,9 @@ the log-process step descriptions, and the chair "project meta" lines.
   but the other existing pages (the six research pages, six project pages,
   `publications.html`, `training.html`, `chopr_history.html`) still need the
   same `<li><a href="workshop.html">Workshop</a></li>` added to their nav so
-  the section is reachable site-wide.
+  the section is reachable site-wide. Likewise the "News" link
+  (`<li><a href="news.html">News</a></li>`) currently exists only in the
+  navs of `index.html` and `news.html`.
 - **Workshop content:** galleries are still placeholders — add the real
   photos to `images/workshop/` and swap in real `<figure>` blocks; replace
   the bracketed `[text]` with real copy.
