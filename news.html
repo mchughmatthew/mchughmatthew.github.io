@@ -68,6 +68,7 @@
     .news-tag { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.18rem 0.55rem; border-radius: 2px; }
     .tag-release { background: var(--navy); color: var(--gold); }
     .tag-coverage { background: var(--gold); color: #6b5d1f; border: 1px solid rgba(107,93,31,0.25); }
+    .tag-recognition { background: none; color: var(--navy); border: 1px solid rgba(12,27,51,0.4); }
     .news-date { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--muted); }
     .news-outlet { font-size: 0.8rem; color: var(--muted); font-style: italic; }
     .news-title { font-size: 1rem; font-weight: 500; color: var(--navy); line-height: 1.45; margin-bottom: 0.35rem; }
@@ -128,6 +129,7 @@
     <button class="filter-btn active" data-filter="all" onclick="filterNews('all', this)">All</button>
     <button class="filter-btn" data-filter="release" onclick="filterNews('release', this)">Press Releases</button>
     <button class="filter-btn" data-filter="coverage" onclick="filterNews('coverage', this)">Media Coverage</button>
+    <button class="filter-btn" data-filter="recognition" onclick="filterNews('recognition', this)">Recognition</button>
     <span class="news-stats" id="news-stats">Loading&hellip;</span>
   </div>
   <div id="news-list"></div>
@@ -142,6 +144,7 @@
   /* -- News data (loaded from news.json) -- */
   let NEWS = [];
   let FILTER = 'all';
+  const TYPE_LABELS = { release: 'Press Release', coverage: 'Media Coverage', recognition: 'Recognition' };
 
   function fmtDate(iso) {
     const [y, m, d] = iso.split('-').map(Number);
@@ -158,9 +161,7 @@
     const years = Object.keys(byYear).sort((a, b) => b - a);
     list.innerHTML = years.map(year => {
       const rows = byYear[year].map(it => {
-        const tag = it.type === 'release'
-          ? '<span class="news-tag tag-release">Press Release</span>'
-          : '<span class="news-tag tag-coverage">Media Coverage</span>';
+        const tag = '<span class="news-tag tag-' + it.type + '">' + (TYPE_LABELS[it.type] || it.type) + '</span>';
         const outlet = it.source ? '<span class="news-outlet">' + it.source + '</span>' : '';
         const title = it.url
           ? '<a href="' + it.url + '" target="_blank" rel="noopener">' + it.title + '</a>'

@@ -681,6 +681,7 @@
   .news-slide-tag { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.22rem 0.6rem; border-radius: 2px; }
   .news-tag-release { background: var(--gold); color: var(--navy); }
   .news-tag-coverage { border: 1px solid rgba(255,248,219,0.5); color: var(--gold); }
+  .news-tag-recognition { background: rgba(255,248,219,0.16); color: var(--gold); border: 1px solid rgba(255,248,219,0.25); }
   .news-slide-date { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: rgba(255,255,255,0.5); }
   .news-slide-title { font-family: 'Cormorant Garamond', serif; font-size: 1.55rem; font-weight: 500; color: #fff; line-height: 1.25; margin-bottom: 0.7rem; }
   .news-slide-blurb { font-size: 0.9rem; color: rgba(255,255,255,0.65); font-weight: 300; line-height: 1.7; max-width: 640px; margin-bottom: 1.1rem; }
@@ -1178,13 +1179,12 @@
       return new Date(y, m - 1, d).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
     };
 
+    const TYPE_LABELS = { release: 'Press Release', coverage: 'Media Coverage', recognition: 'Recognition' };
     track.innerHTML = picks.map(it => {
-      const tag = it.type === 'release'
-        ? '<span class="news-slide-tag news-tag-release">Press Release</span>'
-        : '<span class="news-slide-tag news-tag-coverage">Media Coverage</span>';
-      const src = it.type === 'release'
-        ? 'Penn Nursing News' + (it.source ? ' &middot; ' + it.source : '')
-        : (it.source || '');
+      const tag = '<span class="news-slide-tag news-tag-' + it.type + '">' + (TYPE_LABELS[it.type] || it.type) + '</span>';
+      const src = it.type === 'coverage'
+        ? (it.source || '')
+        : 'Penn Nursing News' + (it.source ? ' &middot; ' + it.source : '');
       const link = it.url
         ? '<a href="' + it.url + '" target="_blank" rel="noopener" class="news-slide-link">Read more &rarr;</a>'
         : '';

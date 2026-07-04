@@ -92,7 +92,8 @@ repo root. Item schema:
 ```json
 {
   "date": "2026-05-05",          // ISO date — controls sort & display
-  "type": "release",             // "release" or "coverage"
+  "type": "release",             // "release", "coverage", or "recognition"
+                                 // (recognition = awards, honors, endorsements)
   "title": "Headline text",
   "url": "https://...",          // main link; null if none exists
   "source": "Medical Care",      // journal (releases) or outlet(s) (coverage)
