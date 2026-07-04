@@ -70,8 +70,9 @@ Linked from the Projects section of the homepage:
 - `publications.html` — full searchable, year-grouped publication list (~160 entries)
 - `news.html` — News & Media page: all Penn Nursing press releases and media
   coverage of CHOPR research (sourced from Ed Federico's announcement emails),
-  year-grouped with Press Release / Media Coverage filter buttons. Static
-  markup — new items are added by hand as `.news-item` divs.
+  year-grouped with Press Release / Media Coverage filter buttons. Rendered
+  by JavaScript from `news.json` — to add an item, add an object to the
+  JSON (no HTML editing needed).
 - `training.html` — training opportunities / T32 program
 - `chopr_history.html` — history of CHOPR (note: underscore in the filename)
 
@@ -79,9 +80,32 @@ Linked from the Projects section of the homepage:
 
 `index.html` has an "In the News" section (`#news`, navy background, between
 Publications and Contact) — an auto-rotating carousel (6s interval, pauses on
-hover, arrows + dots) of ~6 highlight items as static `.news-slide` divs
-inside `#news-track`. "All Coverage →" links to `news.html`. To feature a
-new item, add/replace a `.news-slide` and the dots update automatically.
+hover, arrows + dots) built by JavaScript from `news.json`. It shows items
+flagged `"featured": true` (newest first), filled to six with the most
+recent unflagged items. "All Coverage →" links to `news.html`.
+
+### news.json (single source of news data)
+
+Both the news page and the homepage carousel render from `news.json` in the
+repo root. Item schema:
+
+```json
+{
+  "date": "2026-05-05",          // ISO date — controls sort & display
+  "type": "release",             // "release" or "coverage"
+  "title": "Headline text",
+  "url": "https://...",          // main link; null if none exists
+  "source": "Medical Care",      // journal (releases) or outlet(s) (coverage)
+  "blurb": "One-two sentences; may contain inline <a> links.",
+  "featured": true               // optional — puts item in homepage carousel
+}
+```
+
+To add news: append the object to `news.json` (keep newest-first order for
+readability; JS re-sorts regardless), set `featured` on items that should
+rotate on the homepage, and unset it on items rotating out. The
+`website-news-intake` skill (Cowork) automates this from Gmail — emails
+labeled `to_website`, plus Ed Federico's announcement emails.
 
 ### Workshop section (personal — hobbies, added most recently)
 
