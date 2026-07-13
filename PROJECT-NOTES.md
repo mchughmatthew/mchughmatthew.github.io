@@ -23,9 +23,26 @@ conventions to follow when editing, and what is still outstanding.
 ### How a change goes live
 
 1. Edit files in the local working copy.
-2. Review the changes in GitHub Desktop (it shows a diff of every change).
-3. Commit with a short message, then Push.
-4. GitHub Pages redeploys within a minute or two.
+2. Run `python3 site-lint.py` — it must print `OK` (see Conventions).
+3. Review the changes in GitHub Desktop (it shows a diff of every change).
+4. Commit with a short message, then Push.
+5. GitHub Pages redeploys within a minute or two. A GitHub Action re-runs
+   the lint on every push — a red ✗ next to the commit on github.com means
+   it caught something.
+
+### Automation & external services
+
+- **Weekly news intake** — a Cowork scheduled task
+  (`weekly-website-news-intake`, Mondays ~9 AM, runs when the Claude app is
+  open) clips `to_website`-labeled Gmail and Ed Federico announcements into
+  `news.json`, runs the lint, and leaves the change for review in GitHub
+  Desktop. It never pushes.
+- **Workshop photos** — the `workshop-photo-intake` Cowork skill resizes,
+  renames, captions, and inserts new gallery photos (see Workshop section).
+- **Google Search Console** — property `https://mchughmatthew.github.io/`
+  verified July 2026 (via the Analytics tag); `sitemap.xml` submitted.
+  Check the Performance tab occasionally for search-query data.
+- **Google Analytics** — tag `G-5LNP9W9B62` on every page.
 
 ---
 
@@ -205,6 +222,15 @@ workshop.html              hub / landing page (3 category cards)
 └─ workshop-metalwork.html  single combined steel + copper gallery
 ```
 
+### Adding photos (automated)
+
+The `workshop-photo-intake` Cowork skill handles the whole intake: give it
+new photos and the category, and it resizes to web size, names files as the
+next numbers in the category's sequence, drafts captions and alt text from
+the photos themselves, inserts the figure blocks into the right page, and
+runs the lint. Corrections to its caption guesses happen in the GitHub
+Desktop review. The manual conventions below are what the skill implements.
+
 ### Image folder and naming
 
 All Workshop photos live in `images/workshop/`. Galleries expect sequential,
@@ -259,6 +285,12 @@ remain bracketed.
 
 ## Maintenance log
 
+- **July 12, 2026 automation pass:** ORCID (0000-0002-1263-0697) added to
+  the homepage JSON-LD; Google Search Console verified and sitemap
+  submitted (sitemap status may show "Couldn't fetch" for a few days —
+  normal for new properties); `weekly-website-news-intake` scheduled task
+  created; `workshop-photo-intake` skill built and tested (skill lives in
+  Matthew's Cowork profile, not in this repo).
 - **July 2026 follow-up pass:** JSON-LD `Person` schema on the homepage
   (`sameAs`: ORCID 0000-0002-1263-0697, Google Scholar, LinkedIn, Penn
   profile); favicon now hosted locally
