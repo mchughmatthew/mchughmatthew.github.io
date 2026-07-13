@@ -266,10 +266,17 @@ remain bracketed.
   added `loading="lazy"` to gallery images; converted `mask.png` →
   `mask.jpg` (burnout hero); added meta description, canonical, and OG
   tags to every page.
-- **July 2026 nav rollout:** "News" and "Workshop" nav links on every page
-  site-wide, plus the mobile hamburger menu everywhere
-  (`chopr_history.html` uses its own older but working hamburger pattern;
-  all others use the standard `nav-toggle`/`nav-menu` pattern).
+- **July 2026 nav standardization:** every page now carries the identical
+  menu, in this order: About, Research, Projects, Publications
+  (→ `publications.html`, never the homepage section), News, Training,
+  Workshop, CHOPR (external), Contact, CV button. Section links point to
+  `index.html#…` anchors. The page's own section gets `class="active"`
+  (Research on topic pages, Projects on project pages, etc.). The mobile
+  hamburger is now genuinely on every page — nine pages had been missing it
+  despite earlier notes claiming otherwise (`chopr_history.html` keeps its
+  own older but working hamburger; all others use the standard
+  `nav-toggle`/`nav-menu` pattern). `site-lint.py` enforces the menu's
+  composition, order, and Publications target, so drift now fails the lint.
 - **May–July 2026:** Workshop galleries populated with real photos.
 
 ## Open / outstanding items

@@ -47,11 +47,23 @@ for page in pages:
     if html.count("<script") != html.count("</script>"):
         problem(page, "unbalanced <script> tags (truncated script?)")
 
-    # -- site-wide nav links ----------------------------------------------
+    # -- site-wide nav: same menu on every page -----------------------------
     if not is_404:
-        for target in ("news.html", "workshop.html"):
-            if target not in html and page != target:
-                problem(page, f"nav does not link to {target}")
+        nav = re.search(r"<nav.*?</nav>", html, re.S)
+        if not nav:
+            problem(page, "missing <nav>")
+        else:
+            labels = re.findall(r"<li>\s*<a [^>]*>\s*([^<]+?)\s*</a>\s*</li>", nav.group(0))
+            labels = [re.sub(r"^(?:&#\d+;?|\W)*", "", l) for l in labels]
+            expected = ["About", "Research", "Projects", "Publications", "News",
+                        "Training", "Workshop", "CHOPR", "Contact", "CV"]
+            if labels != expected:
+                problem(page, f"nav menu is {labels}, expected {expected}")
+            pub = re.search(r'<li><a href="([^"]+)"[^>]*>\s*Publications', nav.group(0))
+            if pub and pub.group(1) != "publications.html":
+                problem(page, f"Publications nav link points to {pub.group(1)}")
+            if page != "chopr_history.html" and 'id="nav-toggle"' not in nav.group(0):
+                problem(page, "missing mobile hamburger (nav-toggle)")
 
     # -- conventions --------------------------------------------------------
     if re.search(r'href="mailto:(?!mchughm@nursing\.upenn\.edu)', html):
