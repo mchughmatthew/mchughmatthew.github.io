@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Editor/backup files
+*.bak
+*~
+
+# Thumbnails
+Thumbs.db

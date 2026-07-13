@@ -123,7 +123,15 @@ research. See the dedicated section further down.
 
 - `cv.pdf` — CV, in the repo root; linked from the nav and hero.
 - `publications.bib` — BibTeX source for the publication lists.
+- `pdfs/` — full-text publication PDFs linked from research pages and the bib.
 - `images/` — site images. Workshop photos go in `images/workshop/`.
+- `images/og-preview.jpg` — 1200×630 social preview card used by the Open
+  Graph / Twitter tags on every page.
+- `404.html` — not-found page (design system, `noindex`, no nav).
+- `sitemap.xml` / `robots.txt` — SEO files; add new pages to the sitemap
+  (site-lint.py checks this).
+- `site-lint.py` — consistency checker; see Conventions below.
+- `.gitignore` — keeps `.DS_Store` and backup files out of the repo.
 - Favicon is loaded from `nursing.upenn.edu`.
 
 ---
@@ -166,6 +174,19 @@ Shared across every page. Defined as CSS variables in each page's `<style>`.
   inline styles cannot carry `:hover` rules.
 - When generating a long HTML file, verify it is not truncated — confirm it
   ends with `</body></html>` and the final `<script>` is complete.
+- **Run `python3 site-lint.py` before committing.** It verifies every page has
+  the GA tag, meta description, canonical link, OG tags, News/Workshop nav
+  links, complete `</html>`, valid `news.json`, sitemap coverage, no missing
+  file references, and no oversized images. It must print `OK`.
+- **Every page's `<head>` needs:** meta description, canonical link, and the
+  Open Graph / Twitter block (copy the pattern from any existing page;
+  `og:image` points at `images/og-preview.jpg`).
+- **New pages must be added to `sitemap.xml`.**
+- **Images: max 1600 px on the long side, JPEG quality 85** before adding to
+  the repo (photos as JPEG, not PNG). Gallery/content `<img>` tags get
+  `loading="lazy" decoding="async"`. Resize with Pillow or Preview — full
+  camera files are 3–7 MB each and made workshop pages 25–60 MB before the
+  July 2026 optimization pass.
 
 ---
 
@@ -201,8 +222,9 @@ meaning, so files should be numbered in the order they should appear.
 
 ### Placeholder vs. real gallery images
 
-Each gallery currently holds **placeholder** figures. To show a real photo,
-replace a placeholder:
+All galleries now hold **real photos** (placeholders were replaced in
+May–July 2026). The placeholder pattern below is still how a new not-yet-shot
+image slot is added. A placeholder looks like:
 
 ```html
 <figure class="gallery-item placeholder">
@@ -210,7 +232,7 @@ replace a placeholder:
 </figure>
 ```
 
-with a real figure:
+To show a real photo, replace it with a real figure:
 
 ```html
 <figure class="gallery-item"
@@ -229,23 +251,38 @@ with `data-full`) open in a lightbox on click; placeholders do not.
 ### Placeholder text
 
 Italic, bracketed text such as `[Describe your turned bowls …]` marks copy
-that still needs to be written by Matthew — intros, the chair build stories,
-the log-process step descriptions, and the chair "project meta" lines.
+that still needs to be written by Matthew. Most has been written; as of
+July 2026 only the two chair "project meta" lines in `workshop-chairs.html`
+remain bracketed.
 
 ---
 
+## Maintenance log
+
+- **July 2026 site pass:** added `.gitignore`, `404.html`, `robots.txt`,
+  `sitemap.xml`, `site-lint.py`, and `images/og-preview.jpg`; deleted the
+  leftover `design-preview-pennC.html` mockup and stray files; resized all
+  images to web size (workshop pages went from 25–60 MB to 4–13 MB);
+  added `loading="lazy"` to gallery images; converted `mask.png` →
+  `mask.jpg` (burnout hero); added meta description, canonical, and OG
+  tags to every page.
+- **July 2026 nav rollout:** "News" and "Workshop" nav links on every page
+  site-wide, plus the mobile hamburger menu everywhere
+  (`chopr_history.html` uses its own older but working hamburger pattern;
+  all others use the standard `nav-toggle`/`nav-menu` pattern).
+- **May–July 2026:** Workshop galleries populated with real photos.
+
 ## Open / outstanding items
 
-- ~~Nav link rollout~~ — done (July 2026): "News" and "Workshop" nav links
-  are now present on every page site-wide, and every page now has the
-  mobile hamburger menu (`chopr_history.html` uses its own older but
-  working hamburger pattern; all others use the standard
-  `nav-toggle`/`nav-menu` pattern).
-- **Workshop content:** galleries are still placeholders — add the real
-  photos to `images/workshop/` and swap in real `<figure>` blocks; replace
-  the bracketed `[text]` with real copy.
-- **Social preview image:** `images/og-preview.jpg` (1200×630) is referenced
-  by the Open Graph / Twitter tags on every page but has not been created
-  yet — it needs to be made and committed.
+- **Workshop copy:** the two bracketed `[…]` chair "project meta" lines in
+  `workshop-chairs.html` still need final wording from Matthew.
+- **Unused images:** ~14 root-level files in `images/` (e.g. `Boards*.JPG`,
+  `dollarbill.jpg`, `fin.png`, `nite.png`, `window.jpg`, `shield*.png`) are
+  referenced by no page — decide whether to delete them.
+- **PDF hosting rights:** `pdfs/` publicly hosts ~98 publisher PDFs; verify
+  the key journals' self-archiving policies allow the published versions
+  (vs. author-accepted manuscripts).
 - **Verify a fact:** the year given for when Matthew became CHOPR director
   (currently 2016 in `chopr_history.html`) should be confirmed.
+- **Alt text:** workshop gallery alts are generic ("Turned bowl"); could be
+  made descriptive per photo if desired.

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mchughmatthew.github.io/sitemap.xml
