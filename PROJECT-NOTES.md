@@ -260,7 +260,8 @@ remain bracketed.
 ## Maintenance log
 
 - **July 2026 follow-up pass:** JSON-LD `Person` schema on the homepage
-  (add ORCID to `sameAs` when available); favicon now hosted locally
+  (`sameAs`: ORCID 0000-0002-1263-0697, Google Scholar, LinkedIn, Penn
+  profile); favicon now hosted locally
   (`favicon.ico` in repo root — no longer loaded from nursing.upenn.edu);
   gallery images carry explicit `width`/`height` attributes (prevents
   layout shift — new gallery figures should include them too); GitHub
