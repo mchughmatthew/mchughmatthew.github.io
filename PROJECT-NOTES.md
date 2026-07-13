@@ -259,6 +259,13 @@ remain bracketed.
 
 ## Maintenance log
 
+- **July 2026 follow-up pass:** JSON-LD `Person` schema on the homepage
+  (add ORCID to `sameAs` when available); favicon now hosted locally
+  (`favicon.ico` in repo root — no longer loaded from nursing.upenn.edu);
+  gallery images carry explicit `width`/`height` attributes (prevents
+  layout shift — new gallery figures should include them too); GitHub
+  Action (`.github/workflows/site-lint.yml`) runs `site-lint.py` on every
+  push — a red ✗ on the commit in GitHub means the lint failed.
 - **July 2026 site pass:** added `.gitignore`, `404.html`, `robots.txt`,
   `sitemap.xml`, `site-lint.py`, and `images/og-preview.jpg`; deleted the
   leftover `design-preview-pennC.html` mockup and stray files; resized all
