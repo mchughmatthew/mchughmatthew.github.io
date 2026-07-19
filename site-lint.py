@@ -69,6 +69,13 @@ for page in pages:
     if re.search(r'href="mailto:(?!mchughm@nursing\.upenn\.edu)', html):
         problem(page, "mailto: link with unexpected address")
 
+    # -- accessibility ------------------------------------------------------
+    if not is_404:
+        if "prefers-reduced-motion" not in html:
+            problem(page, "missing prefers-reduced-motion CSS block")
+        if 'class="skip-link"' not in html:
+            problem(page, "missing skip-to-content link")
+
     # -- local references exist, and images are web-sized -------------------
     refs = re.findall(r'(?:src|href|data-full)="((?:images|pdfs)/[^"]+)"', html)
     refs += re.findall(r"url\('((?:images|pdfs)/[^']+)'\)", html)

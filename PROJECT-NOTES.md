@@ -84,12 +84,16 @@ Linked from the Projects section of the homepage:
 
 ### Other pages
 
-- `publications.html` — full searchable, year-grouped publication list (~160 entries)
+- `publications.html` — full searchable, year-grouped publication list (~160
+  entries). The search query mirrors into the URL hash (`#q=…`) so filtered
+  views are shareable, and a BibTeX button downloads the currently visible
+  entries as a `.bib` file.
 - `news.html` — News & Media page: all Penn Nursing press releases and media
   coverage of CHOPR research (sourced from Ed Federico's announcement emails),
-  year-grouped with Press Release / Media Coverage filter buttons. Rendered
-  by JavaScript from `news.json` — to add an item, add an object to the
-  JSON (no HTML editing needed).
+  year-grouped with Press Release / Media Coverage filter buttons (the active
+  filter mirrors into the URL hash, e.g. `#coverage`, so filtered views are
+  shareable). Rendered by JavaScript from `news.json` — to add an item, add
+  an object to the JSON (no HTML editing needed).
 - `training.html` — training opportunities / T32 program
 - `chopr_history.html` — history of CHOPR (note: underscore in the filename)
 
@@ -199,6 +203,11 @@ Shared across every page. Defined as CSS variables in each page's `<style>`.
   Open Graph / Twitter block (copy the pattern from any existing page;
   `og:image` points at `images/og-preview.jpg`).
 - **New pages must be added to `sitemap.xml`.**
+- **Accessibility (lint-enforced):** every page except `404.html` needs a
+  `class="skip-link"` skip-to-content link right after `<body>` (pointing at
+  the page's main content id) and a `@media (prefers-reduced-motion: reduce)`
+  CSS block. Copy both from any existing page. The homepage news carousel
+  also skips auto-rotation for reduced-motion users.
 - **Images: max 1600 px on the long side, JPEG quality 85** before adding to
   the repo (photos as JPEG, not PNG). Gallery/content `<img>` tags get
   `loading="lazy" decoding="async"`. Resize with Pillow or Preview — full
@@ -285,6 +294,12 @@ remain bracketed.
 
 ## Maintenance log
 
+- **July 18, 2026 usability pass** (ideas adapted from Gary King's academic
+  website guide): publications page gained a BibTeX download of visible
+  entries and URL-hash search sync; news page filters sync to the hash;
+  every page got a skip-to-content link and a `prefers-reduced-motion`
+  block (both now lint-enforced); homepage carousel respects reduced
+  motion; `404.html` now carries the standard nav ("no dead ends").
 - **July 12, 2026 automation pass:** ORCID (0000-0002-1263-0697) added to
   the homepage JSON-LD; Google Search Console verified and sitemap
   submitted (sitemap status may show "Couldn't fetch" for a few days —

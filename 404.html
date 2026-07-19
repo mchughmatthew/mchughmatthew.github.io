@@ -20,6 +20,7 @@
   :root {
     --navy: #0c1b33;
     --navy-mid: #162645;
+    --gold: #fff8db;
     --gold-light: #fff8db;
     --cream: #f8f4ef;
     --muted: #9aa3b2;
@@ -34,8 +35,29 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 24px;
+    padding: 84px 24px 24px;
   }
+
+  /* ── Nav (standard site menu, so a lost reader is never at a dead end) ── */
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(12,27,51,0.97); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,248,219,0.2); padding: 0 2rem; height: 60px; display: flex; align-items: center; justify-content: space-between; }
+  nav .nav-brand { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.1rem; color: var(--gold-light); letter-spacing: 0.03em; text-decoration: none; }
+  nav ul { list-style: none; display: flex; gap: 2rem; align-items: center; }
+  nav ul a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.85rem; font-weight: 400; letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; }
+  nav ul a:hover { color: var(--gold-light); }
+  .nav-hamburger { display: none; flex-direction: column; justify-content: center; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; z-index: 1100; }
+  .nav-hamburger span { display: block; width: 22px; height: 2px; background: rgba(255,255,255,0.8); border-radius: 2px; transition: transform 0.25s, opacity 0.25s; }
+  .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+  .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  @media (max-width: 768px) {
+    .nav-hamburger { display: flex; }
+    nav ul { display: none; flex-direction: column; gap: 0; position: fixed; top: 60px; left: 0; right: 0; background: rgba(12,27,51,0.99); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,248,219,0.15); padding: 0.5rem 0 1rem; z-index: 999; }
+    nav ul.open { display: flex; }
+    nav ul li { width: 100%; }
+    nav ul a { display: block; padding: 0.75rem 1.5rem; font-size: 0.85rem; letter-spacing: 0.08em; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    nav ul li:last-child a { margin: 0.75rem 1.5rem 0; display: inline-block; width: auto; }
+  }
+
   .eyebrow {
     font-family: 'DM Mono', monospace;
     font-size: 0.8rem;
@@ -63,14 +85,49 @@
     transition: opacity 0.2s;
   }
   a.home:hover { opacity: 0.85; }
+
+  /* -- Accessibility: respect reduced-motion preference -- */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
+  }
 </style>
 </head>
 <body>
+  <nav>
+    <a href="index.html" class="nav-brand">Matthew D. McHugh</a>
+    <button class="nav-hamburger" id="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul id="nav-menu">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#research">Research</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="training.html">Training</a></li>
+      <li><a href="workshop.html">Workshop</a></li>
+      <li><a href="https://www.nursing.upenn.edu/chopr/" target="_blank">CHOPR</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="cv.pdf" download style="font-family:'DM Mono',monospace;font-size:0.72rem;color:var(--navy);background:var(--gold);padding:0.35rem 0.9rem;border-radius:2px;letter-spacing:0.05em;text-transform:uppercase;text-decoration:none;font-weight:500;transition:background 0.15s;">&#11015; CV</a></li>
+    </ul>
+  </nav>
+
   <main>
     <div class="eyebrow">404 &middot; Not Found</div>
     <h1>This page doesn&rsquo;t exist</h1>
-    <p>The page you&rsquo;re looking for may have moved or never existed. The homepage has links to everything on the site.</p>
+    <p>The page you&rsquo;re looking for may have moved or never existed. Use the menu above, or start from the homepage.</p>
     <a class="home" href="/">Back to homepage</a>
   </main>
+
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    if (navToggle && navMenu) {
+      navToggle.addEventListener('click', () => {
+        navToggle.classList.toggle('open');
+        navMenu.classList.toggle('open');
+      });
+    }
+  </script>
 </body>
 </html>

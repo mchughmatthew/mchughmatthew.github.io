@@ -108,9 +108,20 @@
     nav ul li { width: 100%; }
     nav ul a { display: block; padding: 0.75rem 1.5rem; font-size: 0.85rem; letter-spacing: 0.08em; border-bottom: 1px solid rgba(255,255,255,0.05); }
   }
-</style>
+
+    /* -- Accessibility: skip-to-content link (visible only on keyboard focus) -- */
+    .skip-link { position: absolute; left: -9999px; top: 0; z-index: 2000; background: var(--gold-light, #fff8db); color: var(--navy, #0c1b33); padding: 0.6rem 1.2rem; font-family: 'DM Mono', monospace; font-size: 0.8rem; letter-spacing: 0.05em; text-decoration: none; border-radius: 0 0 4px 0; }
+    .skip-link:focus { left: 0; }
+
+    /* -- Accessibility: respect reduced-motion preference -- */
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
+    }
+  </style>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to content</a>
 <nav>
   <a href="index.html" class="nav-brand">Matthew D. McHugh</a>
   <button class="nav-hamburger" id="nav-toggle" aria-label="Toggle navigation">
@@ -130,7 +141,7 @@
   </ul>
 </nav>
 
-<div class="topic-hero">
+<div class="topic-hero" id="main-content">
   <div class="topic-hero-inner">
     <a href="index.html#projects" class="back-link">&#8592; Back to Projects</a>
     <div><span class="topic-tag">#magnet4europe</span><span class="funder-tag">EU Commission · Multi-site</span></div>

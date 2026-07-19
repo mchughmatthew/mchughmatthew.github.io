@@ -319,9 +319,14 @@
     .reveal { opacity: 1; transform: none; transition: none; }
     html { scroll-behavior: auto; }
   }
-</style>
+
+    /* -- Accessibility: skip-to-content link (visible only on keyboard focus) -- */
+    .skip-link { position: absolute; left: -9999px; top: 0; z-index: 2000; background: var(--gold-light, #fff8db); color: var(--navy, #0c1b33); padding: 0.6rem 1.2rem; font-family: 'DM Mono', monospace; font-size: 0.8rem; letter-spacing: 0.05em; text-decoration: none; border-radius: 0 0 4px 0; }
+    .skip-link:focus { left: 0; }
+  </style>
 </head>
 <body>
+<a class="skip-link" href="#hero">Skip to content</a>
 
 <nav>
   <a href="index.html" class="nav-brand">Matthew D. McHugh</a>

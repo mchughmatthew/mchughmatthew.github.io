@@ -728,9 +728,20 @@
     .news-arrow-prev { left: -8px; }
     .news-arrow-next { right: -8px; }
   }
-</style>
+
+    /* -- Accessibility: skip-to-content link (visible only on keyboard focus) -- */
+    .skip-link { position: absolute; left: -9999px; top: 0; z-index: 2000; background: var(--gold-light, #fff8db); color: var(--navy, #0c1b33); padding: 0.6rem 1.2rem; font-family: 'DM Mono', monospace; font-size: 0.8rem; letter-spacing: 0.05em; text-decoration: none; border-radius: 0 0 4px 0; }
+    .skip-link:focus { left: 0; }
+
+    /* -- Accessibility: respect reduced-motion preference -- */
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
+    }
+  </style>
 </head>
 <body>
+<a class="skip-link" href="#hero">Skip to content</a>
 
 <!-- ===================================================
      NAV
@@ -1240,8 +1251,10 @@
       idx = (i + slides.length) % slides.length;
       render();
     }
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     function restart() {
       clearInterval(timer);
+      if (reduceMotion) return; /* no auto-rotation for reduced-motion users; arrows and dots still work */
       timer = setInterval(() => go(idx + 1), 6000);
     }
 

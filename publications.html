@@ -66,6 +66,8 @@
     #pub-search:focus { border-color: var(--navy); }
     #pub-search::placeholder { color: var(--muted); }
     .pub-stats { font-family: 'DM Mono', monospace; font-size: 0.75rem; color: var(--muted); white-space: nowrap; }
+    .btn-bibtex { font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--navy); border: 1px solid rgba(12,27,51,0.35); background: none; padding: 0.35rem 0.9rem; border-radius: 2px; cursor: pointer; letter-spacing: 0.05em; text-transform: uppercase; transition: all 0.15s; white-space: nowrap; }
+    .btn-bibtex:hover { background: var(--navy); color: var(--gold); }
 
     /* ── Year groups ── */
     .year-group { margin-bottom: 3rem; }
@@ -105,9 +107,20 @@
       nav ul li:last-child a { margin: 0.75rem 1.5rem 0; display: inline-block; width: auto; }
       .pub-controls { top: 60px; }
     }
+  
+    /* -- Accessibility: skip-to-content link (visible only on keyboard focus) -- */
+    .skip-link { position: absolute; left: -9999px; top: 0; z-index: 2000; background: var(--gold-light, #fff8db); color: var(--navy, #0c1b33); padding: 0.6rem 1.2rem; font-family: 'DM Mono', monospace; font-size: 0.8rem; letter-spacing: 0.05em; text-decoration: none; border-radius: 0 0 4px 0; }
+    .skip-link:focus { left: 0; }
+
+    /* -- Accessibility: respect reduced-motion preference -- */
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
+    }
   </style>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to content</a>
 
 <nav>
   <a href="index.html" class="nav-brand">Matthew D. McHugh</a>
@@ -128,7 +141,7 @@
   </ul>
 </nav>
 
-<div class="page-header">
+<div class="page-header" id="main-content">
   <div class="page-header-inner">
     <p class="page-eyebrow">Center for Health Outcomes and Policy Research</p>
     <h1>Publications</h1>
@@ -140,6 +153,7 @@
   <div class="pub-controls">
     <input type="text" id="pub-search" placeholder="Search by title, author, or journal&hellip;" oninput="filterPubs()" autocomplete="off">
     <span class="pub-stats" id="pub-stats">Loading&hellip;</span>
+    <button class="btn-bibtex" id="bib-export" onclick="downloadBib()" title="Download the currently shown entries as a BibTeX file">&#11015; BibTeX</button>
   </div>
   <div id="pub-list"></div>
 </main>
@@ -156,7 +170,7 @@ function parseBib(text) {
   const entryRe = /@(\w+)\s*\{\s*([^,]+),([\s\S]*?)\n\}/g;
   let m;
   while ((m = entryRe.exec(text)) !== null) {
-    const id = m[2].trim(), body = m[3], entry = { id };
+    const id = m[2].trim(), body = m[3], entry = { id, raw: m[0] };
     const fieldRe = /^\s*(\w+)\s*=\s*\{([\s\S]*?)\}\s*(?:,|$)/gm;
     let fm;
     while ((fm = fieldRe.exec(body)) !== null) entry[fm[1].toLowerCase()] = fm[2].trim();
@@ -184,7 +198,10 @@ function formatAuthors(str) {
     .replace(/McHugh,?\s*M\.?D\.?/gi, '<strong style="color:var(--navy)">McHugh, M.D.</strong>');
 }
 
+let VISIBLE = [];
+
 function renderPubs(filtered) {
+  VISIBLE = filtered;
   const container = document.getElementById('pub-list');
   const q = document.getElementById('pub-search').value.toLowerCase().trim();
   if (!filtered.length) {
@@ -232,6 +249,7 @@ function toggleAbstract(uid, btn) {
 
 function filterPubs() {
   const raw = document.getElementById('pub-search').value.toLowerCase().trim();
+  syncHash(raw);
   if (!raw) { renderPubs(PUBS); return; }
   const terms = raw.split(/\s+/).filter(Boolean);
   const filtered = PUBS.filter(p => {
@@ -241,13 +259,41 @@ function filterPubs() {
   renderPubs(filtered);
 }
 
+/* Shareable filtered views: mirror the search query in the URL hash (#q=...) */
+function syncHash(query) {
+  const hash = query ? '#q=' + encodeURIComponent(query) : location.pathname + location.search;
+  history.replaceState(null, '', hash);
+}
+
+function applyHash() {
+  const m = location.hash.match(/^#q=(.+)$/);
+  if (!m) return;
+  const q = decodeURIComponent(m[1]);
+  document.getElementById('pub-search').value = q;
+}
+
+/* Download the currently visible entries as a .bib file */
+function downloadBib() {
+  if (!VISIBLE.length) return;
+  const text = VISIBLE.map(p => p.raw).join('\n\n') + '\n';
+  const blob = new Blob([text], { type: 'application/x-bibtex;charset=utf-8' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = VISIBLE.length === PUBS.length ? 'mchugh-publications.bib' : 'mchugh-publications-selected.bib';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(a.href);
+}
+
 async function loadPubs() {
   try {
     const res = await fetch('publications.bib');
     if (!res.ok) throw new Error('Failed to load publications.bib');
     const text = await res.text();
     PUBS = parseBib(text);
-    renderPubs(PUBS);
+    applyHash();
+    filterPubs();
   } catch(e) {
     document.getElementById('pub-list').innerHTML = '<div class="no-results">Could not load publications. Please try refreshing.</div>';
     document.getElementById('pub-stats').textContent = '';

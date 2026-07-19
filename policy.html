@@ -125,9 +125,20 @@
   footer { background: var(--navy); padding: 2.5rem 2rem; text-align: center; border-top: 1px solid rgba(255,248,219,0.2); }
   footer p { font-size: 0.82rem; color: rgba(255,255,255,0.35); }
   footer a { color: var(--gold); text-decoration: none; }
-</style>
+
+    /* -- Accessibility: skip-to-content link (visible only on keyboard focus) -- */
+    .skip-link { position: absolute; left: -9999px; top: 0; z-index: 2000; background: var(--gold-light, #fff8db); color: var(--navy, #0c1b33); padding: 0.6rem 1.2rem; font-family: 'DM Mono', monospace; font-size: 0.8rem; letter-spacing: 0.05em; text-decoration: none; border-radius: 0 0 4px 0; }
+    .skip-link:focus { left: 0; }
+
+    /* -- Accessibility: respect reduced-motion preference -- */
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
+    }
+  </style>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to content</a>
 
 <nav>
   <a href="index.html" class="nav-brand">Matthew D. McHugh</a>
@@ -148,7 +159,7 @@
   </ul>
 </nav>
 
-<div class="topic-hero">
+<div class="topic-hero" id="main-content">
   <div class="topic-hero-bg"></div>
   <div class="topic-hero-overlay"></div>
   <div class="topic-hero-inner">

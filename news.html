@@ -103,9 +103,20 @@
       nav ul li:last-child a { margin: 0.75rem 1.5rem 0; display: inline-block; width: auto; }
       .news-stats { margin-left: 0; width: 100%; }
     }
+  
+    /* -- Accessibility: skip-to-content link (visible only on keyboard focus) -- */
+    .skip-link { position: absolute; left: -9999px; top: 0; z-index: 2000; background: var(--gold-light, #fff8db); color: var(--navy, #0c1b33); padding: 0.6rem 1.2rem; font-family: 'DM Mono', monospace; font-size: 0.8rem; letter-spacing: 0.05em; text-decoration: none; border-radius: 0 0 4px 0; }
+    .skip-link:focus { left: 0; }
+
+    /* -- Accessibility: respect reduced-motion preference -- */
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
+    }
   </style>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to content</a>
 
 <nav>
   <a href="index.html" class="nav-brand">Matthew D. McHugh</a>
@@ -126,7 +137,7 @@
   </ul>
 </nav>
 
-<div class="page-header">
+<div class="page-header" id="main-content">
   <div class="page-header-inner">
     <p class="page-eyebrow">Center for Health Outcomes and Policy Research</p>
     <h1>News &amp; Media</h1>
@@ -190,7 +201,15 @@
     FILTER = type;
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
+    /* Shareable filtered views: mirror the active filter in the URL hash */
+    history.replaceState(null, '', type === 'all' ? location.pathname + location.search : '#' + type);
     renderNews();
+  }
+
+  function applyHash() {
+    const type = location.hash.replace('#', '');
+    const btn = document.querySelector('.filter-btn[data-filter="' + type + '"]');
+    if (type && btn) filterNews(type, btn);
   }
 
   async function loadNews() {
@@ -199,6 +218,7 @@
       if (!res.ok) throw new Error('news.json fetch failed');
       NEWS = await res.json();
       NEWS.sort((a, b) => b.date.localeCompare(a.date));
+      applyHash();
       renderNews();
     } catch (e) {
       document.getElementById('news-list').innerHTML =
