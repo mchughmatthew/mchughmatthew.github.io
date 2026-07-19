@@ -178,8 +178,9 @@
   <div class="pub-inner">
     <p class="section-label">Related Publications</p>
     <div class="pub-controls">
-      <input type="text" id="pub-search" placeholder="Filter these publications&hellip;" oninput="filterPubs()" value="corporatization profit">
+      <input type="text" id="pub-search" placeholder="Filter these publications&hellip;" oninput="filterPubs()">
       <span class="pub-stats" id="pub-stats"></span>
+      <a class="btn-doi" href="publications.html#topic=corporatization">All topics &rarr;</a>
     </div>
     <div id="pub-list"><p class="no-results">Loading publications&hellip;</p></div>
   </div>
@@ -190,6 +191,7 @@
 </footer>
 
 <script>
+const TOPIC = 'corporatization'; /* controlled slug from publications.bib keywords */
 let PUBS = [];
 function parseBib(text) {
   const entries = [];
@@ -214,7 +216,7 @@ async function loadPubs() {
     const res = await fetch('publications.bib');
     if (!res.ok) throw new Error('Failed to load');
     const text = await res.text();
-    PUBS = parseBib(text);
+    PUBS = parseBib(text).filter(p => (p.keywords || '').split(',').map(k => k.trim()).includes(TOPIC));
     filterPubs();
   } catch(e) {
     document.getElementById('pub-list').innerHTML = '<p class="no-results">Could not load publications.</p>';

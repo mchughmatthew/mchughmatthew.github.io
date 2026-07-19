@@ -86,8 +86,9 @@ Linked from the Projects section of the homepage:
 
 - `publications.html` — full searchable, year-grouped publication list (~160
   entries). The search query mirrors into the URL hash (`#q=…`) so filtered
-  views are shareable, and a BibTeX button downloads the currently visible
-  entries as a `.bib` file.
+  views are shareable, a BibTeX button downloads the currently visible
+  entries as a `.bib` file, and each entry has a Cite toggle showing its
+  BibTeX with a copy button.
 - `news.html` — News & Media page: all Penn Nursing press releases and media
   coverage of CHOPR research (sourced from Ed Federico's announcement emails),
   year-grouped with Press Release / Media Coverage filter buttons (the active
@@ -191,6 +192,13 @@ Shared across every page. Defined as CSS variables in each page's `<style>`.
 - **Keep the Google Analytics tag** (`G-5LNP9W9B62`) on every page.
 - **Publications:** prefer DOI links over plain URLs. Link logic is
   `doi ? https://doi.org/<doi> : url`.
+- **Topic keywords in publications.bib:** each entry should carry a
+  `keywords = {…}` field using only these controlled slugs — `staffing`,
+  `workenvironment`, `burnout`, `healthequity`, `corporatization`,
+  `policy` (multiple allowed; a few out-of-scope early papers are
+  deliberately untagged). The slugs drive the topic filter chips on
+  `publications.html` and the auto-generated "Related Publications" lists
+  on the six research topic pages, so new entries must be tagged.
 - **Use CSS classes, not inline styles, for anything with a hover state** —
   inline styles cannot carry `:hover` rules.
 - When generating a long HTML file, verify it is not truncated — confirm it
@@ -294,6 +302,16 @@ remain bracketed.
 
 ## Maintenance log
 
+- **July 18, 2026 topic tags:** all but 8 of the 160 `publications.bib`
+  entries tagged with controlled topic slugs (see Conventions); topic
+  filter chips added to `publications.html` (hash-synced, e.g.
+  `#topic=burnout&q=ratios`); the six research pages' "Related
+  Publications" sections now filter by tag instead of pre-filled text
+  search, with an "All topics →" link to the filtered publications page.
+  AI-drafted classifications — corrections happen directly in the bib.
+- **July 18, 2026 cite buttons:** per-entry "Cite" toggle on the publications
+  page showing the entry's BibTeX with a one-click Copy button (idea from
+  brandonstewart.org).
 - **July 18, 2026 usability pass** (ideas adapted from Gary King's academic
   website guide): publications page gained a BibTeX download of visible
   entries and URL-hash search sync; news page filters sync to the hash;
