@@ -1,5 +1,64 @@
 [
   {
+    "date": "2026-09-21",
+    "type": "coverage",
+    "title": "New research raises concerns over 'substitution by stealth' as global nursing shortfall grows",
+    "url": "https://www.icn.ch/news/new-research-raises-concerns-over-substitution-stealth-global-nursing-shortfall-grows",
+    "source": "International Council of Nurses",
+    "blurb": "ICN CEO Howard Catton joined nursing leaders and researchers at a CHOPR-hosted symposium on September 18 to discuss how better work environments improve recruitment, retention, and patient safety. ICN's coverage pairs the Penn evidence on skill mix with a new Lancet Public Health estimate of a 23.9 million global nurse and midwife shortfall.",
+    "featured": true
+  },
+  {
+    "date": "2026-09-15",
+    "type": "recognition",
+    "title": "Penn Nursing Faculty Appointed to AAN Science Leadership Roles",
+    "url": "https://almanac.upenn.edu/volume-73-number-6#penn-nursing-faculty-appointed-to-aan-science-leadership-roles",
+    "source": "Penn Almanac",
+    "blurb": "The <em>Almanac</em> reports that Matthew McHugh, Dean Antonia Villarruel, Therese Richmond, and Dennis Flores have been appointed to leadership roles in AAN Science, the American Academy of Nursing's new initiative to advance nursing research and evidence-informed policy.",
+    "featured": true
+  },
+  {
+    "date": "2026-09-15",
+    "type": "coverage",
+    "title": "Penn Today spotlights Inquirer interview on psychiatric nurse burnout",
+    "url": "https://www.inquirer.com/health/penn-psychiatric-nurses-burnout-study-20260825.html",
+    "source": "Penn Today",
+    "blurb": "Penn Today's \"Penn in the News\" section features CHOPR postdoctoral fellow Justinna Dixon's <em>Philadelphia Inquirer</em> interview on her finding that about 40% of inpatient psychiatric nurses are burned out, with staffing and the work environment as key drivers."
+  },
+  {
+    "date": "2026-09-07",
+    "type": "coverage",
+    "title": "Nearly 40% of inpatient mental health nurses 'suffer high burnout'",
+    "url": "https://www.nursingtimes.net/nurse-wellbeing/nearly-40-of-us-inpatient-mental-health-nurses-suffer-high-burnout-07-09-2026/",
+    "source": "Nursing Times (UK)",
+    "blurb": "The UK's Nursing Times reports on CHOPR postdoctoral fellow Justinna Dixon's <a href=\"https://onlinelibrary.wiley.com/doi/10.1111/jpm.70189\" target=\"_blank\" rel=\"noopener\">study</a> in the <em>Journal of Psychiatric and Mental Health Nursing</em>, which found 38% of U.S. inpatient psychiatric nurses report high burnout and that better work environments sharply reduce it."
+  },
+  {
+    "date": "2026-08-25",
+    "type": "coverage",
+    "title": "Burnout among psychiatric nurses is high. What can hospitals do to improve?",
+    "url": "https://www.inquirer.com/health/penn-psychiatric-nurses-burnout-study-20260825.html",
+    "source": "The Philadelphia Inquirer &amp; others",
+    "blurb": "The Inquirer's Q&amp;A with CHOPR postdoctoral fellow Justinna Dixon explores her study of burnout among inpatient psychiatric nurses. The release also drew coverage from <a href=\"https://www.psychiatryadvisor.com/news/burnout-common-among-psychiatric-mental-health-registered-nurses/\" target=\"_blank\" rel=\"noopener\">Psychiatry Advisor</a>, <a href=\"https://www.beckersbehavioralhealth.com/research-analysis/nearly-1-in-4-inpatient-psychiatric-nurses-intend-to-quit-within-a-year/\" target=\"_blank\" rel=\"noopener\">Becker's Behavioral Health</a>, <a href=\"https://medicalxpress.com/news/2026-08-inpatient-psychiatric-nurses-high-burnout.html\" target=\"_blank\" rel=\"noopener\">MedicalXpress</a>, and others."
+  },
+  {
+    "date": "2026-08-17",
+    "type": "coverage",
+    "title": "6 Penn Nursing Studies Challenge How Hospitals Measure Staffing",
+    "url": "https://www.beckershospitalreview.com/quality/nursing/6-penn-nursing-studies-challenge-how-hospitals-measure-staffing/",
+    "source": "Becker's Hospital Review",
+    "blurb": "Becker's Clinical Leadership brings together key findings from six recent CHOPR studies, emphasizing that safe patient care begins with adequate nurse staffing — and that headcounts alone miss what matters.",
+    "featured": true
+  },
+  {
+    "date": "2026-08-11",
+    "type": "release",
+    "title": "Nearly 40% of Inpatient Psychiatric Nurses Suffer High Burnout; Work Environment Holds Solution",
+    "url": "https://www.nursing.upenn.edu/live/news/3758-nearly-40-of-inpatient-psychiatric-nurses-suffer",
+    "source": "Journal of Psychiatric and Mental Health Nursing",
+    "blurb": "A CHOPR <a href=\"https://onlinelibrary.wiley.com/doi/epdf/10.1111/jpm.70189\" target=\"_blank\" rel=\"noopener\">study</a> of 740 psychiatric nurses in 297 hospitals across ten states finds 38% report high burnout — and that each one-point improvement in work environment quality cuts the odds of burnout by 70%. Led by CHOPR postdoctoral fellow Justinna Dixon."
+  },
+  {
     "date": "2026-08-05",
     "type": "release",
     "title": "Penn Nursing Professors Co-author Editorial on the Impact of Trauma, Stress, and Violence on Health",
@@ -136,8 +195,7 @@
     "title": "Broad coverage of \"What Would Bring Nurses Back?\"",
     "url": "https://www.medpagetoday.com/nursing/nursing/119808",
     "source": "MedPage Today, KFF Health News, Becker's &amp; others",
-    "blurb": "The <em>JAMA Network Open</em> reattraction study drew coverage from at least eight outlets, including <a href=\"https://kffhealthnews.org/morning-breakout/as-kaiser-strike-gains-steam-new-york-nurses-vote-whether-to-end-theirs/\" target=\"_blank\" rel=\"noopener\">KFF Health News</a>, <a href=\"https://www.beckershospitalreview.com/quality/nursing/top-factors-that-would-bring-rns-back-to-the-bedside-penn-nursing-study/\" target=\"_blank\" rel=\"noopener\">Becker's</a>, and <a href=\"https://medicalxpress.com/news/2026-02-nurses-hospitals-reverse-nursing-workforce.html\" target=\"_blank\" rel=\"noopener\">MedicalXpress</a>.",
-    "featured": true
+    "blurb": "The <em>JAMA Network Open</em> reattraction study drew coverage from at least eight outlets, including <a href=\"https://kffhealthnews.org/morning-breakout/as-kaiser-strike-gains-steam-new-york-nurses-vote-whether-to-end-theirs/\" target=\"_blank\" rel=\"noopener\">KFF Health News</a>, <a href=\"https://www.beckershospitalreview.com/quality/nursing/top-factors-that-would-bring-rns-back-to-the-bedside-penn-nursing-study/\" target=\"_blank\" rel=\"noopener\">Becker's</a>, and <a href=\"https://medicalxpress.com/news/2026-02-nurses-hospitals-reverse-nursing-workforce.html\" target=\"_blank\" rel=\"noopener\">MedicalXpress</a>."
   },
   {
     "date": "2026-02-09",
@@ -145,8 +203,7 @@
     "title": "What Would Bring Nurses Back? New Research Shows How Hospitals Can Reverse Nursing Workforce Losses",
     "url": "https://www.nursing.upenn.edu/live/news/3445-what-would-bring-nurses-back-new-research-shows",
     "source": "JAMA Network Open",
-    "blurb": "A study of 4,043 RNs who left hospital direct care finds most are motivated to return — and safe nurse staffing levels top the list of factors that would bring them back. By Karen Lasater, Matthew McHugh, and Jane Muir.",
-    "featured": true
+    "blurb": "A study of 4,043 RNs who left hospital direct care finds most are motivated to return — and safe nurse staffing levels top the list of factors that would bring them back. By Karen Lasater, Matthew McHugh, and Jane Muir."
   },
   {
     "date": "2026-01-30",
@@ -178,8 +235,7 @@
     "title": "Landmark Magnet4Europe Intervention Improves Clinician Wellbeing and Patient Safety Across Europe",
     "url": "https://www.nursing.upenn.edu/live/news/3399-landmark-magnet4europe-intervention-improves",
     "source": "Medical Care",
-    "blurb": "The Magnet4Europe trial, co-led by CHOPR and KU Leuven, twinned 56 European hospitals with 65 U.S. Magnet hospitals and found significant drops in nurse burnout, intent to leave, and unfavorable safety ratings.",
-    "featured": true
+    "blurb": "The Magnet4Europe trial, co-led by CHOPR and KU Leuven, twinned 56 European hospitals with 65 U.S. Magnet hospitals and found significant drops in nurse burnout, intent to leave, and unfavorable safety ratings."
   },
   {
     "date": "2025-12-09",
