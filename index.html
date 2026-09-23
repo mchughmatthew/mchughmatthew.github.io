@@ -137,6 +137,27 @@
     background: linear-gradient(90deg, transparent, var(--gold), transparent);
   }
   .hero-inner { max-width: 860px; margin: 0 auto; }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 3rem;
+    align-items: center;
+  }
+  .hero-photo {
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid rgba(255,248,219,0.45);
+    box-shadow: 0 0 0 8px rgba(255,248,219,0.05), 0 18px 40px rgba(0,0,0,0.35);
+    position: relative;
+    z-index: 1;
+  }
+  .hero-photo img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+    display: block;
+  }
   .hero-eyebrow {
     font-family: 'DM Mono', monospace;
     font-size: 0.75rem;
@@ -522,6 +543,8 @@
     .about-grid    { grid-template-columns: 1fr; }
     .research-grid { grid-template-columns: 1fr; }
     #hero h1       { font-size: 2.5rem; }
+    .hero-grid     { grid-template-columns: 1fr; gap: 1.75rem; }
+    .hero-photo    { order: -1; width: 128px; height: 128px; }
     .nav-hamburger { display: flex; }
     nav ul {
       display: none;
@@ -783,6 +806,8 @@
 ==================================================== -->
 <section id="hero">
   <div class="hero-inner">
+  <div class="hero-grid">
+  <div class="hero-text">
     <p class="hero-eyebrow">University of Pennsylvania School of Nursing</p>
     <h1>Matthew D.<br>McHugh</h1>
     <p class="hero-credentials">PhD &middot; JD &middot; MPH &middot; RN &middot; FAAN</p>
@@ -804,6 +829,11 @@
       <a href="https://www.linkedin.com/in/matthew-mchugh-phd-jd-mph-rn-73442844/" target="_blank">LinkedIn</a>
       <a href="https://github.com/mchughmatthew" target="_blank">GitHub</a>
     </div>
+  </div><!-- end .hero-text -->
+  <div class="hero-photo">
+    <img src="images/mmchugh.jpeg" alt="Portrait of Matthew D. McHugh" width="278" height="270" fetchpriority="high">
+  </div>
+  </div><!-- end .hero-grid -->
   </div>
 </section>
 
