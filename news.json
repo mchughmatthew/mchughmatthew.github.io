@@ -1,5 +1,55 @@
 [
   {
+    "date": "2026-10-09",
+    "type": "coverage",
+    "title": "For-profit hospitals tied to more deaths, nurse understaffing: Study",
+    "url": "https://www.beckershospitalreview.com/quality/patient-safety-outcomes/for-profit-hospitals-tied-to-more-deaths-nurse-understaffing-study/",
+    "source": "Becker's Hospital Review; Medical Daily; News-Medical; EurekAlert!",
+    "blurb": "Coverage of CHOPR's <em>Medical Care</em> study of for-profit hospitals appears in <a href=\"https://www.beckershospitalreview.com/quality/patient-safety-outcomes/for-profit-hospitals-tied-to-more-deaths-nurse-understaffing-study/\">Becker's Hospital Review</a>, <a href=\"https://www.medicaldaily.com/profit-hospitals-deaths-nurse-understaffing-penn-study-479741\">Medical Daily</a>, <a href=\"https://www.news-medical.net/news/20261008/Inadequate-nurse-staffing-drives-worse-patient-outcomes-in-for-profit-hospitals.aspx\">News-Medical</a>, and <a href=\"https://www.eurekalert.org/news-releases/1146926\">EurekAlert!</a>."
+  },
+  {
+    "date": "2026-10-07",
+    "type": "release",
+    "title": "For-Profit Hospitals Linked to Worse Patient Outcomes and Nurse Staffing Shortfalls, New Penn Nursing Study Finds",
+    "url": "https://www.nursing.upenn.edu/live/news/3877-for-profit-hospitals-linked-to-worse-patient",
+    "source": "Medical Care",
+    "blurb": "Across 941 hospitals in 10 states, for-profit hospitals had roughly 11 more deaths per 1,000 medical admissions and higher readmissions, with nurse staffing accounting for part of the gap; 71% of nurses in for-profit hospitals reported unsafe workloads. Published open access in <em>Medical Care</em>.",
+    "featured": true
+  },
+  {
+    "date": "2026-10-07",
+    "type": "recognition",
+    "title": "National Award for Penn Nursing Postdoctoral Fellow",
+    "url": "https://www.nursing.upenn.edu/live/news/3874-national-award-for-penn-nursing-postdoctoral",
+    "source": "STAT News",
+    "blurb": "CHOPR postdoctoral fellow Justinna Dixon, PhD, RN, was named a <a href=\"https://www.statnews.com/wunderkinds/justinna-dixon/\">2026 STAT Wunderkind</a>, recognizing standout early-career researchers in biomedical science.",
+    "featured": true
+  },
+  {
+    "date": "2026-10-07",
+    "type": "coverage",
+    "title": "Researchers call for investing in hospital nursing workforce to address health impacts of extreme heat",
+    "url": "https://medicalxpress.com/news/2026-10-investing-hospital-nursing-workforce-health.html",
+    "source": "Medical Xpress; Becker's Hospital Review; Medical Daily; EurekAlert!",
+    "blurb": "Coverage of the CHOPR editorial in <em>Public Health Nursing</em> appears in <a href=\"https://medicalxpress.com/news/2026-10-investing-hospital-nursing-workforce-health.html\">Medical Xpress</a>, <a href=\"https://www.beckershospitalreview.com/quality/public-health/an-immediate-hospital-preparedness-priority-preparing-nurses-for-heat-related-illness-surges/\">Becker's Hospital Review</a>, <a href=\"https://www.medicaldaily.com/penn-nursing-editorial-extreme-heat-hospital-nurse-staffing-479618\">Medical Daily</a>, and <a href=\"https://www.eurekalert.org/news-releases/1146541\">EurekAlert!</a>."
+  },
+  {
+    "date": "2026-10-05",
+    "type": "release",
+    "title": "New Editorial Calls for Investing in Hospital Nursing Workforce to Address Health Impacts of Extreme Heat",
+    "url": "https://www.nursing.upenn.edu/live/news/3870-new-editorial-calls-for-investing-in-hospital",
+    "source": "Public Health Nursing",
+    "blurb": "Led by Eileen Lake with Domenique Villani and Ysabella Perez, the editorial urges hospitals to make nurse staffing and supportive work environments a core part of extreme heat emergency preparedness."
+  },
+  {
+    "date": "2026-10-05",
+    "type": "recognition",
+    "title": "Linda Aiken to Receive the M. Louise Fitzpatrick Award for Transformative Leadership",
+    "url": "https://www.villanova.edu/university/media/press-releases/2026/fcn-award.html",
+    "source": "Villanova University",
+    "blurb": "Villanova's M. Louise Fitzpatrick College of Nursing named CHOPR founding director Linda H. Aiken, PhD, RN, FAAN, FRCN, the 2026 recipient of its Award for Transformative Leadership."
+  },
+  {
     "date": "2026-09-23",
     "type": "coverage",
     "title": "Global Nursing Shortage Requires Better Workplaces, Not Just More Nurses",
@@ -113,8 +163,7 @@
     "title": "Pennsylvania safe staffing study draws wide coverage",
     "url": "https://www.phillyvoice.com/nurses-workloads-patients-saff-levels-shortage/",
     "source": "Philly Voice, Pittsburgh Post-Gazette, Becker's &amp; others",
-    "blurb": "The <em>Medical Care</em> study on safe minimum nurse staffing requirements in Pennsylvania was covered by Philly Voice, the Pittsburgh Post-Gazette, <a href=\"https://www.beckershospitalreview.com/quality/patient-safety-outcomes/fatality-risk-grows-8-per-added-med-surg-nurse-patient-study/\" target=\"_blank\" rel=\"noopener\">Becker's</a>, and <a href=\"https://scienmag.com/new-study-finds-pennsylvania-safe-staffing-policy-could-save-lives-and-cut-costs-to-fund-better-care/\" target=\"_blank\" rel=\"noopener\">ScienMag</a>.",
-    "featured": true
+    "blurb": "The <em>Medical Care</em> study on safe minimum nurse staffing requirements in Pennsylvania was covered by Philly Voice, the Pittsburgh Post-Gazette, <a href=\"https://www.beckershospitalreview.com/quality/patient-safety-outcomes/fatality-risk-grows-8-per-added-med-surg-nurse-patient-study/\" target=\"_blank\" rel=\"noopener\">Becker's</a>, and <a href=\"https://scienmag.com/new-study-finds-pennsylvania-safe-staffing-policy-could-save-lives-and-cut-costs-to-fund-better-care/\" target=\"_blank\" rel=\"noopener\">ScienMag</a>."
   },
   {
     "date": "2026-05-05",
@@ -122,8 +171,7 @@
     "title": "A Safe Staffing Policy for Pennsylvania Could Prevent Deaths and Produce Savings to Help Fund Improved Staffing, New Study Finds",
     "url": "https://www.nursing.upenn.edu/live/news/3630-a-safe-staffing-policy-for-pennsylvania-could",
     "source": "Medical Care",
-    "blurb": "A CHOPR study of more than 547,000 patients across 132 Pennsylvania hospitals projects that safe-staffing ratios could prevent up to 3,040 deaths a year while generating roughly $305 million in savings.",
-    "featured": true
+    "blurb": "A CHOPR study of more than 547,000 patients across 132 Pennsylvania hospitals projects that safe-staffing ratios could prevent up to 3,040 deaths a year while generating roughly $305 million in savings."
   },
   {
     "date": "2026-04-20",
