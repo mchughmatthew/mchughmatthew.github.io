@@ -1,5 +1,22 @@
 [
   {
+    "date": "2026-10-15",
+    "type": "coverage",
+    "title": "Safer nurse workloads may ease emergency department crowding",
+    "url": "https://www.beckershospitalreview.com/quality/nursing/nurse-staffings-effect-on-ed-crowding-by-the-numbers/",
+    "source": "ANA SmartBrief; Becker's Hospital Review; News-Medical; Medical Daily; EurekAlert!",
+    "blurb": "Coverage of CHOPR's <em>Medical Care</em> ED crowding study appears in <a href=\"https://www.beckershospitalreview.com/quality/nursing/nurse-staffings-effect-on-ed-crowding-by-the-numbers/\">Becker's Hospital Review</a>, <a href=\"https://www.news-medical.net/news/20261013/Improving-nurse-staffing-could-ease-emergency-department-crowding.aspx\">News-Medical</a>, <a href=\"https://www.medicaldaily.com/er-nurse-understaffing-longer-stays-patients-leaving-unseen-479945\">Medical Daily</a>, and <a href=\"https://www.eurekalert.org/news-releases/1147549\">EurekAlert!</a>, and was the top story in ANA SmartBrief."
+  },
+  {
+    "date": "2026-10-13",
+    "type": "release",
+    "title": "Safer Nurse Workloads Could Alleviate Emergency Department Crowding",
+    "url": "https://www.nursing.upenn.edu/live/news/3888-safer-nurse-workloads-could-alleviate-emergency",
+    "source": "Medical Care",
+    "blurb": "Across 410 hospitals, worse nurse staffing adequacy was tied to longer ED stays and more patients leaving before being seen; over 60% of ED nurses reported too few staff. Led by Jane Muir, published in <em>Medical Care</em>.",
+    "featured": true
+  },
+  {
     "date": "2026-10-09",
     "type": "coverage",
     "title": "For-profit hospitals tied to more deaths, nurse understaffing: Study",
@@ -130,8 +147,7 @@
     "title": "Stop Saying There's a Nursing Shortage",
     "url": "https://time.com/article/2026/07/30/stop-saying-theres-a-nursing-shortage/",
     "source": "TIME",
-    "blurb": "Karen Lasater is quoted several times in this national <em>TIME</em> feature; Penn Nursing is mentioned and CHOPR publications are cited extensively throughout.",
-    "featured": true
+    "blurb": "Karen Lasater is quoted several times in this national <em>TIME</em> feature; Penn Nursing is mentioned and CHOPR publications are cited extensively throughout."
   },
   {
     "date": "2026-05-20",
