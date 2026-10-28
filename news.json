@@ -1,5 +1,22 @@
 [
   {
+    "date": "2026-10-20",
+    "type": "coverage",
+    "title": "Nurses are in high demand—but they're quitting in droves",
+    "url": "https://www.wsj.com/health/healthcare/nurses-are-in-high-demandbut-theyre-quitting-in-droves-d8ead94f",
+    "source": "Wall Street Journal; MSN",
+    "blurb": "The <em>Wall Street Journal</em> cites CHOPR's <a href=\"https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2844818\">February 2026 <em>JAMA Network Open</em> survey</a> of 4,000 licensed nurses who left a job in the past five years in its look at nurse turnover, burnout, and understaffing.",
+    "featured": true
+  },
+  {
+    "date": "2026-10-19",
+    "type": "coverage",
+    "title": "Pennsylvania Nurses Are Overloaded, Putting Patients at Risk",
+    "url": "https://ldi.upenn.edu/our-work/research-updates/pennsylvania-nurses-are-overloaded-putting-patients-at-risk/",
+    "source": "Penn LDI",
+    "blurb": "Penn LDI's look at Pennsylvania's proposed nurse staffing ratio bill draws on CHOPR research, including the Queensland <em>Lancet</em> study and a <em>Medical Care</em> analysis of rural Pennsylvania hospitals."
+  },
+  {
     "date": "2026-10-15",
     "type": "coverage",
     "title": "Safer nurse workloads may ease emergency department crowding",
@@ -122,8 +139,7 @@
     "title": "6 Penn Nursing Studies Challenge How Hospitals Measure Staffing",
     "url": "https://www.beckershospitalreview.com/quality/nursing/6-penn-nursing-studies-challenge-how-hospitals-measure-staffing/",
     "source": "Becker's Hospital Review",
-    "blurb": "Becker's Clinical Leadership brings together key findings from six recent CHOPR studies, emphasizing that safe patient care begins with adequate nurse staffing — and that headcounts alone miss what matters.",
-    "featured": true
+    "blurb": "Becker's Clinical Leadership brings together key findings from six recent CHOPR studies, emphasizing that safe patient care begins with adequate nurse staffing — and that headcounts alone miss what matters."
   },
   {
     "date": "2026-08-11",
