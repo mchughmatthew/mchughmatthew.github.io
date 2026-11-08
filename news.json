@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-10-30",
+    "type": "coverage",
+    "title": "Preventing emergency department bottlenecks",
+    "url": "https://mailchi.mp/upenn/10-30-26-gift-establishes-new-brain-tumor-center",
+    "source": "Penn Today",
+    "blurb": "Penn Today's Health & Medicine section highlights the CHOPR study led by Jane Muir, PhD, RN, in <em>Medical Care</em> finding that safer hospital nurse workloads could alleviate delays in care that contribute to emergency department crowding."
+  },
+  {
+    "date": "2026-10-29",
+    "type": "coverage",
+    "title": "For-profit hospitals linked to worse outcomes",
+    "url": "https://mailchi.mp/upenn/10-29-26-stopping-muscular-dystrophy",
+    "source": "Penn Today",
+    "blurb": "Penn Today features the CHOPR <em>Medical Care</em> study by Matthew McHugh, Karen Lasater, and colleagues showing higher mortality and readmissions at for-profit hospitals, where nurses also reported less safe staffing and worse working conditions.",
+    "featured": true
+  },
+  {
+    "date": "2026-10-28",
+    "type": "coverage",
+    "title": "Solving the Nursing Shortage Means Supporting Care Workers",
+    "url": "https://ldi.upenn.edu/our-work/research-updates/solving-the-nursing-shortage-means-supporting-care-workers/",
+    "source": "Penn LDI",
+    "blurb": "A Penn LDI research update by CHOPR postdoctoral fellow Lynne Moronski, PhD, RN, on why addressing the nursing shortage depends on supporting care workers."
+  },
+  {
+    "date": "2026-10-27",
+    "type": "coverage",
+    "title": "More Margin, More Mortality",
+    "url": "https://digitalhealthwire.com/newsletter/general-medicine-arcadia-ascent-and-utah-get-me-two/",
+    "source": "Digital Health Wire",
+    "blurb": "Digital Health Wire's newsletter covers the CHOPR study led by Matthew McHugh and Karen Lasater linking for-profit hospital ownership to higher mortality and worse nurse staffing."
+  },
+  {
     "date": "2026-10-20",
     "type": "coverage",
     "title": "Nurses are in high demand—but they're quitting in droves",
@@ -7,6 +40,14 @@
     "source": "Wall Street Journal; MSN",
     "blurb": "The <em>Wall Street Journal</em> cites CHOPR's <a href=\"https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2844818\">February 2026 <em>JAMA Network Open</em> survey</a> of 4,000 licensed nurses who left a job in the past five years in its look at nurse turnover, burnout, and understaffing.",
     "featured": true
+  },
+  {
+    "date": "2026-10-19",
+    "type": "coverage",
+    "title": "Justinna Dixon named 2026 STAT News Wunderkind",
+    "url": "https://almanac.upenn.edu/#justinna-dixon-2026-stat-news-wunderkind",
+    "source": "Penn Almanac",
+    "blurb": "The <em>Almanac</em> features CHOPR postdoctoral fellow Justinna Dixon, PhD, RN, and her designation as a 2026 STAT Wunderkind."
   },
   {
     "date": "2026-10-19",
@@ -106,8 +147,7 @@
     "title": "Penn Nursing Faculty Appointed to AAN Science Leadership Roles",
     "url": "https://almanac.upenn.edu/volume-73-number-6#penn-nursing-faculty-appointed-to-aan-science-leadership-roles",
     "source": "Penn Almanac",
-    "blurb": "The <em>Almanac</em> reports that Matthew McHugh, Dean Antonia Villarruel, Therese Richmond, and Dennis Flores have been appointed to leadership roles in AAN Science, the American Academy of Nursing's new initiative to advance nursing research and evidence-informed policy.",
-    "featured": true
+    "blurb": "The <em>Almanac</em> reports that Matthew McHugh, Dean Antonia Villarruel, Therese Richmond, and Dennis Flores have been appointed to leadership roles in AAN Science, the American Academy of Nursing's new initiative to advance nursing research and evidence-informed policy."
   },
   {
     "date": "2026-09-15",
